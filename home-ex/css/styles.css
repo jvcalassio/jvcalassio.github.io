@@ -3,3 +3,10 @@
         margin-left:40%;
     }
 }
+
+.nav-pills > li > a.active {
+    background-color: #343a40 !important;
+}
+.nav-pills > li > a {
+    color: #343a40;
+}

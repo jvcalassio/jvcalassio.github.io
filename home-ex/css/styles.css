@@ -10,3 +10,11 @@
 .nav-pills > li > a {
     color: #343a40;
 }
+
+.top-btn {
+    color: #343a40;
+}
+
+.top-btn > :hover{
+    color: #6c757d;
+}

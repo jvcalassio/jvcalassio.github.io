@@ -24,9 +24,9 @@
             <div class="collapse navbar-collapse" id="main_nav">
                 <ul class="navbar-nav ml-auto mr-3 text-center">
                     <li class="nav-item active"><a class="nav-link" href="#">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#fotos">Fotos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#caracteristicas">Características</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Item 4</a></li>
+                    <li class="nav-item"><a class="nav-link link-scroll" href="#fotos">Fotos</a></li>
+                    <li class="nav-item"><a class="nav-link link-scroll" href="#caracteristicas">Características</a></li>
+                    <li class="nav-item"><a class="nav-link link-scroll" href="#">Item 4</a></li>
                 </ul>
             </div>
         </div>
@@ -109,10 +109,19 @@
         </div>
     </div>
     <br />
-    <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="bootstrap/js/bootstrap.js"></script>
+    <!-- page js -->
+    <script type="text/javascript">
+        $('.link-scroll').click(function(e){
+            e.preventDefault();
+            var h = $(this).attr('href');
+            $('html,body').animate({
+                scrollTop: $(h).offset().top
+            }, 1000);
+        });
+    </script>
   </body>
 </html>

@@ -181,14 +181,20 @@
         <div class="row my-4">
             <div class="col text-center">
                 notas de rodapé
+                <!--
                 <div class="float-right">
                     <a href="#top" class="link-scroll top-btn">
                         <i class="fas fa-chevron-circle-up"></i>
                     </a>
                 </div>
+                -->
             </div>
         </div>
     </div>
+
+    <a href="#top" class="top-btn link-scroll" id="top-scroll-btn">
+        <i class="fas fa-chevron-circle-up"></i>
+    </a>
 
     <!-- Modal -->
     <div class="modal fade" tabindex="-1" role="dialog" id="modal-bravo" aria-hidden="true">
@@ -241,6 +247,13 @@
     <script src="bootstrap/js/bootstrap.js"></script>
     <!-- page js -->
     <script type="text/javascript">
+        $(window).scroll(function(){
+            if($(this).scrollTop() > 100){
+                $("#top-scroll-btn").fadeIn();
+            } else {
+                $("#top-scroll-btn").fadeOut();
+            }
+        });
         $('.link-scroll').click(function(e){
             e.preventDefault();
             var h = $(this).attr('href');

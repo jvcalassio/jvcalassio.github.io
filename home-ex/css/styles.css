@@ -14,8 +14,21 @@
 .top-btn {
     color: #343a40;
     font-size:1.5em;
+    position: fixed;
+    right:10px;
+    bottom:10px;
+    z-index:1100;
+    display:none;
 }
 
 .top-btn > :hover{
     color: #6c757d;
+}
+
+.top-btn > i{
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-left:-30px;
+    margin-top:-30px;
 }

@@ -32,3 +32,9 @@
     margin-left:-30px;
     margin-top:-30px;
 }
+
+/* alt lembrete */
+img[alt=""],
+img:not([alt]) {
+    border: 5px dashed #ff00ff;
+}

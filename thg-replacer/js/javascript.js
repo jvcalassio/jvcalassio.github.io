@@ -17,7 +17,9 @@ $("#subst").click(function(){
         } else {
             scnd = $("#cont"+i).val();
         }
-        texto = texto.replace( $("#nome" + i).val(), "@" + scnd );
+        if($("#nome"+i).val() != ""){
+            texto = texto.replace( $("#nome" + i).val(), "@" + scnd );
+        }
     }
 
     $("#texto-p").val(texto);

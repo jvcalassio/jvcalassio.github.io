@@ -15,10 +15,10 @@ $("#subst").click(function(){
         if($("#cont"+i).val() == ""){
             scnd = $("#nome"+i).val();
         } else {
-            scnd = $("#cont"+i).val();
+            scnd = "@" + $("#cont"+i).val();
         }
         if($("#nome"+i).val() != ""){
-            texto = texto.replace( $("#nome" + i).val(), "@" + scnd );
+            texto = texto.replace( $("#nome" + i).val(), scnd );
         }
     }
 

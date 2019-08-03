@@ -49,6 +49,7 @@ function onPlayerStateChange(event) {
       setInterval(function(){
         alert(player.getCurrentTime());
       });
+      playing = true;
   }
 }
 function stopVideo() {

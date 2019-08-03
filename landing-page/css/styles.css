@@ -157,6 +157,7 @@
     text-align: left;
     padding:12px 12px 12px 25px;
     border-bottom: 0px;
+    cursor:pointer;
 }
 
 .card #first-header .fa-chevron-down {

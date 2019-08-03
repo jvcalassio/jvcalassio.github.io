@@ -38,10 +38,17 @@ function onPlayerReady(event) {
 
 // Quando o estado do player muda (state = 1), o video toca por 6s e depois para
 var done = false;
+
+var playing = false;
 function onPlayerStateChange(event) {
-  if (event.data == YT.PlayerState.PLAYING && !done) {
+  /*if (event.data == YT.PlayerState.PLAYING && !done) {
     setTimeout(stopVideo, 6000);
     done = true;
+  }*/
+  if(playing == false){
+      setInterval(function(){
+        alert(player.getCurrentTime());
+      });
   }
 }
 function stopVideo() {

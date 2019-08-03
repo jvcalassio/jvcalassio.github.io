@@ -48,7 +48,7 @@ function onPlayerStateChange(event) {
   if(playing == false){
       setInterval(function(){
         alert(player.getCurrentTime());
-      });
+      },2000);
       playing = true;
   }
 }

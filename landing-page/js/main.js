@@ -33,7 +33,7 @@ function onYouTubeIframeAPIReady() {
 
 // quando o player estiver pronto, inicia o video automaticamente
 function onPlayerReady(event) {
-  event.target.playVideo();
+  //event.target.playVideo();
 }
 
 // Quando o estado do player muda (state = 1), o video toca por 6s e depois para

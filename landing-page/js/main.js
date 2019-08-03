@@ -37,21 +37,25 @@ function onPlayerReady(event) {
 }
 
 // Quando o estado do player muda (state = 1), o video toca por 6s e depois para
-var done = false;
+//var done = false;
 
-var playing = false;
+var played = false;
+var interval;
+var playingtime = 0;
 function onPlayerStateChange(event) {
   /*if (event.data == YT.PlayerState.PLAYING && !done) {
     setTimeout(stopVideo, 6000);
     done = true;
   }*/
-  if(playing == false){
-      setInterval(function(){
-        alert(player.getCurrentTime());
+  if(played == false){
+      interval = setInterval(function(){
+        playingtime = player.getCurrentTime();
+
+        if(playingtime >= 6){ // 6 segundos
+            clearInterval(interval);
+            player.stopVideo();
+        }
       },2000);
-      playing = true;
+      played = true;
   }
-}
-function stopVideo() {
-  player.stopVideo();
 }

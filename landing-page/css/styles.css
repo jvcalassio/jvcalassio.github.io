@@ -1,0 +1,591 @@
+/* Variaveis de cor */
+:root {
+    --bg-color: #ffffff;
+    --main-red: #f02c2c;
+    --main-red-dark: #971818;
+    --secondary-red: #e32828;
+    --main-pink: #f9bdb9;
+    --secondary-pink: #facac7;
+    --third-pink: #fbd8d5;
+    --light-pink: #fee3e4;
+
+    --dark-font: #6e2326;
+    --normal-font: #a44e52;
+    --light-font: #e08d91;
+    --grey-font: #858585;
+    --black-font: #181818;
+
+    --main-green: #5bbb14;
+    --secondary-green: #50a313;
+    --main-green-dark: #3f7c12;
+    --light-green: #85ca52;
+
+    --grey-bg: #cdcdcd;
+    --main-blue: #3e6da8;
+    --dark-grey: #6a6a6a;
+}
+
+/* Botões customizados */
+.btn-primary {
+    color:white;
+    background-color: var(--main-red);
+    border-color: var(--main-red);
+    border-bottom-color: var(--main-red-dark);
+    border-bottom-width: 3px;
+    border-radius: 20px;
+    min-width: 300px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 900;
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 15pt;
+}
+
+.btn-primary:hover {
+    color: white;
+    background-color:var(--secondary-red);
+    border-color:var(--secondary-red);
+    border-bottom-color: var(--main-red-dark);
+    border-bottom-width: 3px;
+}
+
+.btn-primary:focus,
+.btn-primary.focus {
+    /*box-shadow: 0 0 0 .2rem rgba(235, 43, 69, 0.5)*/
+    box-shadow: 0 0 0 0;
+}
+
+.btn-primary.disabled,
+.btn-primary:disabled {
+    /*color: #212529;*/
+    color: white;
+    background-color:var(--main-pink);
+    border-color: var(--secondary-pink);
+}
+
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active,
+.show>.btn-primary.dropdown-toggle {
+    color: white;
+    background-color: var(--main-red-dark);
+    border-color: var(--main-red);
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.show>.btn-primary.dropdown-toggle:focus {
+    /*box-shadow: 0 0 0 .2rem rgba(91, 194, 194, 0.5)*/
+    box-shadow: 0 0 0 0;
+}
+
+.btn-primary .little-txt {
+    font-weight: 500;
+    font-size:9pt;
+}
+
+.btn-secondary {
+    color:white;
+    background-color: var(--main-green);
+    border-color: var(--main-green);
+    border-bottom-color: var(--main-green-dark);
+    border-bottom-width: 3px;
+    border-radius: 20px;
+    min-width: 300px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 900;
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 20pt;
+}
+
+.btn-secondary:hover {
+    color: white;
+    background-color:var(--secondary-green);
+    border-color:var(--secondary-green);
+    border-bottom-color: var(--main-green-dark);
+    border-bottom-width: 3px;
+}
+
+.btn-secondary:focus,
+.btn-secondary.focus {
+    /*box-shadow: 0 0 0 .2rem rgba(235, 43, 69, 0.5)*/
+    box-shadow: 0 0 0 0;
+}
+
+.btn-secondary.disabled,
+.btn-secondary:disabled {
+    /*color: #212529;*/
+    color: white;
+    background-color:var(--light-green);
+    border-color: var(--light-green);
+}
+
+.btn-secondary:not(:disabled):not(.disabled):active,
+.btn-secondary:not(:disabled):not(.disabled).active,
+.show>.btn-secondary.dropdown-toggle {
+    color: white;
+    background-color: var(--main-green-dark);
+    border-color: var(--main-green);
+}
+
+.btn-secondary:not(:disabled):not(.disabled):active:focus,
+.btn-secondary:not(:disabled):not(.disabled).active:focus,
+.show>.btn-secondary.dropdown-toggle:focus {
+    /*box-shadow: 0 0 0 .2rem rgba(91, 194, 194, 0.5)*/
+    box-shadow: 0 0 0 0;
+}
+
+.btn-secondary .little-txt {
+    font-weight: 500;
+    font-size:9pt;
+}
+
+.spec {
+    border-radius:30px;
+    line-height: 20px;
+}
+
+/* Card customizado */
+.card {
+    border-width: 0pt;
+    border-radius: 0px;
+}
+
+.card .card-header {
+    background-color: var(--grey-bg);
+    color: var(--main-blue);
+    text-align: left;
+    padding:12px 12px 12px 25px;
+    border-bottom: 0px;
+}
+
+.card #first-header .fa-chevron-down {
+    float:right;
+    display: block;
+}
+
+.card #first-header .fa-chevron-right {
+    float:right;
+    display: none;
+}
+
+.card .card-header .fa-chevron-down {
+    float:right;
+    display: none;
+}
+
+.card .card-header .fa-chevron-right {
+    float:right;
+    display: block;
+}
+
+.card .card-header h5{
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 700;
+    font-size: 14pt;
+}
+
+.card .card-body {
+    background-color: var(--bg-color);
+    color: var(--grey-font);
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 500;
+    font-size: 14pt;
+    text-align: left;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+/* Restante do corpo da página */
+
+.sorteio-title {
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 900;
+    font-size: 50pt;
+    color: var(--main-red);
+}
+
+.sorteio-txt {
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 700;
+    font-size:20pt;
+    color: var(--light-font);
+    max-width: 450px;
+}
+
+.sorteio-txt .highlight{
+    color: var(--normal-font);
+}
+
+.sorteio-txt-listing{
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 500;
+    font-size:17pt;
+    color: var(--grey-font);
+}
+
+.bg-red {
+    background-color: var(--main-red);
+}
+
+.first-block {
+    margin-top:50px;
+    /*background-color: var(--light-pink);*/
+    background-image: url("../img/bg-first-block.png");
+    background-attachment: local;
+}
+.first-block .main-text {
+    margin-top:50px;
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 700;
+    font-size: 25pt;
+    color: var(--normal-font);
+}
+
+.first-block .highlight{
+    font-family: 'black_jackregular', sans-serif;
+    font-size:35pt;
+}
+
+.logo {
+    width: 200px;
+    height: 137px;
+    background-image: url("../img/logo.png");
+    background-size: 100%;
+    margin:auto;
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+}
+
+.second-block {
+    background-color: var(--bg-color);
+}
+.second-block .main-text {
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 700;
+    font-size: 20pt;
+    color: var(--normal-font);
+}
+
+.second-block .bg-depoimentos {
+    width:100%;
+    /*background-color: var(--light-pink);*/
+    background: 
+    linear-gradient(135deg, var(--secondary-pink) 25%, transparent 25%) -10px 0,
+    linear-gradient(225deg, var(--secondary-pink) 25%, transparent 25%) -10px 0,
+    linear-gradient(315deg, var(--secondary-pink) 25%, transparent 25%),
+    linear-gradient(45deg, var(--secondary-pink) 25%, transparent 25%);	
+    background-size: 20px 20px;
+    background-color: var(--main-pink);
+    height:250px;
+    position: absolute;
+    left:0;
+    right:0;
+    margin-top:75px;
+}
+
+.second-block .bg-depoimentos2 {
+    width:100%;
+    /*background-color: var(--light-pink);*/
+    background: 
+    linear-gradient(135deg, var(--secondary-pink) 25%, transparent 25%) -10px 0,
+    linear-gradient(225deg, var(--secondary-pink) 25%, transparent 25%) -10px 0,
+    linear-gradient(315deg, var(--secondary-pink) 25%, transparent 25%),
+    linear-gradient(45deg, var(--secondary-pink) 25%, transparent 25%);	
+    background-size: 20px 20px;
+    background-color: var(--main-pink);
+    height:250px;
+    position: absolute;
+    left:0;
+    right:0;
+    margin-top:475px;
+}
+.second-block .bg-depoimentos3 {
+    width:100%;
+    /*background-color: var(--light-pink);*/
+    background: 
+    linear-gradient(135deg, var(--secondary-pink) 25%, transparent 25%) -10px 0,
+    linear-gradient(225deg, var(--secondary-pink) 25%, transparent 25%) -10px 0,
+    linear-gradient(315deg, var(--secondary-pink) 25%, transparent 25%),
+    linear-gradient(45deg, var(--secondary-pink) 25%, transparent 25%);	
+    background-size: 20px 20px;
+    background-color: var(--main-pink);
+    height:250px;
+    position: absolute;
+    left:0;
+    right:0;
+    margin-top:875px;
+}
+
+.second-block .depoimento-video {
+    height:400px;
+    max-width:300px;
+    background-color:var(--normal-font);
+}
+
+.third-block .content {
+    background-color: transparent;
+    height:500px;
+}
+.third-block .custom-bg{
+    background-color: var(--main-pink);
+    background-image: radial-gradient(var(--secondary-pink) 15%, transparent 16%),
+    radial-gradient(var(--secondary-pink) 15%, transparent 16%);
+    background-size: 60px 60px;
+    background-position: 0 0, 30px 30px;
+    position:absolute;
+    height:680px;
+    width:100%;
+    left:0;
+    right:0;
+    z-index:-2;
+}
+
+.third-block .title{
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 500;
+    font-size: 20pt;
+    color: var(--normal-font);
+}
+
+.third-block .main-text{
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 500;
+    font-size: 15pt;
+    text-align: left;
+    color: var(--dark-font);
+    line-height: 50px;
+}
+
+.third-block .main-text i {
+    color: var(--light-font);
+}
+
+.third-block .woman-pic {
+    width:200px;
+    height:212px;
+    /*background-color:#000;*/
+    background-image: url("../img/woman-pic.png");
+    background-attachment: local;
+    background-size: 100%;
+}
+
+.fourth-block .phone-pic {
+    width:500px;
+    height:270px;
+    /*background-color: #000;*/
+    background-image: url("../img/phone-pic.png");
+    background-attachment: local;
+    background-size:130%;
+}
+
+.fourth-block .popup {
+    background-color: var(--third-pink);
+    border: 3px solid var(--main-pink);
+    border-radius: 30px;
+    max-width: 400px;
+    padding: 20px 40px 20px 40px;
+}
+
+.fourth-block .popup h2 {
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 700;
+    font-size:20pt;
+    color: var(--dark-font);
+}
+
+.fourth-block .popup p {
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 500;
+    font-size:15pt;
+    color: var(--dark-font);
+}
+
+.sixth-block {
+    /*background-color: var(--light-pink);    */
+    background-image: url("../img/bg-sixth-block.png");
+    background-attachment: local;
+    background-size: 100%;
+}
+
+.sixth-block h2{
+    font-family: 'Arial Black', sans-serif;
+    font-size: 16pt;
+    line-height: 15px;
+}
+
+.seventh-block {
+    background-color: #000;
+    /*height:600px;*/
+    color:white;
+    width: 100%;
+}
+
+.seventh-block .part2 h1{
+    font-family: 'Gotham Black Regular', sans-serif;
+    font-size: 36pt;
+    color:var(--main-red);
+}
+
+.seventh-block .part2 h2{
+    font-family: 'Gotham Book', sans-serif;
+    font-size: 10pt;
+    color:var(--main-pink);
+}
+
+.seventh-block .part2 h3{
+    font-family: 'Gotham Black Regular', sans-serif;
+    font-size: 14pt;
+    color:white;
+}
+
+.seventh-block .part2 minibox{
+    font-family: 'Gotham Book', sans-serif;
+    font-size: 10pt;
+    color:var(--main-pink);
+    border: 2px solid var(--main-pink);
+    padding: 5px 5px 5px 5px;
+    line-height: 45px;
+}
+
+.seventh-block .part2 .price-1 {
+    font-family: 'Gotham Black Regular', sans-serif;
+    font-size: 12pt;
+    color:var(--main-red);
+    line-height: 5px;
+}
+
+.seventh-block .part2 .price-2 {
+    font-family: 'Gotham Black Regular', sans-serif;
+    font-size: 12pt;
+    color:var(--main-green);
+    line-height: 5px;
+}
+
+.seventh-block .part2 .price-3 {
+    font-family: 'Gotham Black Regular', sans-serif;
+    font-size: 40pt;
+    color:var(--main-green);
+    line-height: 20px;
+}
+
+.seventh-block .part2 .price-4 {
+    font-family: 'Gotham Black Regular', sans-serif;
+    font-size: 12pt;
+    color:var(--main-green);
+    line-height: 15px;
+}
+
+.seventh-block .subsection {
+    text-align: center;
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 8pt;
+    color: #fff;
+}
+
+.eighth-block {
+    background-color: var(--bg-color);
+}
+
+.eighth-block .title {
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 700;
+    font-size:25pt;
+    color: var(--light-font);
+}
+
+.eighth-block .main-text {
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 500;
+    font-size:14pt;
+    color: var(--grey-font);
+    max-width: 650px;
+    position:absolute;
+    margin-left:auto;
+    margin-right:auto;
+    left:0;
+    right:0;
+}
+
+.nineth-block {
+    background-color:var(--bg-color);
+}
+
+.nineth-block .inner {
+    max-width: 800px;
+    position: absolute;
+    margin:auto;
+    left:0;
+    right:0;
+    padding-left:15px;
+    padding-right:15px;
+}
+
+.nineth-block .inner .contato {
+    color:var(--light-font);
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 700;
+    font-size: 18pt;    
+}
+
+.nineth-block .inner .contato .ig-txt{
+    /*color:var(--light-font);
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 500;*/
+    font-size: 20pt;
+    position: absolute;
+    margin-top:3px;
+    margin-left:5px;
+}
+
+.nineth-block .inner .contato .fa-instagram {
+    background: -webkit-radial-gradient(33% 100% circle, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
+    background: radial-gradient(circle at 33% 100%, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nineth-block .inner .contato .ig{
+    color:var(--light-font);
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 500;
+    cursor:pointer;
+}
+
+.nineth-block .title {
+    background-color:var(--light-pink);
+    padding-left:20px;
+    padding-right:20px;
+    max-width: 560px;
+    position:absolute;
+    margin-left:auto;
+    margin-right:auto;
+    left:0;
+    right:0;
+}
+
+.nineth-block .title h1 {
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 700;
+    color:var(--light-font);
+
+}
+
+.centering{
+    text-align: center!important;
+}
+
+hr {
+    width: 100%;
+    max-width: 900px;
+    height: 0.3px;
+    background-color:#fff;
+}
+
+.pink-hr {
+    width: 100%;
+    height: 10px;
+    background-color:var(--main-pink);
+}

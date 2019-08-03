@@ -39,7 +39,6 @@ function onPlayerReady(event) {
 // Quando o estado do player muda (state = 1), o video toca por 6s e depois para
 //var done = false;
 
-var played = false;
 var interval;
 var playingtime = 0;
 function onPlayerStateChange(event) {
@@ -47,7 +46,7 @@ function onPlayerStateChange(event) {
     setTimeout(stopVideo, 6000);
     done = true;
   }*/
-  if(played == false){
+  if(player.getPlayerState() == 1){
       interval = setInterval(function(){
         playingtime = player.getCurrentTime();
 
@@ -55,6 +54,7 @@ function onPlayerStateChange(event) {
             clearInterval(interval);
             player.stopVideo();
         }
+        console.log(playingtime);
       },2000);
       played = true;
   }

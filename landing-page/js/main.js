@@ -21,9 +21,11 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 var player;
 function onYouTubeIframeAPIReady() {
   player = new YT.Player('player', {
-    height: '390',
+    height: '700',
     width: '640',
+    //videoId: 'c4kqTCQF70k',
     videoId: 'fJ9rUzIMcZQ',
+    playerVars: {'controls': 0},
     events: {
       'onReady': onPlayerReady,
       'onStateChange': onPlayerStateChange
@@ -53,9 +55,14 @@ function onPlayerStateChange(event) {
         if(playingtime >= 6){ // 6 segundos
             clearInterval(interval);
             player.stopVideo();
+            change_videotoform();
         }
         console.log(playingtime);
       },2000);
-      played = true;
   }
+}
+
+function change_videotoform() {
+    $("#player").toggle();
+    $("#form-holder").fadeIn("fast");
 }

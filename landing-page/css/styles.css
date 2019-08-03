@@ -235,6 +235,7 @@
     background-image: url("../img/bg-first-block.png");
     background-attachment: local;
 }
+
 .first-block .main-text {
     margin-top:50px;
     font-family: 'Maven Pro', sans-serif;
@@ -246,6 +247,32 @@
 .first-block .highlight{
     font-family: 'black_jackregular', sans-serif;
     font-size:35pt;
+}
+
+.form-lbl {
+    /*font-family: 'Roboto', sans-serif;*/
+    font-weight: 700;
+    font-size: 20pt;
+    color: #fff;
+}
+
+.video-form {
+    display: none;
+    height:360px;
+    width:640px;
+    background-color:#303030;
+    color:#fff;
+    padding-left:30px;
+    padding-right:30px;
+}
+
+.video-wrapper {
+    overflow:hidden;
+    height:360px;
+}
+
+.video-second-wrapper {
+    margin-top:-175px;
 }
 
 .logo {

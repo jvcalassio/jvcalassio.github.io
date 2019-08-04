@@ -268,12 +268,12 @@
 
 .video-wrapper {
     overflow:hidden;
-    height:360px;
+    height:225px;
     background-color:#000;
 }
 
 .video-second-wrapper {
-    margin-top:-175px;
+    margin-top:-235px;
     background-color:#000;
 }
 

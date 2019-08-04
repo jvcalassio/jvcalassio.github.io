@@ -12,13 +12,44 @@ $(".card-header").click(function(){
 
 // carrega a API do iframe
 var tag = document.createElement('script');
+var interval;
+var playingtime = 0;
+var sent_form_data = false;
+var player;
 
-tag.src = "https://www.youtube.com/iframe_api";
-var firstScriptTag = document.getElementsByTagName('script')[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+$(document).ready(function(){
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    
+    /*
+    var limit_date = new Date("Aug 13, 2019 20:00:00").getTime();
+    var counter_interval = setInterval(function(){
+        var now = new Date().getTime();
+        var time = limit_date - now;
+
+
+        var days = Math.floor(time / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((time % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((time % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((time % (1000 * 60)) / 1000);
+
+        if(time >= 0){
+            //$("#contador").html(days + ":" + hours + ":" + minutes + ":" + seconds);
+            $("#days").html(days);
+            $("#hours").html(('0' + hours).slice(-2));
+            $("#minutes").html(('0' + minutes).slice(-2));
+            $("#seconds").html(('0' + seconds).slice(-2));
+        } else {
+            clearInterval(counter_interval);
+            //$("#contador").html("ACABOU");
+        }
+    }, 1000);*/
+    var limit = new Date("Aug 13, 2019 20:00:00").getTime() / 1000;
+    new FlipDown(limit,{theme:'light'}).start();
+});
 
 // cria iframe
-var player;
 function onYouTubeIframeAPIReady() {
   player = new YT.Player('player', {
     height: '700',
@@ -27,28 +58,18 @@ function onYouTubeIframeAPIReady() {
     videoId: 'fJ9rUzIMcZQ',
     playerVars: {'controls': 0},
     events: {
-      'onReady': onPlayerReady,
+      //'onReady': onPlayerReady,
       'onStateChange': onPlayerStateChange
     }
   });
 }
 
 // quando o player estiver pronto, inicia o video automaticamente
-function onPlayerReady(event) {
+//function onPlayerReady(event) {
   //event.target.playVideo();
-}
+//}
 
-// Quando o estado do player muda (state = 1), o video toca por 6s e depois para
-//var done = false;
-
-var interval;
-var playingtime = 0;
-var sent_form_data = false;
 function onPlayerStateChange(event) {
-  /*if (event.data == YT.PlayerState.PLAYING && !done) {
-    setTimeout(stopVideo, 6000);
-    done = true;
-  }*/
   if(player.getPlayerState() == 1 && !sent_form_data){
       interval = setInterval(function(){
         playingtime = player.getCurrentTime();
@@ -141,21 +162,3 @@ $("#form-dados").submit(function(e){
         }
     });
 });
-
-var limit_date = new Date("Aug 13, 2019 20:00:00").getTime();
-var counter_interval = setInterval(function(){
-    var now = new Date().getTime();
-    var time = limit_date - now;
-
-    var days = Math.floor(time / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((time % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((time % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((time % (1000 * 60)) / 1000);
-
-    if(time >= 0){
-        $("#contador").html(days + ":" + hours + ":" + minutes + ":" + seconds);
-    } else {
-        clearInterval(counter_interval);
-        $("#contador").html("ACABOU");
-    }
-}, 1000);

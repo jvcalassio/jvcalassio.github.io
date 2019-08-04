@@ -229,7 +229,14 @@
     background-color: var(--main-red);
 }
 
-.first-block {
+.webp .first-block {
+    margin-top:50px;
+    /*background-color: var(--light-pink);*/
+    background-image: url("../img/bg-first-block.webp");
+    background-attachment: local;
+}
+
+.no-webp .first-block {
     margin-top:50px;
     /*background-color: var(--light-pink);*/
     background-image: url("../img/bg-first-block.png");
@@ -277,7 +284,19 @@
     background-color:#000;
 }
 
-.logo {
+.webp .logo {
+    width: 200px;
+    height: 137px;
+    background-image: url("../img/logo.webp");
+    background-size: 100%;
+    margin:auto;
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+}
+
+.no-webp .logo {
     width: 200px;
     height: 137px;
     background-image: url("../img/logo.png");
@@ -289,7 +308,14 @@
     top:0;
 }
 
-.second-block {
+.webp .second-block {
+    /*background-color: var(--bg-color);*/
+    background-image: url("../img/bg-second-block.webp");
+    background-size:100%;
+    background-attachment: local; 
+}
+
+.no-webp .second-block {
     /*background-color: var(--bg-color);*/
     background-image: url("../img/bg-second-block.png");
     background-size:100%;
@@ -393,7 +419,16 @@
     color: var(--light-font);
 }
 
-.third-block .woman-pic {
+.webp .third-block .woman-pic {
+    width:200px;
+    height:212px;
+    /*background-color:#000;*/
+    background-image: url("../img/woman-pic.webp");
+    background-attachment: local;
+    background-size: 100%;
+}
+
+.no-webp .third-block .woman-pic {
     width:200px;
     height:212px;
     /*background-color:#000;*/
@@ -402,7 +437,16 @@
     background-size: 100%;
 }
 
-.fourth-block .phone-pic {
+.webp .fourth-block .phone-pic {
+    width:500px;
+    height:270px;
+    /*background-color: #000;*/
+    background-image: url("../img/phone-pic.webp");
+    background-attachment: local;
+    background-size:130%;
+}
+
+.no-webp .fourth-block .phone-pic {
     width:500px;
     height:270px;
     /*background-color: #000;*/
@@ -441,7 +485,14 @@
     left:0;
 }
 */
-.sixth-block {
+.webp .sixth-block {
+    /*background-color: var(--light-pink);    */
+    background-image: url("../img/bg-sixth-block.webp");
+    background-attachment: local;
+    background-size: 100%;
+}
+
+.no-webp .sixth-block {
     /*background-color: var(--light-pink);    */
     background-image: url("../img/bg-sixth-block.png");
     background-attachment: local;

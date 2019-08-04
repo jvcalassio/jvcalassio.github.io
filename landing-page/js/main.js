@@ -23,8 +23,8 @@ function onYouTubeIframeAPIReady() {
   player = new YT.Player('player', {
     height: '700',
     width: '400',
-    videoId: 'c4kqTCQF70k',
-    //videoId: 'fJ9rUzIMcZQ',
+    //videoId: 'c4kqTCQF70k',
+    videoId: 'fJ9rUzIMcZQ',
     playerVars: {'controls': 0},
     events: {
       'onReady': onPlayerReady,
@@ -141,3 +141,21 @@ $("#form-dados").submit(function(e){
         }
     });
 });
+
+var limit_date = new Date("Aug 13, 2019 20:00:00").getTime();
+var counter_interval = setInterval(function(){
+    var now = new Date().getTime();
+    var time = limit_date - now;
+
+    var days = Math.floor(time / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((time % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((time % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((time % (1000 * 60)) / 1000);
+
+    if(time >= 0){
+        $("#contador").html(days + ":" + hours + ":" + minutes + ":" + seconds);
+    } else {
+        clearInterval(counter_interval);
+        $("#contador").html("ACABOU");
+    }
+}, 1000);

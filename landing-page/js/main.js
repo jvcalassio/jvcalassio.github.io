@@ -23,8 +23,8 @@ function onYouTubeIframeAPIReady() {
   player = new YT.Player('player', {
     height: '700',
     width: '400',
-    //videoId: 'c4kqTCQF70k',
-    videoId: 'fJ9rUzIMcZQ',
+    videoId: 'c4kqTCQF70k',
+    //videoId: 'fJ9rUzIMcZQ',
     playerVars: {'controls': 0},
     events: {
       'onReady': onPlayerReady,
@@ -66,7 +66,7 @@ function change_videotoform() {
     player.pauseVideo();
     $("#player").toggle();
     setTimeout(function() {
-        $(".video-wrapper").css("width","0");
+        //$(".video-wrapper").css("width","0");
         $("#form-holder").fadeIn("fast");
     }, 1000);
 }
@@ -75,7 +75,7 @@ function change_formtovideo() {
     sent_form_data = true;
     $("#form-holder").fadeOut("fast");
     setTimeout(function(){
-        $(".video-wrapper").css("width","640");
+        //$(".video-wrapper").css("width",auto);
         $("#player").fadeIn("fast");
     }, 1000);
     setTimeout(function(){
@@ -91,6 +91,15 @@ function validate_mail(mail){
     return r.test(String(mail).toLowerCase());
 }
 
+function validate_phone(phone){
+    if(phone.length == 15){
+        var r = /[0-9]/;
+        return r.test(phone);
+    } else {
+        return false;
+    }
+}
+
 function format_phone() {
     phone = $("#input_tel").val();
     phone = phone.replace(/[^\d]/g, "");
@@ -101,8 +110,21 @@ function format_phone() {
 
 $("#send_data").click(function(){
     format_phone();
-    if(validate_mail($("#input_email").val()) && $("#input_tel").val().length == 15){
+    var valid_mail = validate_mail($("#input_email").val());
+    var valid_phone = validate_phone($("#input_tel").val());
+    if(valid_mail && valid_phone){
         $("#form-dados").submit();
+    } else {
+        if(!valid_mail){
+            $("#input_email").addClass("is-invalid");
+        } else if(valid_mail){
+            $("#input_email").removeClass("is-invalid");
+        }
+        if(!valid_phone){
+            $("#input_tel").addClass("is-invalid");
+        } else if(valid_phone){
+            $("#input_tel").removeClass("is-invalid");
+        }
     }
 });
 

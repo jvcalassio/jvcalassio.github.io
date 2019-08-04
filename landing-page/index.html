@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="font-aweasome/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="css/flipdown.min.css">
     <link rel="stylesheet" href="css/styles.css">
-
     
     <script src="js/modernizr-custom.js"></script>
     <title>MakeYoUP</title>
@@ -36,16 +35,23 @@
                         <label class="form-lbl">Preencha e continue assistindo</label>
                         <br /><br />
                         <div class="form-group">
-                            <input type="text" class="form-control" required="required" id="input_name" placeholder="Seu nome">
+                            <input type="text" class="form-control" required="required" id="input_name" name="input_name"placeholder="Seu nome" autofocus>
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control" required="required" id="input_email" placeholder="Seu email">
+                            <input type="email" class="form-control" required="required" id="input_email" name="input_email" placeholder="Seu email">
                         </div>
                         <div class="form-group">
-                            <input type="tel" oninput="format_phone()" required="required" maxlength="11" class="form-control" id="input_tel" placeholder="Seu telefone">
+                            <input type="tel" oninput="format_phone()" required="required" maxlength="11" class="form-control" id="input_tel" name="input_tel" placeholder="Seu telefone">
                         </div>
                         <button type="button" class="btn btn-primary" id="send_data">Enviar</button>
                     </form>
+                </div>
+            </div>
+            <div id="form-thanks" class="video-form">
+                <br />
+                <div class="container">
+                    <label class="form-lbl">Obrigado!</label><br /><br />
+                    <i class="fas fa-check-circle fa-9x" style="color:var(--main-green);"></i>
                 </div>
             </div>
         </div>

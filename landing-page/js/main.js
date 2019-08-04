@@ -52,11 +52,12 @@ $(document).ready(function(){
 // cria iframe
 function onYouTubeIframeAPIReady() {
   player = new YT.Player('player', {
-    height: '700',
+    //height: '700',
+    height: '300',
     width: '400',
     //videoId: 'c4kqTCQF70k',
     videoId: 'fJ9rUzIMcZQ',
-    playerVars: {'controls': 0},
+    playerVars: {'controls': 1, 'modestbranding': 1, 'fs': 0},
     events: {
       //'onReady': onPlayerReady,
       'onStateChange': onPlayerStateChange
@@ -96,15 +97,21 @@ function change_formtovideo() {
     sent_form_data = true;
     $("#form-holder").fadeOut("fast");
     setTimeout(function(){
-        //$(".video-wrapper").css("width",auto);
-        $("#player").fadeIn("fast");
-    }, 1000);
-    setTimeout(function(){
-        player.playVideo();
+        //$("#player").fadeIn("fast");
+        $("#form-thanks").fadeIn("fast");
         setTimeout(function(){
-            player.seekTo(8, true);
-        }, 200);
-    }, 500);
+            $("#form-thanks").fadeOut("fast");
+            setTimeout(function(){
+                $("#player").fadeIn("fast");
+                setTimeout(function(){
+                    player.playVideo();
+                    setTimeout(function(){
+                        player.seekTo(8, true);
+                    }, 200);
+                }, 500);
+            }, 500);
+        }, 2000);
+    }, 300);
 }
 
 function validate_mail(mail){
@@ -153,12 +160,12 @@ $("#form-dados").submit(function(e){
     e.preventDefault();
     $.ajax({
         type: "POST",
-        url: "form_submit.php",
+        url: "conn/send_form.php",
         data: $(this).serialize(),
         success: function(){
             change_formtovideo();
         }, error: function(data) {
-            change_formtovideo();
+            alert("erro");
         }
     });
 });

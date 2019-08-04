@@ -54,7 +54,7 @@ function onYouTubeIframeAPIReady() {
   player = new YT.Player('player', {
     //height: '700',
     height: '300',
-    width: '390',
+    width: '420',
     //videoId: 'c4kqTCQF70k',
     videoId: 'fJ9rUzIMcZQ',
     playerVars: {'controls': 1, 'modestbranding': 1, 'fs': 0},
@@ -165,7 +165,7 @@ $("#form-dados").submit(function(e){
         success: function(){
             change_formtovideo();
         }, error: function(data) {
-            alert("erro");
+            alert("Ocorreu um erro.");
         }
     });
 });

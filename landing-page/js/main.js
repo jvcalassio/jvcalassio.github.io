@@ -34,7 +34,10 @@ function onYouTubeIframeAPIReady() {
     width: '380',
     //videoId: 'c4kqTCQF70k',
     videoId: 'fJ9rUzIMcZQ',
-    playerVars: {'controls': 1, 'modestbranding': 1, 'fs': 0}
+    playerVars: {'controls': 1, 'modestbranding': 1, 'fs': 0},
+    events: {
+        'onStateChange': onPlayerStateChange
+    }
   });
 }
 

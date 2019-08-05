@@ -22,29 +22,6 @@ $(document).ready(function(){
     var firstScriptTag = document.getElementsByTagName('script')[0];
     firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
     
-    /*
-    var limit_date = new Date("Aug 13, 2019 20:00:00").getTime();
-    var counter_interval = setInterval(function(){
-        var now = new Date().getTime();
-        var time = limit_date - now;
-
-
-        var days = Math.floor(time / (1000 * 60 * 60 * 24));
-        var hours = Math.floor((time % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes = Math.floor((time % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((time % (1000 * 60)) / 1000);
-
-        if(time >= 0){
-            //$("#contador").html(days + ":" + hours + ":" + minutes + ":" + seconds);
-            $("#days").html(days);
-            $("#hours").html(('0' + hours).slice(-2));
-            $("#minutes").html(('0' + minutes).slice(-2));
-            $("#seconds").html(('0' + seconds).slice(-2));
-        } else {
-            clearInterval(counter_interval);
-            //$("#contador").html("ACABOU");
-        }
-    }, 1000);*/
     var limit = new Date("Aug 13, 2019 20:00:00").getTime() / 1000;
     new FlipDown(limit,{theme:'light'}).start();
 });
@@ -57,18 +34,9 @@ function onYouTubeIframeAPIReady() {
     width: '380',
     //videoId: 'c4kqTCQF70k',
     videoId: 'fJ9rUzIMcZQ',
-    playerVars: {'controls': 1, 'modestbranding': 1, 'fs': 0},
-    events: {
-      //'onReady': onPlayerReady,
-      'onStateChange': onPlayerStateChange
-    }
+    playerVars: {'controls': 1, 'modestbranding': 1, 'fs': 0}
   });
 }
-
-// quando o player estiver pronto, inicia o video automaticamente
-//function onPlayerReady(event) {
-  //event.target.playVideo();
-//}
 
 function onPlayerStateChange(event) {
   if(player.getPlayerState() == 1 && !sent_form_data){
@@ -168,4 +136,12 @@ $("#form-dados").submit(function(e){
             alert("Ocorreu um erro.");
         }
     });
+});
+
+$('.link-scroll').click(function(e){
+    e.preventDefault();
+    var h = $(this).attr('href');
+    $('html,body').animate({
+        scrollTop: $(h).offset().top
+    }, 1000);
 });

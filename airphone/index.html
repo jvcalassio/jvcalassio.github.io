@@ -615,7 +615,10 @@
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script>
         $(document).ready(function(){
-            $("#modalForm").modal("show");
+            $("#modalForm").modal({
+                backdrop:"static",
+                keyboard:false
+            },"show");
         });
     </script>
 </body>

@@ -106,11 +106,11 @@
         }
         
         .third-block {
-            background-image:url("assets/img/fundo_espaco0.jpg");
+            background-image:url("assets/img/fundo_espaco1.jpg");
             background-repeat: no-repeat;
             color:#fff;
             background-size: cover;
-            background-attachment: scroll;
+            background-attachment:scroll;
             background-position: center left;
         }
 
@@ -133,8 +133,8 @@
         }
 
         .fourth-block .f-txt .btn {
-            width: 100%;
-            max-width: 285px;
+            width: 88%;
+            /*max-width: 285px;*/
             margin-left: 25px;
         }
 
@@ -143,7 +143,7 @@
         }
 
         .only-mobile {
-            display:inline-block;
+            display:block;
         }
 
         .only-desktop {
@@ -155,7 +155,7 @@
                 padding: 2em 2em;
             }
             .third-block {
-                background-attachment: fixed;
+                background-image:url("assets/img/fundo_espaco0.jpg");
             }
             .fourth-block .f-txt .btn {
                 width: 100%;
@@ -184,6 +184,12 @@
             cursor:pointer;
         }
 
+        @media (max-width:767px){
+            .sixth-block img {
+                max-width: 80%;
+            }
+        }
+
         .seventh-block .card-body {
             font-weight: 500;
             font-size: 12pt;
@@ -206,6 +212,20 @@
             margin-right:auto;
             left:0;
             right:0;
+        }
+
+        .modal-content h5 {
+            font-weight: 700;
+            font-size:14pt;
+        }
+
+        .modal-content label {
+            font-weight: 500;
+            font-size:10pt;
+        }
+
+        .modal-content input {
+            font-size:9pt;
         }
     </style>
 </head>
@@ -246,7 +266,7 @@
     <div class="jumbotron third-block">
         <div class="container">
             <h2 class="text-center">O QUE ANDAM DIZENDO SOBRE O AIRPHONE</h2>
-            <img class="img-alien-small only-mobile mt-3" style="margin-left:33%"/>
+            <img class="img-alien-small only-mobile mt-3 center-elem-x"/>
             <div class="row mt-3">
                 <div class="col-md-6">
                     <p>"Abafa bem o som, mesmo na academia que é um ambiente barulhento e com música alta"<br><br>
@@ -259,7 +279,7 @@
                 </div>
                 <div class="col-md-6 text-center">
                     <img class="img-alien-small only-desktop"/>
-                    <div class="center-elem-x" style="background-color:#000;width:240px;height:360px;margin-top:20px;">
+                    <div class="center-elem-x" style="background-color:rgb(0,0,0,0.8);width:240px;height:360px;margin-top:20px;">
                     </div>
                 </div>
             </div>
@@ -561,8 +581,43 @@
             </div>
         </div>
     </div>
+
+    <!-- formulario -->
+    <div class="modal fade" id="modalForm" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-center" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="formTitle">Por favor, preencha o formulário para acessar a página:</h5>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="nomeInput">Nome</label>
+                            <input type="text" class="form-control" id="nomeInput" placeholder="Insira seu nome">
+                        </div>
+                        <div class="form-group">
+                            <label for="emailInput">Email</label>
+                            <input type="email" class="form-control" id="emailInput" placeholder="Insira seu e-mail">
+                        </div>
+                        <div class="form-group">
+                            <label for="telInput">Telefone:</label>
+                            <input type="tel" class="form-control" id="telInput" placeholder="Insira seu telefone">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#modalForm").modal("show");
+        });
+    </script>
 </body>
 
 </html>

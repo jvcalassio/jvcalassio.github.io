@@ -241,7 +241,7 @@
 
         .sixth-block .offer-holder {
             width: 100%;
-            max-width: 190px;
+            /*max-width: 190px;*/
             height:95%;
             margin-top:20px;
             border:3.5px solid #d50101;
@@ -250,7 +250,7 @@
         }
 
         .sixth-block .offer-header {
-            width:160px;
+            width:90%;
             border-radius:20px;
             height:30px;
             background-color:#747474;
@@ -299,7 +299,6 @@
             font-size: 11pt;
             padding-top:4px;
             padding-bottom:4px;
-            border-left: 1px solid var(--dark-red);
         }
 
         .sixth-block .offer-banner i {
@@ -307,8 +306,31 @@
         }
 
         @media (max-width:767px){
-            .sixth-block img {
-                max-width: 80%;
+            .sixth-block .offer-holder {
+                max-width: 360px;
+                width:85%;
+            }
+            .sixth-block .offer-header {
+                height:40px;
+                font-size: 13pt;
+            }
+            .sixth-block .offer-text {
+                font-size: 16pt;
+                line-height: 20px;
+                background-position-y: 70%;
+            }
+            .btn-buy {
+                width:80%;
+                font-size: 13pt;
+                margin-top:5px;
+            }
+
+            .no-webp .sixth-block .offer-text {
+                background-image: url("assets/img/background-setas-mob.png");
+            }
+
+            .webp .sixth-block .offer-text {
+                background-image: url("assets/img/webp/background-setas-mob.webp");
             }
         }
 
@@ -490,13 +512,13 @@
                     </div>
                     <picture>
                         <source srcset="assets/img/webp/airphone_full.webp" type="image/webp">
-                        <img class="offer-img" src="assets/img/airphone_full.png" width="80px">
+                        <img class="offer-img" src="assets/img/airphone_full.png" width="50%">
                     </picture>
                     <div class="text-center offer-text mt-2">
                         por apenas 12x de <br><br>
                         <span class="offer-price">R$13,04</span><br>
                         ou<br>
-                        R$129,90 à vista
+                        R$129,90 à vista<br>
                         <a href="http://bit.ly/SpartaPhone1" class="btn btn-buy">COMPRAR AGORA!</a><br>
                         <span class="offer-obs">*Esta compra contém 1 kit AirPhone</span>
                     </div>    
@@ -512,38 +534,32 @@
                     </div>
                     <picture>
                         <source srcset="assets/img/webp/airphone_conj2.webp" type="image/webp">
-                        <img class="offer-img" src="assets/img/airphone_conj2.png" width="80px" style="margin-top:2px;">
+                        <img class="offer-img" src="assets/img/airphone_conj2.png" width="50%" style="margin-top:2px;">
                     </picture>
                     <div class="text-center offer-text mt-2">
                         por apenas 12x de <br><br>
                         <span class="offer-price">R$26,08</span><br>
                         ou<br>
-                        R$259,80 à vista
+                        R$259,80 à vista<br>
                         <a href="http://bit.ly/SpartaPhone2" class="btn btn-buy">COMPRAR AGORA!</a><br>
                         <span class="offer-obs">*Esta compra contém 3 kits AirPhone</span>
                     </div>    
                 </div>
             </div>
             <div class="col-md-4">
-                <!--
-                <picture>
-                    <source srcset="assets/img/webp/checkout_banner_3.webp" type="image/webp">
-                    <img src="assets/img/checkout_banner_3.png" width="100%" class="mt-4">
-                </picture>
-                -->
                 <div class="offer-holder center-elem-x">
                     <div class="offer-header">
                         COMPRE 3 LEVE 5
                     </div>
                     <picture>
                         <source srcset="assets/img/webp/airphone_conj3.webp" type="image/webp">
-                        <img class="offer-img" src="assets/img/airphone_conj3.png" width="140px" style="margin-top:10px;">
+                        <img class="offer-img" src="assets/img/airphone_conj3.png" width="85%" style="margin-top:10px;">
                     </picture>
                     <div class="text-center offer-text mt-2">
                         por apenas 12x de <br><br>
                         <span class="offer-price">R$39,13</span><br>
                         ou<br>
-                        R$389,70 à vista
+                        R$389,70 à vista<br>
                         <a href="http://bit.ly/SpartaPhone3" class="btn btn-buy">COMPRAR AGORA!</a><br>
                         <span class="offer-obs">*Esta compra contém 5 kits AirPhone</span>
                     </div>    

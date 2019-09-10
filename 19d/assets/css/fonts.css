@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'Myriad Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: local("Myriad Pro Bold Condensed"), url("../fonts/MYRIADPRO-BOLDCOND.woff") format("woff");
+}
+
+@font-face {
+    font-family: 'Myriad Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local("Myriad Pro Regular"), url("../fonts/MYRIADPRO-REGULAR.woff") format("woff");
+}
+
+@font-face {
+    font-family: 'Bahnschrift';
+    font-style: normal;
+    font-display: swap;
+    src: local("Bahnschrift"), url("../fonts/BAHNSCHRIFT.woff") format("woff");
+}
+
+@font-face {
+    font-family: 'Blowbrush';
+    font-style:normal;
+    font-display: swap;
+    src: local("Blowbrush"), url("../fonts/blowbrush.ttf") format("truetype");
+}

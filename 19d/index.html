@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="pt-br" class="no-js">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/fonts.css">
+
+	<title>Dieta Rápida 19d</title>
+
+	<style>
+		:root {
+			--main-orange: #e83e1e;
+			--main-orange-dark: #cd3e1e;
+			--main-blue: #3cddda;
+		}
+
+		.centering {
+			margin-left:auto;
+			margin-right:auto;
+			left:0;
+			right:0;
+		}
+		.first-block {
+			font-family: 'Myriad Pro';
+			font-weight: 700;
+			display: block;
+			position: relative;
+		}
+		.first-block::before {
+			background-color: var(--main-blue);
+			content:"";
+			opacity: 0.5;
+			top:0;
+			left:0;
+			right:0;
+			bottom:0;
+			position: absolute;
+			z-index: -1;
+		}
+		.first-block::after {	
+			background-image: url('assets/img/img-fundo-b1.png');
+			content:"";
+			opacity: 0.5;
+			top:0;
+			left:0;
+			right:0;
+			bottom:0;
+			position: absolute;
+			z-index: -1;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-position-x: center;
+			background-position-y: -250px;
+		}
+		.first-block .img-top {
+			background-image:url('assets/img/top-img-1.png');
+			width:90%;
+			background-size:100%;
+			background-repeat: no-repeat;
+			height:120px;
+			content:"";
+		}
+
+		.first-block h2 {
+			font-size: 40pt;
+			font-weight: 700;
+		}
+		@media (max-width:767px){
+			.first-block h2 {
+				font-size: 20pt;
+			}
+			.first-block .img-top {
+				height:40px;
+			}
+		}
+		.btn-primary {
+			color:white;
+			background-color: var(--main-orange);
+			border-color: var(--main-orange);
+			border-bottom-color: var(--main-orange-dark);
+			border-bottom-width: 3px;
+			border-radius: 15px;
+			width: 400px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			font-weight: 900;
+			font-family: 'Myriad Pro', sans-serif;
+			font-size: 20pt;
+			transition-property: all;
+			transition-duration: 0.2s;
+		}
+		
+		.btn-primary:hover {
+			color: white;
+			background-color:#e84d1e;
+			border-color:var(--main-orange);
+			border-bottom-color: var(--main-orange);
+			border-bottom-width: 3px;
+			transform:scale(1.05);
+			box-shadow: 0px 0px 5px 0px rgb(165, 165, 165);
+		}
+
+		.btn-primary:focus,
+		.btn-primary.focus {
+			/*box-shadow: 0 0 0 .2rem rgba(235, 43, 69, 0.5)*/
+			box-shadow: 0 0 0 0;
+		}
+
+		.btn-primary.disabled,
+		.btn-primary:disabled {
+			/*color: #212529;*/
+			color: white;
+			background-color:var(--main-pink);
+			border-color: var(--secondary-pink);
+		}
+
+		.btn-primary:not(:disabled):not(.disabled):active,
+		.btn-primary:not(:disabled):not(.disabled).active,
+		.show>.btn-primary.dropdown-toggle {
+			color: white;
+			background-color: var(--main-orange-dark);
+			border-color: var(--main-orange);
+		}
+
+		.btn-primary:not(:disabled):not(.disabled):active:focus,
+		.btn-primary:not(:disabled):not(.disabled).active:focus,
+		.show>.btn-primary.dropdown-toggle:focus {
+			/*box-shadow: 0 0 0 .2rem rgba(91, 194, 194, 0.5)*/
+			box-shadow: 0 0 0 0;
+		}
+
+		@media (max-width: 767px){
+			.btn-primary {
+				font-size: 18pt;
+				width: 290px;
+			}
+		}
+
+		.first-block .btn-fb {
+			position: absolute;
+			margin-top:-30px;
+		}
+
+		.second-block h4 {
+			font-size: 14pt;
+			margin-top:10px;
+			font-family: 'Myriad Pro';
+			font-weight: 700;
+		}
+
+		.second-block .jumbotron {
+			margin-top:90px;
+			background-color:var(--main-orange);
+			color:#fafafa;
+		}
+
+		.second-block p {
+			font-family: 'Myriad Pro';
+			font-size: 14pt;
+			font-weight: 400;
+			text-align: left;
+		}
+
+		.logo-medium {
+			width:300px;
+		}
+		.logo-medium .logo-bg {
+			background-color:#e51b72;
+			padding:1px 6px 1px 6px;
+			font-family: 'Bahnschrift',sans-serif;
+			font-weight: bold;
+			font-size: 30pt;
+			line-height: 50px;
+			color:#000;
+			text-shadow: -3px 2px #fff;
+		}
+
+		.logo-medium .logo-num {
+			font-family: 'Blowbrush',sans-serif;
+			text-shadow: -3px 2px #fff;
+			font-size:60pt;
+			line-height: 50px;
+			text-align: right;
+			margin-left:150px;
+		}
+	</style>
+
+	<script>
+        !function(e,n,A){function o(e,n){return typeof e===n}function t(){var e,n,A,t,a,i,l;for(var f in r)if(r.hasOwnProperty(f)){if(e=[],n=r[f],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(A=0;A<n.options.aliases.length;A++)e.push(n.options.aliases[A].toLowerCase());for(t=o(n.fn,"function")?n.fn():n.fn,a=0;a<e.length;a++)i=e[a],l=i.split("."),1===l.length?Modernizr[l[0]]=t:(!Modernizr[l[0]]||Modernizr[l[0]]instanceof Boolean||(Modernizr[l[0]]=new Boolean(Modernizr[l[0]])),Modernizr[l[0]][l[1]]=t),s.push((t?"":"no-")+l.join("-"))}}function a(e){var n=u.className,A=Modernizr._config.classPrefix||"";if(c&&(n=n.baseVal),Modernizr._config.enableJSClass){var o=new RegExp("(^|\\s)"+A+"no-js(\\s|$)");n=n.replace(o,"$1"+A+"js$2")}Modernizr._config.enableClasses&&(n+=" "+A+e.join(" "+A),c?u.className.baseVal=n:u.className=n)}function i(e,n){if("object"==typeof e)for(var A in e)f(e,A)&&i(A,e[A]);else{e=e.toLowerCase();var o=e.split("."),t=Modernizr[o[0]];if(2==o.length&&(t=t[o[1]]),"undefined"!=typeof t)return Modernizr;n="function"==typeof n?n():n,1==o.length?Modernizr[o[0]]=n:(!Modernizr[o[0]]||Modernizr[o[0]]instanceof Boolean||(Modernizr[o[0]]=new Boolean(Modernizr[o[0]])),Modernizr[o[0]][o[1]]=n),a([(n&&0!=n?"":"no-")+o.join("-")]),Modernizr._trigger(e,n)}return Modernizr}var s=[],r=[],l={_version:"3.6.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var A=this;setTimeout(function(){n(A[e])},0)},addTest:function(e,n,A){r.push({name:e,fn:n,options:A})},addAsyncTest:function(e){r.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=l,Modernizr=new Modernizr;var f,u=n.documentElement,c="svg"===u.nodeName.toLowerCase();!function(){var e={}.hasOwnProperty;f=o(e,"undefined")||o(e.call,"undefined")?function(e,n){return n in e&&o(e.constructor.prototype[n],"undefined")}:function(n,A){return e.call(n,A)}}(),l._l={},l.on=function(e,n){this._l[e]||(this._l[e]=[]),this._l[e].push(n),Modernizr.hasOwnProperty(e)&&setTimeout(function(){Modernizr._trigger(e,Modernizr[e])},0)},l._trigger=function(e,n){if(this._l[e]){var A=this._l[e];setTimeout(function(){var e,o;for(e=0;e<A.length;e++)(o=A[e])(n)},0),delete this._l[e]}},Modernizr._q.push(function(){l.addTest=i}),Modernizr.addAsyncTest(function(){function e(e,n,A){function o(n){var o=n&&"load"===n.type?1==t.width:!1,a="webp"===e;i(e,a&&o?new Boolean(o):o),A&&A(n)}var t=new Image;t.onerror=o,t.onload=o,t.src=n}var n=[{uri:"data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=",name:"webp"},{uri:"data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA==",name:"webp.alpha"},{uri:"data:image/webp;base64,UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA",name:"webp.animation"},{uri:"data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=",name:"webp.lossless"}],A=n.shift();e(A.name,A.uri,function(A){if(A&&"load"===A.type)for(var o=0;o<n.length;o++)e(n[o].name,n[o].uri)})}),t(),a(s),delete l.addTest,delete l.addAsyncTest;for(var p=0;p<Modernizr._q.length;p++)Modernizr._q[p]();e.Modernizr=Modernizr}(window,document);
+    </script>
+</head>
+
+<body>
+	<div class="first-block text-center">
+		<br>
+		<div class="container">
+			<div class="img-top centering" style="font-size: 30pt;"></div>
+			<h2>Perca de <span class="text-white">6KG</span> a <span class="text-white">10KG</span> <span style="color:var(--main-orange)">SEM PASSAR FOME</span><br> e sem fazer exercícios físicos</h2>
+			<br>
+			<div class="centering" style="width:310px;height:220px;background-color:#000"></div>
+		</div>
+		<br><br><br>
+		<button class="btn btn-primary btn-fb centering">SIM! QUERO EMAGRECER DE VEZ</button>
+	</div>
+	<div class="second-block text-center">
+		<br>
+		<h4>*COMPRA 100% SEGURA PELO HOTMART</h4>
+		<div class="logo-medium centering" style="position: absolute;">
+			<span class="logo-bg">
+				DIETA RÁPIDA
+			</span><br>
+			<span class="logo-num">
+				19<span style="color:var(--main-orange)">D</span>
+			</span>
+		</div>
+
+		<div class="jumbotron">
+			<div class="container">
+				<h2>A Dieta de 19 Dias funciona?</h2>
+				<br>
+				<p> &emsp;A Dieta Rápida 19 Dias funciona para você, perder peso de forma saudável em <b>APENAS 19
+					DIAS</b>. O nosso método de emagrecer ocorre atráves de uma alimentação LOW CARB (Baixo Carboidrato),
+					que é uma Dieta MUITO eficiente na prática.</p>
+			</div>
+		</div>
+	</div>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+	<script src="assets/js/jquery-3.4.1.min.js"></script>
+	<script src="assets/js/popper.min.js"></script>
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>

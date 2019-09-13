@@ -65,7 +65,7 @@
 			color:white;
 			background-color: #e83e1e;
 			border-color: #e83e1e;
-			border-bottom-color: #cd3e1e;
+			border-bottom-color: #ac280a;
 			border-bottom-width: 3px;
 			border-radius: 15px;
 			width: 400px;
@@ -80,7 +80,7 @@
 		
 		.btn-primary:hover {
 			color: white;
-			background-color:#e84d1e;
+			background-color:#ff5934;
 			border-color:#e83e1e;
 			border-bottom-color: #e83e1e;
 			border-bottom-width: 3px;
@@ -106,7 +106,7 @@
 		.btn-primary:not(:disabled):not(.disabled).active,
 		.show>.btn-primary.dropdown-toggle {
 			color: white;
-			background-color: #cd3e1e;
+			background-color: #ac280a;
 			border-color: #e83e1e;
 		}
 
@@ -192,6 +192,11 @@
                 background-size:200%;
                 background-position-x: -150px;
                 background-position-y: 0px;
+                height: 460px;
+            }
+
+            .first-block .bg1 {
+                height:480px;
             }
 
             .first-block .announce {
@@ -272,6 +277,63 @@
                 height: 560px;
             }
         }
+
+        .fourth-block {
+            margin-top:50px;
+        }
+        .fourth-block h2 {
+			font-family: 'Myriad Pro';
+			font-weight: 700;
+			font-size: 30pt;
+        }
+        .fourth-block h3 {
+			font-family: 'Cabin';
+			font-size: 16pt;
+            font-weight: 500;
+            margin-top:20px;
+        }
+        .fourth-block h4, .fifth-block h4, .first-block h4 {
+			font-size: 14pt;
+			margin-top:10px;
+			font-family: 'Myriad Pro';
+			font-weight: 700;
+        }
+        
+        .separator {
+            background-image:url("img/big_separator.png");
+            width:580px;
+            height:11px;
+            display:block;  
+            background-repeat: no-repeat;
+        }
+
+        .separator-dark {
+            background-image:url("img/big_separator_dark.png");
+            width:580px;
+            height:11px;
+            display:block;  
+            background-repeat: no-repeat;
+        }
+
+        .separator-sm {
+            background-image:url("img/separator.png");
+        }
+
+        .separator-sm-dark {
+            background-image:url("img/separator_dark.png");
+        }
+
+        @media (max-width:767px){
+            .separator {
+                background-image:url("img/separator.png");
+                width:300px;
+            }
+
+            .separator-dark {
+                background-image:url("img/separator_dark.png");
+                width:300px;
+            }
+        }
     </style>
 </head>
 
@@ -294,6 +356,8 @@
                     e sem fazer exercícios físicos
                 </span><br><br><br>
                 <a href="#" class="btn btn-primary">SIM! QUERO EMAGRECER DE VEZ</a>
+                <h4>* COMPRA 100% SEGURA PELO HOTMART</h4>
+                <img src="img/Bandeiras-Pagamento.png" width="300px"/>
             </div>
         </div>
     </div>
@@ -302,8 +366,8 @@
         <div class="text-center container centering">
             <br>
             <h2>A Dieta de 19 Dias funciona?</h2>
-            <img src="img/separator.png"><br>
-            <p style="padding:0px 20px 0px 20px; margin-top:10px;"> 
+            <span class="separator centering mt-3"></span><br>
+            <p style="padding:0px 20px 0px 20px;"> 
                 &emsp;A Dieta Rápida 19 Dias funciona para você, perder peso de forma saudável em <b>APENAS 19
 					DIAS</b>. O nosso método de emagrecer ocorre atráves de uma alimentação LOW CARB (Baixo Carboidrato),
 					que é uma Dieta MUITO eficiente na prática.</p>
@@ -317,8 +381,8 @@
             <div class="c-inner text-center container centering">
                 <br>
                 <h2>Quais os benefícios da Dieta 19 Dias?</h2>
-                <img src="img/separator_dark.png"><br>
-                <p style="padding:0px 20px 0px 20px; margin-top:10px;">
+                <span class="separator-dark centering mt-3"></span><br>
+                <p style="padding:0px 20px 0px 20px;">
                     &emsp;A quantidade de pessoas acima do peso vem crescendo cada vez mais no Brasil e no mundo, e isso é um grande risco à
                     saúde. Com isso, emagrecer não é apenas questão de estética e sim de saúde. Se você já tentou uma série de dietas
                     malucas, e não teve resultados a Dieta Rápida 19 Dias vai resolver o seus problemas para
@@ -326,6 +390,53 @@
                 </p>
                 <br>
             </div>
+        </div>
+    </div>
+
+    <div class="fourth-block">
+        <div class="text-center container centering">
+            <br>
+            <h2>É indicado para pessoas que:</h2>
+            <span class="separator centering mt-3"></span>
+            <br><br>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="img/pill.png" width="100px">
+                    <h3>Já tentaram emagrecer tomando<br>
+                        remédios e não obtiveram sucesso</h3>
+                </div>
+                <div class="col-md-6 mt-5 mt-md-0">
+                    <img src="img/gym.png" width="100px">
+                    <h3>Não têm tempo para ir à academia</h3>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-6 mt-5">
+                    <img src="img/checked.png" width="100px">
+                    <h3>Quer emagrecer definitivamente</h3>
+                </div>
+                <div class="col-md-6 mt-5">
+                    <img src="img/heartbeat.png" width="100px">
+                    <h3>Quer emagrecer de forma saudável<br>
+                        e manter o peso ideal</h3>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-6 mt-5">
+                    <img src="img/weight.png" width="100px">
+                    <h3>Tem dificuldade para emagrecer</h3>
+                </div>
+                <div class="col-md-6 mt-5">
+                    <img src="img/fat.png" width="100px">
+                    <h3>Está infeliz com o próprio corpo</h3>
+                </div>
+            </div>
+            <br><br><br>
+            <a href="#" class="btn btn-primary" style="margin-top:-28px;">SIM! QUERO EMAGRECER DE VEZ</a>
+            <h4>* COMPRA 100% SEGURA PELO HOTMART</h4>
+            <img src="img/Bandeiras-Pagamento.png" width="300px"/>
         </div>
     </div>
 

@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fonts.css">
+
+    <title>Dieta Rápida 19 Dias</title>
+
+    <style>
+
+        body::before {
+            background-color: var(--main-blue);
+			content:"";
+			opacity: 0.9;
+			top:0;
+			left:0;
+			right:0;
+			bottom:0;
+			position: fixed;
+			z-index: -1;
+        }
+
+        body::after {
+            background-image:url("img/fruit-bg.jpg");
+            background-size: 100%;
+			content:"";
+			opacity: 0.1;
+			top:0;
+			left:0;
+			right:0;
+			bottom:0;
+			position: fixed;
+			z-index: -1;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-position-x: center;
+			background-position-y: -250px;
+        }
+
+        .centering {
+            margin-left:auto;
+            margin-right:auto;
+            left:0;
+            right:0;
+        }
+
+        .v-centering {
+            margin-top:auto;
+            margin-bottom:auto;
+            top:0;
+            bottom:0;
+        }
+
+        .abs {
+            position:absolute;
+        }
+
+        .btn-primary {
+			color:white;
+			background-color: #e83e1e;
+			border-color: #e83e1e;
+			border-bottom-color: #cd3e1e;
+			border-bottom-width: 3px;
+			border-radius: 15px;
+			width: 400px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			font-weight: 900;
+			font-family: 'Myriad Pro', sans-serif;
+			font-size: 20pt;
+			transition-property: all;
+			transition-duration: 0.2s;
+		}
+		
+		.btn-primary:hover {
+			color: white;
+			background-color:#e84d1e;
+			border-color:#e83e1e;
+			border-bottom-color: #e83e1e;
+			border-bottom-width: 3px;
+			transform:scale(1.05);
+			box-shadow: 0px 0px 5px 0px rgb(165, 165, 165);
+		}
+
+		.btn-primary:focus,
+		.btn-primary.focus {
+			/*box-shadow: 0 0 0 .2rem rgba(235, 43, 69, 0.5)*/
+			box-shadow: 0 0 0 0;
+		}
+
+		.btn-primary.disabled,
+		.btn-primary:disabled {
+			/*color: #212529;*/
+			color: white;
+			background-color:var(--main-pink);
+			border-color: var(--secondary-pink);
+		}
+
+		.btn-primary:not(:disabled):not(.disabled):active,
+		.btn-primary:not(:disabled):not(.disabled).active,
+		.show>.btn-primary.dropdown-toggle {
+			color: white;
+			background-color: #cd3e1e;
+			border-color: #e83e1e;
+		}
+
+		.btn-primary:not(:disabled):not(.disabled):active:focus,
+		.btn-primary:not(:disabled):not(.disabled).active:focus,
+		.show>.btn-primary.dropdown-toggle:focus {
+			/*box-shadow: 0 0 0 .2rem rgba(91, 194, 194, 0.5)*/
+			box-shadow: 0 0 0 0;
+		}
+
+		@media (max-width: 767px){
+			.btn-primary {
+				font-size: 18pt;
+				width: 290px;
+			}
+        }
+        
+        .logo {
+            width:300px;
+            z-index:300;
+        }
+
+        .logo .logo-bg {
+			background-color:#e51b72;
+			padding:1px 6px 1px 6px;
+			font-family: 'Bahnschrift',sans-serif;
+			font-weight: bold;
+			font-size: 30pt;
+			line-height: 50px;
+			color:#000;
+			text-shadow: -3px 2px #fff;
+		}
+
+		.logo .logo-num {
+			font-family: 'Blowbrush',sans-serif;
+			text-shadow: -3px 2px #fff;
+			font-size:60pt;
+			line-height: 50px;
+			text-align: right;
+			margin-left:150px;
+        }
+        
+        .first-block .holder {
+            background-color: #6dc7e1;
+            background-image: url("img/img-fundo-b1.png");
+            transform: skewY(-2deg);
+            width:100%;
+            height:400px;
+            background-size:100%;
+            background-position-y: -150px;
+            background-position-x: 150px;
+            background-repeat: no-repeat;
+        }
+
+        .first-block .bg1 {
+            background-color:#176a81;
+            content:"lol";
+            transform: skewY(-3.5deg);
+            width: 100%;
+            height: 420px;
+            position: absolute;
+            margin-top:-10px;
+        }
+
+        .first-block .c-inner {
+            transform: skewY(2deg);
+            position: absolute;
+            width:95%;
+            height:420px;
+            margin-top:30px;
+        }
+
+        .first-block .announce {
+            font-family: 'Myriad Pro';
+            font-weight: 700;
+            font-size:40pt;
+            color: #fafafa;
+            text-shadow: 2px 2px #000;
+        }
+
+        @media (max-width:767px){
+            .first-block .holder {
+                background-size:200%;
+                background-position-x: -150px;
+                background-position-y: 0px;
+            }
+
+            .first-block .announce {
+                font-size:30pt;
+            }
+        }
+
+        .second-block {
+            margin-top:50px;
+        }
+        .second-block h2 {
+			font-family: 'Myriad Pro';
+			font-weight: 700;
+			font-size: 30pt;
+		}
+		.second-block p {
+			font-family: 'Cabin';
+			font-size: 14pt;
+			font-weight: 500;
+			text-align: left;
+        }
+        
+        .third-block {
+            margin-top:100px;
+            color:var(--dark);
+        }
+        .third-block h2 {
+			font-family: 'Myriad Pro';
+			font-weight: 700;
+			font-size: 30pt;
+		}
+		.third-block p {
+			font-family: 'Cabin';
+			font-size: 14pt;
+			font-weight: 500;
+			text-align: left;
+        }
+        
+        .third-block .holder {
+            background-color: rgb(255, 255, 255);
+            transform: skewY(2deg);
+            width:100%;
+            height:300px;
+            background-size:100%;
+            background-position-y: -150px;
+            background-position-x: 150px;
+            background-repeat: no-repeat;
+        }
+
+        .third-block .bg1 {
+            background-color:rgb(158, 158, 158);
+            content:"lol";
+            transform: skewY(3.5deg);
+            width: 100%;
+            height: 320px;
+            position: absolute;
+            margin-top:-10px;
+        }
+
+        .third-block .c-inner {
+            transform: skewY(-2deg);
+            position: absolute;
+            width:95%;
+            height:320px;
+            margin-top:30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="first-block">
+        <div class="logo centering mt-3 abs">
+            <span class="logo-bg">
+                DIETA RÁPIDA
+            </span><br>
+            <span class="logo-num">
+                19<span style="color:var(--main-orange)">D</span>
+            </span>
+        </div>
+        <br><br><br><br>
+        <div class="container bg1 centering"></div>
+        <div class="container holder">
+            <div class="c-inner text-center">
+                <span class="announce">
+                    Perca de 6KG a 10KG SEM PASSAR FOME<br>
+                    e sem fazer exercícios físicos
+                </span><br><br><br>
+                <a href="#" class="btn btn-primary">SIM! QUERO EMAGRECER DE VEZ</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="second-block">
+        <div class="container text-center">
+            <br>
+            <h2>A Dieta de 19 Dias funciona?</h2>
+            <p style="padding:0px 20px 0px 20px;"> 
+                &emsp;A Dieta Rápida 19 Dias funciona para você, perder peso de forma saudável em <b>APENAS 19
+					DIAS</b>. O nosso método de emagrecer ocorre atráves de uma alimentação LOW CARB (Baixo Carboidrato),
+					que é uma Dieta MUITO eficiente na prática.</p>
+        </div>
+    </div>
+
+    <div class="third-block">
+        <div class="container bg1 centering">
+        </div>
+        <div class="container holder">
+            <div class="c-inner text-center">
+                <br>
+                <h2>Quais os benefícios da Dieta 19 Dias?</h2>
+                <br>
+                <p style="padding:0px 20px 0px 20px;">
+                    &emsp;A quantidade de pessoas acima do peso vem crescendo cada vez mais no Brasil e no mundo, e isso é um grande risco à
+                    saúde. Com isso, emagrecer não é apenas questão de estética e sim de saúde. Se você já tentou uma série de dietas
+                    malucas, e não teve resultados a Dieta Rápida 19 Dias vai resolver o seus problemas para
+                    emagrecer de forma definitiva.
+                </p>
+                <br>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -8,6 +8,8 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-aweasome/css/all.min.css">
+    <link rel="stylesheet" href="css/flipdown.min.css">
     <link rel="stylesheet" href="css/fonts.css">
 
     <title>Dieta Rápida 19 Dias</title>
@@ -59,6 +61,42 @@
 
         .abs {
             position:absolute;
+        }
+
+        .separator {
+            background-image:url("img/big_separator.png");
+            width:580px;
+            height:11px;
+            display:block;  
+            background-repeat: no-repeat;
+        }
+
+        .separator-dark {
+            background-image:url("img/big_separator_dark.png");
+            width:580px;
+            height:11px;
+            display:block;  
+            background-repeat: no-repeat;
+        }
+
+        .separator-sm {
+            background-image:url("img/separator.png");
+        }
+
+        .separator-sm-dark {
+            background-image:url("img/separator_dark.png");
+        }
+
+        @media (max-width:767px){
+            .separator {
+                background-image:url("img/separator.png");
+                width:300px;
+            }
+
+            .separator-dark {
+                background-image:url("img/separator_dark.png");
+                width:300px;
+            }
         }
 
         .btn-primary {
@@ -264,20 +302,6 @@
             margin-top:30px;
         }
 
-        @media (max-width:767px){
-            .third-block .holder {
-                height:540px;
-            }
-
-            .third-block .bg1 {
-                height: 560px;
-            }
-
-            .third-block .c-inner {
-                height: 560px;
-            }
-        }
-
         .fourth-block {
             margin-top:50px;
         }
@@ -292,46 +316,158 @@
             font-weight: 500;
             margin-top:20px;
         }
-        .fourth-block h4, .fifth-block h4, .first-block h4 {
+        .fourth-block h4, .fifth-block h4, .first-block h4, .sixth-block h4{
 			font-size: 14pt;
 			margin-top:10px;
 			font-family: 'Myriad Pro';
 			font-weight: 700;
         }
+
+        .fifth-block {
+            margin-top:100px;
+            color:#fff;
+        }
+
+        .fifth-block h2 {
+			font-family: 'Myriad Pro';
+			font-weight: 700;
+			font-size: 30pt;
+		}
+		.fifth-block span{
+			font-family: 'Cabin';
+			font-size: 14pt;
+			font-weight: 500;
+			text-align: left;
+        }
+
+        .fifth-block .holder {
+            background-color: #e83e1e;
+            transform: skewY(1.5deg);
+            width:100%;
+            height:600px;
+            background-size:100%;
+            background-position-y: -150px;
+            background-position-x: 150px;
+            background-repeat: no-repeat;
+        }
+
+        .fifth-block .bg1 {
+            background-color:#b62e13;
+            content:"lol";
+            transform: skewY(2deg);
+            width: 100%;
+            height: 620px;
+            position: absolute;
+            margin-top:-10px;
+        }
+
+        .fifth-block .c-inner {
+            transform: skewY(-1.5deg);
+            position: absolute;
+            width:95%;
+            height:620px;
+            margin-top:30px;
+        }
+
+        .price-bar {
+			background-color:#b62e13;
+			font-family: 'Myriad Pro';
+			font-size: 20pt;
+			font-weight: 700;
+            padding: 5px 7px 5px 7px;
+		}
+
+        .selo {
+			background-image:url("img/7-dias-garantia.png");
+			content:"";
+			width:300px;
+			height:300px;
+			background-size: 100%;
+			background-repeat: no-repeat;
+			background-position-x: center;
+		}
+
+        .sixth-block h1 {
+            font-family: 'Myriad Pro';
+            font-weight: 700;
+            font-size: 40pt;
+        }
+        .sixth-block p {
+            font-size: 18pt;
+        }
+
+        .seventh-block {
+            background-color:rgb(122, 122, 122);
+        }
+        .seventh-block h2 {
+            font-family: 'Myriad Pro';
+            font-size: 35pt;
+            font-weight: 700;
+            color:#fff;
+            text-shadow: 2px 2px #000;
+        }
+        .seventh-block h3, .seventh-block a{
+            font-size: 13pt;
+            color:#fff;
+        }
+        .seventh-block .card-header {
+            background-color:#52bad6;
+            cursor:pointer;
+        }
+        .seventh-block .card-body {
+            background-color:#fff;
+            font-family: 'Cabin';
+            font-size:12pt;
+            border-left:3px solid #52bad6;
+            border-right:3px solid #52bad6;
+            border-bottom:2px solid #52bad6;
+            border-bottom-right-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+        .seventh-block .card {
+            border: none;
+            margin-top:5px;
+        }
         
-        .separator {
-            background-image:url("img/big_separator.png");
-            width:580px;
-            height:11px;
-            display:block;  
-            background-repeat: no-repeat;
+        .seventh-block .accordion>.card:not(:first-of-type):not(:last-of-type) {
+            border-bottom: 0;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            border-bottom-left-radius: 5px;
         }
 
-        .separator-dark {
-            background-image:url("img/big_separator_dark.png");
-            width:580px;
-            height:11px;
-            display:block;  
-            background-repeat: no-repeat;
+        .seventh-block .accordion>.card:first-of-type{
+            border-bottom: 0;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            border-bottom-left-radius: 5px;
         }
 
-        .separator-sm {
-            background-image:url("img/separator.png");
-        }
-
-        .separator-sm-dark {
-            background-image:url("img/separator_dark.png");
+        .seventh-block .collapse {
+            background-color:rgb(122, 122, 122);
         }
 
         @media (max-width:767px){
-            .separator {
-                background-image:url("img/separator.png");
-                width:300px;
+            .third-block .holder {
+                height:540px;
+            }
+            .third-block .bg1 {
+                height: 560px;
+            }
+            .third-block .c-inner {
+                height: 560px;
             }
 
-            .separator-dark {
-                background-image:url("img/separator_dark.png");
-                width:300px;
+            .fifth-block .holder {
+                height:950px;
+            }
+            .fifth-block .bg1 {
+                height:970px;
+            }
+            .fifth-block .c-inner {
+                height:970px;
             }
         }
     </style>
@@ -439,12 +575,177 @@
             <img src="img/Bandeiras-Pagamento.png" width="300px"/>
         </div>
     </div>
+    <div class="fifth-block">
+        <div class="bg1 centering">
+        </div>
+        <div class="holder">
+            <div class="c-inner text-center container centering">
+                <br>
+                <h2>Você vai receber:</h2><br>
+                <!--<p style="padding:0px 20px 0px 20px;">-->
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="row">
+                            <div class="col">
+                                <img src="img/phone-1.png" width="100px" style="float:right;">
+                            </div>
+                            <div class="col">
+                                <span style="float:left;font-family: 'Myriad Pro';font-weight: 700;
+                                            font-size: 20pt;">Dieta Rápida<br>19 Dias
+                                            <br><br>
+                                            <span class="price-bar"><strike>R$57,00</strike></span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <br>
+                        <div class="centering"><i class="fas fa-plus fa-5x centering"></i></div>
+                        <br>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row">
+                            <div class="col">
+                                <img src="img/phone-2.png" width="100px" style="float:right;">
+                            </div>
+                            <div class="col">
+                                <span style="float:left;font-family: 'Myriad Pro';font-weight: 700;
+                                            font-size: 20pt;">50 receitas de<br>Suco Detox
+                                            <br><br>
+                                            <span class="price-bar"><strike>R$30,00</strike></span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <h2>Por tempo limitado! A oferta acaba em:</h2>
+                <div class="d-flex justify-content-center"><div id="flipdown" class="flipdown"></div></div>
+                <br>
+            </div>
+        </div>
+    </div>
+
+    <div class="sixth-block mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="selo centering"></div>
+                </div>
+                <div class="col-md-8 text-center">
+                    <h1>Promoção HOJE</h1><br>
+                    <p>	
+                        De <strike>R$87,00</strike><br>
+                        por apenas<br>
+                        <span style="font-family:'Myriad Pro';color:lime;font-size: 70pt;font-weight: 700;line-height: 60px;text-shadow: 1.5px 1.5px #000;">
+                            R$ 37,00
+                        </span><br>
+                        <span style="font-size: 12pt;">
+                            * você vai pagar menos de R$1,30 por DIA *
+                        </span>
+                    </p>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <p style="font-size:16pt;padding:0px 20px 0px 20px;" class="text-center centering">
+                    De R$ 87,00 por apenas uma única vez de R$ 37,00 no cartão ou boleto!<br>
+                    Se no prazo de 7 dias você NÃO emagrecer ou achar que o Dieta 19D não serve para você, basta nos<br>
+                    mandar um e-mail que devolvemos todo seu dinheiro!
+                </p>
+            </div>
+            <br>
+            <div class="text-center">
+                <a href="#" class="btn btn-primary">SIM! QUERO EMAGRECER DE VEZ</a>
+                <h4>* COMPRA 100% SEGURA PELO HOTMART</h4>
+                <img src="img/Bandeiras-Pagamento.png" width="300px"/>
+            </div>
+        </div>
+    </div>
+
+    <div class="seventh-block jumbotron mt-3">
+        <div class="container">
+            <h2 class="text-center">Perguntas Frequentes</h2>
+            <div class="accordion centering mt-5" id="accordion-faq" style="max-width: 800px;">
+                <div class="card">
+                    <div class="card-header" id="hfaq1" data-toggle="collapse" data-target="#faq1">
+                        <h3>Para quem a Dieta é indicada?<i class="fas fa-chevron-circle-down mt-1" style="float:right;"></i><i class="fas fa-chevron-circle-right mt-1" style="float:right;display:none;"></i></h3>
+                    </div>
+                    <div id="faq1" class="collapse show" data-parent="#accordion-faq">
+                        <div class="card-body">
+                            É indicada para homens e mulheres que queiram perder peso de forma saudável, sem passar fome, sem tomar remédios,apenas aplicando reeducação alimentar.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="hfaq2" data-toggle="collapse" data-target="#faq2">
+                        <h3>Quanto tempo demora para obter resultados?<i class="fas fa-chevron-circle-right mt-1" style="float:right;"></i><i class="fas fa-chevron-circle-down mt-1" style="float:right;display:none;"></i></h3>
+                    </div>
+                </div>
+                <div id="faq2" class="collapse" data-parent="#accordion-faq">
+                    <div class="card-body">
+                        Os resultados podem variar de acordo com cada indivíduo. Isso dependerá do esforço e desempenho de cada pessoa, estado corporal atual, fatores genéticos, entre outros. Porém o que o E-Book ensina pode ser aplicado o resto da vida, e ter os resultados alcançados sempre, pois o E-Book tem bases científicas.
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="hfaq4" data-toggle="collapse" data-target="#faq4">
+                        <h3>Como vou receber o E-Book ?<i class="fas fa-chevron-circle-right mt-1" style="float:right;"></i><i class="fas fa-chevron-circle-down mt-1" style="float:right;display:none;"></i></h3>
+                    </div>
+                </div>
+                <div id="faq4" class="collapse" data-parent="#accordion-faq">
+                    <div class="card-body">
+                        A Dieta Rápida 19 Dias é um E-Book. Logo quando for efetuado o pagamento você irá receber no seu e-mail cadastrado.
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="hfaq5" data-toggle="collapse" data-target="#faq5">
+                        <h3>Como funciona o pagamento?<i class="fas fa-chevron-circle-right mt-1" style="float:right;"></i><i class="fas fa-chevron-circle-down mt-1" style="float:right;display:none;"></i></h3>
+                    </div>
+                </div>
+                <div id="faq5" class="collapse" data-parent="#accordion-faq">
+                    <div class="card-body">
+                        O pagamento é realizado através da Hotmart, que é a maior plataforma de produtos digitais da América Latina. A compra é 100% segura, e há várias formas de pagamento. <br>São elas: via cartão de crédito e débito, boleto bancário e transferência bancária.
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="hfaq6" data-toggle="collapse" data-target="#faq6">
+                        <h3>Tem que pagar mensalidade?<i class="fas fa-chevron-circle-right mt-1" style="float:right;"></i><i class="fas fa-chevron-circle-down mt-1" style="float:right;display:none;"></i></h3>
+                    </div>
+                </div>
+                <div id="faq6" class="collapse" data-parent="#accordion-faq">
+                    <div class="card-body">
+                            Não. A Dieta 19D você recebe [....]
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/flipdown.min.js"></script>
+    <script>
+        var limit = new Date("September 30, 2019 19:00:00").getTime() / 1000;
+        new FlipDown(limit,{theme:'light'}).start();
+
+        $(".card-header").click(function(){
+            $(this).children().children(".fa-chevron-circle-down").toggle();
+            $(this).children().children(".fa-chevron-circle-right").toggle();
+            let k = this;
+            $(".card-header").each(function(i, obj){
+                if(obj != k){
+                    $(this).children().children(".fa-chevron-circle-down").css("display","none");
+                    $(this).children().children(".fa-chevron-circle-right").css("display","block");
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

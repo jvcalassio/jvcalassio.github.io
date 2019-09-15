@@ -1,212 +1,70 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br" class="no-js">
 
 <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="font-aweasome/css/all.min.css">
-    <link rel="stylesheet" href="css/flipdown.min.css">
-    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="preload" href="bootstrap/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="font-aweasome/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="css/flipdown.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="css/fonts.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="css/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="font-aweasome/css/all.min.css">
+        <link rel="stylesheet" href="css/flipdown.min.css">
+        <link rel="stylesheet" href="css/fonts.css">
+        <link rel="stylesheet" href="css/styles.css">
+    </noscript>
 
     <title>Dieta Rápida 19 Dias</title>
 
     <style>
-
-        body::before {
-            background-color: var(--main-blue);
-			content:"";
-			opacity: 0.9;
-			top:0;
-			left:0;
-			right:0;
-			bottom:0;
-			position: fixed;
-			z-index: -1;
-        }
-
-        body::after {
-            background-image:url("img/fruit-bg.jpg");
-            background-size: 100%;
-			content:"";
-			opacity: 0.1;
-			top:0;
-			left:0;
-			right:0;
-			bottom:0;
-			position: fixed;
-			z-index: -1;
-			background-attachment: cover;
-			background-position-x: center;
-			background-position-y: -250px;
-        }
-
-        @media (max-width:767px){
-            body::after {
-                background-image:url("img/fruit-bg-mobile.jpg");
-                background-attachment: cover;
-			    background-position-x: center;
-                background-repeat: no-repeat;
-                background-position-y: center;
-            }
-        }
-
-        .centering {
-            margin-left:auto;
-            margin-right:auto;
-            left:0;
-            right:0;
-        }
-
-        .v-centering {
-            margin-top:auto;
-            margin-bottom:auto;
-            top:0;
-            bottom:0;
-        }
-
-        .abs {
-            position:absolute;
-        }
-
-        .separator {
-            background-image:url("img/big_separator.png");
-            width:580px;
-            height:11px;
-            display:block;  
-            background-repeat: no-repeat;
-        }
-
-        .separator-dark {
-            background-image:url("img/big_separator_dark.png");
-            width:580px;
-            height:11px;
-            display:block;  
-            background-repeat: no-repeat;
-        }
-
-        .separator-sm {
-            background-image:url("img/separator.png");
-            width:300px;
-            height:11px;
-            display:block;  
-            background-repeat: no-repeat;
-        }
-
-        .separator-sm-dark {
-            background-image:url("img/separator_dark.png");
-            width:300px;
-            height:11px;
-            display:block;  
-            background-repeat: no-repeat;
-        }
-
-        @media (max-width:767px){
-            .separator {
-                background-image:url("img/separator.png");
-                width:300px;
-            }
-
-            .separator-dark {
-                background-image:url("img/separator_dark.png");
-                width:300px;
-            }
-        }
-
         .btn-primary {
-			color:white;
-			background-color: #e83e1e;
-			border-color: #e83e1e;
-			border-bottom-color: #ac280a;
-			border-bottom-width: 3px;
-			border-radius: 15px;
-			width: 400px;
-			padding-top: 10px;
-			padding-bottom: 10px;
-			font-weight: 900;
-			font-family: 'Myriad Pro', sans-serif;
-			font-size: 20pt;
-			transition-property: all;
-			transition-duration: 0.2s;
-		}
-		
-		.btn-primary:hover {
-			color: white;
-			background-color:#ff5934;
-			border-color:#e83e1e;
-			border-bottom-color: #e83e1e;
-			border-bottom-width: 3px;
-			transform:scale(1.05);
-			box-shadow: 0px 0px 5px 0px rgb(165, 165, 165);
-		}
-
-		.btn-primary:focus,
-		.btn-primary.focus {
-			/*box-shadow: 0 0 0 .2rem rgba(235, 43, 69, 0.5)*/
-			box-shadow: 0 0 0 0;
-		}
-
-		.btn-primary.disabled,
-		.btn-primary:disabled {
-			/*color: #212529;*/
-			color: white;
-			background-color:var(--main-pink);
-			border-color: var(--secondary-pink);
-		}
-
-		.btn-primary:not(:disabled):not(.disabled):active,
-		.btn-primary:not(:disabled):not(.disabled).active,
-		.show>.btn-primary.dropdown-toggle {
-			color: white;
-			background-color: #ac280a;
-			border-color: #e83e1e;
-		}
-
-		.btn-primary:not(:disabled):not(.disabled):active:focus,
-		.btn-primary:not(:disabled):not(.disabled).active:focus,
-		.show>.btn-primary.dropdown-toggle:focus {
-			/*box-shadow: 0 0 0 .2rem rgba(91, 194, 194, 0.5)*/
-			box-shadow: 0 0 0 0;
-		}
-
-		@media (max-width: 767px){
-			.btn-primary {
-				font-size: 18pt;
-				width: 290px;
-			}
+            color:white;
+            background-color: #e83e1e;
+            border-color: #e83e1e;
+            border-bottom-color: #ac280a;
+            border-bottom-width: 3px;
+            border-radius: 15px;
+            width: 400px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-weight: 900;
+            font-family: 'Myriad Pro', sans-serif;
+            font-size: 20pt;
+            transition-property: all;
+            transition-duration: 0.2s;
         }
-        
+
         .logo {
             width:270px;
             z-index:300;
         }
 
         .logo .logo-bg {
-			background-color:#e51b72;
-			padding:5px 8px 3px 10px;
-			font-family: 'Bahnschrift',sans-serif;
-			font-weight: bold;
-			font-size: 30pt;
-			line-height: 50px;
-			color:#000;
-			text-shadow: -3px 2px #fff;
-		}
-
-		.logo .logo-num {
-			font-family: 'Blowbrush',sans-serif;
-			text-shadow: -3px 2px #fff;
-			font-size:60pt;
-			line-height: 50px;
-			text-align: right;
-			margin-left:150px;
+            background-color:#e51b72;
+            padding:5px 8px 3px 10px;
+            font-family: 'Bahnschrift',sans-serif;
+            font-weight: bold;
+            font-size: 30pt;
+            line-height: 50px;
+            color:#000;
+            text-shadow: -3px 2px #fff;
         }
-        
+
+        .logo .logo-num {
+            font-family: 'Blowbrush',sans-serif;
+            text-shadow: -3px 2px #fff;
+            font-size:60pt;
+            line-height: 50px;
+            text-align: right;
+            margin-left:150px;
+        }
+
         .first-block .holder {
             background-color: #6dc7e1;
-            background-image: url("img/img-fundo-b1.png");
             transform: skewY(-2deg);
             width:100%;
             height:400px;
@@ -214,6 +72,14 @@
             background-position-x: 500px;
             background-position-y: -60px;
             background-repeat: no-repeat;
+        }
+
+        .no-webp .first-block .holder {
+            background-image: url("img/img-fundo-b1.png");
+        }
+
+        .webp .first-block .holder {
+            background-image: url("img/webp/img-fundo-b1.webp");
         }
 
         .first-block .bg1 {
@@ -242,7 +108,27 @@
             text-shadow: 2px 2px #000;
         }
 
-        @media (max-width:767px){
+        .second-block {
+            margin-top:50px;
+        }
+        .second-block h2 {
+            font-family: 'Myriad Pro';
+            font-weight: 700;
+            font-size: 30pt;
+        }
+        .second-block p {
+            font-family: 'Cabin';
+            font-size: 14pt;
+            font-weight: 500;
+            text-align: left;
+        }
+
+        @media (max-width: 767px){
+            .btn-primary {
+                font-size: 18pt;
+                width: 290px;
+            }
+
             .first-block .holder {
                 background-size:200%;
                 background-position-x: -150px;
@@ -258,248 +144,11 @@
                 font-size:30pt;
             }
         }
-
-        .second-block {
-            margin-top:50px;
-        }
-        .second-block h2 {
-			font-family: 'Myriad Pro';
-			font-weight: 700;
-			font-size: 30pt;
-		}
-		.second-block p {
-			font-family: 'Cabin';
-			font-size: 14pt;
-			font-weight: 500;
-			text-align: left;
-        }
-        
-        .third-block {
-            margin-top:100px;
-            color:#fff;
-        }
-        .third-block h2 {
-			font-family: 'Myriad Pro';
-			font-weight: 700;
-			font-size: 30pt;
-		}
-		.third-block p {
-			font-family: 'Cabin';
-			font-size: 14pt;
-			font-weight: 500;
-			text-align: left;
-        }
-        
-        .third-block .holder {
-            background-color: #e83e1e;
-            transform: skewY(1.5deg);
-            width:100%;
-            height:300px;
-            background-size:100%;
-            background-position-y: -150px;
-            background-position-x: 150px;
-            background-repeat: no-repeat;
-        }
-
-        .third-block .bg1 {
-            background-color:#b62e13;
-            content:"lol";
-            transform: skewY(2deg);
-            width: 100%;
-            height: 320px;
-            position: absolute;
-            margin-top:-10px;
-        }
-
-        .third-block .c-inner {
-            transform: skewY(-1.5deg);
-            position: absolute;
-            width:95%;
-            height:320px;
-            margin-top:30px;
-        }
-
-        .fourth-block {
-            margin-top:50px;
-        }
-        .fourth-block h2 {
-			font-family: 'Myriad Pro';
-			font-weight: 700;
-			font-size: 30pt;
-        }
-        .fourth-block h3 {
-			font-family: 'Cabin';
-			font-size: 16pt;
-            font-weight: 500;
-            margin-top:20px;
-        }
-        .fourth-block h4, .fifth-block h4, .first-block h4, .sixth-block h4{
-			font-size: 14pt;
-			margin-top:10px;
-			font-family: 'Myriad Pro';
-			font-weight: 700;
-        }
-
-        .fifth-block {
-            margin-top:50px;
-            color:#fff;
-        }
-
-        .fifth-block h2 {
-			font-family: 'Myriad Pro';
-			font-weight: 700;
-			font-size: 30pt;
-		}
-		.fifth-block span{
-			font-family: 'Cabin';
-			font-size: 14pt;
-			font-weight: 500;
-			text-align: left;
-        }
-
-        .fifth-block .holder {
-            background-color: #e83e1e;
-            transform: skewY(1.5deg);
-            width:100%;
-            height:420px;
-            background-size:100%;
-            background-position-y: -150px;
-            background-position-x: 150px;
-            background-repeat: no-repeat;
-        }
-
-        .fifth-block .bg1 {
-            background-color:#b62e13;
-            content:"lol";
-            transform: skewY(2deg);
-            width: 100%;
-            height: 440px;
-            position: absolute;
-            margin-top:-10px;
-        }
-
-        .fifth-block .c-inner {
-            transform: skewY(-1.5deg);
-            position: absolute;
-            width:95%;
-            height:440px;
-            margin-top:30px;
-        }
-
-        .price-bar {
-			font-family: 'Myriad Pro';
-			font-size: 20pt;
-			font-weight: 700;
-            padding: 5px 7px 5px 7px;
-			background-color:#52bad6;
-            color:#000;
-		}
-
-        .selo {
-			background-image:url("img/7-dias-garantia.png");
-			content:"";
-			width:300px;
-			height:300px;
-			background-size: 100%;
-			background-repeat: no-repeat;
-			background-position-x: center;
-		}
-
-        .sixth-block h1 {
-            font-family: 'Myriad Pro';
-            font-weight: 700;
-            font-size: 40pt;
-        }
-        .sixth-block p {
-            font-size: 18pt;
-        }
-
-        .seventh-block {
-            background-color:#00627e;
-            border-radius: 0;
-            border-top: 5px solid #52bad6;
-        }
-        .seventh-block h2 {
-            font-family: 'Myriad Pro';
-            font-size: 35pt;
-            font-weight: 700;
-            color:#fff;
-            text-shadow: 2px 2px #000;
-        }
-        .seventh-block h3, .seventh-block a{
-            font-size: 13pt;
-            color:#fff;
-        }
-        .seventh-block .card-header {
-            background-color:#52bad6;
-            cursor:pointer;
-        }
-        .seventh-block .card-body {
-            background-color:#fff;
-            font-family: 'Cabin';
-            font-size:12pt;
-            border-left:3px solid #52bad6;
-            border-right:3px solid #52bad6;
-            border-bottom:2px solid #52bad6;
-            border-bottom-right-radius: 5px;
-            border-bottom-left-radius: 5px;
-        }
-        .seventh-block .card {
-            border: none;
-            margin-top:5px;
-        }
-        
-        .seventh-block .accordion>.card:not(:first-of-type):not(:last-of-type) {
-            border-bottom: 0;
-            border-top-left-radius: 5px;
-            border-top-right-radius: 5px;
-            border-bottom-right-radius: 5px;
-            border-bottom-left-radius: 5px;
-        }
-
-        .seventh-block .accordion>.card:first-of-type{
-            border-bottom: 0;
-            border-top-left-radius: 5px;
-            border-top-right-radius: 5px;
-            border-bottom-right-radius: 5px;
-            border-bottom-left-radius: 5px;
-        }
-
-        .seventh-block .collapse {
-            background-color:rgb(122, 122, 122);
-        }
-
-        @media (max-width:767px){
-            .third-block .holder {
-                height:580px;
-            }
-            .third-block .bg1 {
-                height: 600px;
-            }
-            .third-block .c-inner {
-                height: 600px;
-            }
-
-            .fifth-block .holder {
-                height:720px;
-            }
-            .fifth-block .bg1 {
-                height:740px;
-            }
-            .fifth-block .c-inner {
-                height:740px;
-            }
-        }
-
-        .footer {
-            background-color:#ffffff;
-            border-top: 5px solid #bbbbbb;
-        }
-
-        #tiny {
-            transform:scale(0.8);
-        }
     </style>
+
+    <script>
+        !function(e,n,A){function o(e,n){return typeof e===n}function t(){var e,n,A,t,a,i,l;for(var f in r)if(r.hasOwnProperty(f)){if(e=[],n=r[f],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(A=0;A<n.options.aliases.length;A++)e.push(n.options.aliases[A].toLowerCase());for(t=o(n.fn,"function")?n.fn():n.fn,a=0;a<e.length;a++)i=e[a],l=i.split("."),1===l.length?Modernizr[l[0]]=t:(!Modernizr[l[0]]||Modernizr[l[0]]instanceof Boolean||(Modernizr[l[0]]=new Boolean(Modernizr[l[0]])),Modernizr[l[0]][l[1]]=t),s.push((t?"":"no-")+l.join("-"))}}function a(e){var n=u.className,A=Modernizr._config.classPrefix||"";if(c&&(n=n.baseVal),Modernizr._config.enableJSClass){var o=new RegExp("(^|\\s)"+A+"no-js(\\s|$)");n=n.replace(o,"$1"+A+"js$2")}Modernizr._config.enableClasses&&(n+=" "+A+e.join(" "+A),c?u.className.baseVal=n:u.className=n)}function i(e,n){if("object"==typeof e)for(var A in e)f(e,A)&&i(A,e[A]);else{e=e.toLowerCase();var o=e.split("."),t=Modernizr[o[0]];if(2==o.length&&(t=t[o[1]]),"undefined"!=typeof t)return Modernizr;n="function"==typeof n?n():n,1==o.length?Modernizr[o[0]]=n:(!Modernizr[o[0]]||Modernizr[o[0]]instanceof Boolean||(Modernizr[o[0]]=new Boolean(Modernizr[o[0]])),Modernizr[o[0]][o[1]]=n),a([(n&&0!=n?"":"no-")+o.join("-")]),Modernizr._trigger(e,n)}return Modernizr}var s=[],r=[],l={_version:"3.6.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var A=this;setTimeout(function(){n(A[e])},0)},addTest:function(e,n,A){r.push({name:e,fn:n,options:A})},addAsyncTest:function(e){r.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=l,Modernizr=new Modernizr;var f,u=n.documentElement,c="svg"===u.nodeName.toLowerCase();!function(){var e={}.hasOwnProperty;f=o(e,"undefined")||o(e.call,"undefined")?function(e,n){return n in e&&o(e.constructor.prototype[n],"undefined")}:function(n,A){return e.call(n,A)}}(),l._l={},l.on=function(e,n){this._l[e]||(this._l[e]=[]),this._l[e].push(n),Modernizr.hasOwnProperty(e)&&setTimeout(function(){Modernizr._trigger(e,Modernizr[e])},0)},l._trigger=function(e,n){if(this._l[e]){var A=this._l[e];setTimeout(function(){var e,o;for(e=0;e<A.length;e++)(o=A[e])(n)},0),delete this._l[e]}},Modernizr._q.push(function(){l.addTest=i}),Modernizr.addAsyncTest(function(){function e(e,n,A){function o(n){var o=n&&"load"===n.type?1==t.width:!1,a="webp"===e;i(e,a&&o?new Boolean(o):o),A&&A(n)}var t=new Image;t.onerror=o,t.onload=o,t.src=n}var n=[{uri:"data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=",name:"webp"},{uri:"data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA==",name:"webp.alpha"},{uri:"data:image/webp;base64,UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA",name:"webp.animation"},{uri:"data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=",name:"webp.lossless"}],A=n.shift();e(A.name,A.uri,function(A){if(A&&"load"===A.type)for(var o=0;o<n.length;o++)e(n[o].name,n[o].uri)})}),t(),a(s),delete l.addTest,delete l.addAsyncTest;for(var p=0;p<Modernizr._q.length;p++)Modernizr._q[p]();e.Modernizr=Modernizr}(window,document);
+    </script>
 </head>
 
 <body>
@@ -522,7 +171,10 @@
                 </span><br><br><br>
                 <a href="#" class="btn btn-primary">SIM! QUERO EMAGRECER DE VEZ</a>
                 <h4>* COMPRA 100% SEGURA PELO HOTMART</h4>
-                <img src="img/Bandeiras-Pagamento.png" width="300px"/>
+                <picture>
+                    <source srcset="img/webp/Bandeiras-Pagamento.webp" type="image/webp">
+                    <img src="img/Bandeiras-Pagamento.png" width="300px" alt="Bandeiras de Cartão de Crédito aceitas"/>
+                </picture>
             </div>
         </div>
     </div>
@@ -566,23 +218,29 @@
             <br><br>
             <div class="row">
                 <div class="col-md-6">
-                    <img src="img/pill.png" width="100px">
+                    <img src="img/pill.png" width="100px" alt="Remédios para emagrecimento">
                     <h3>Já tentaram emagrecer tomando<br>
                         remédios e não obtiveram sucesso</h3>
                 </div>
                 <div class="col-md-6 mt-5 mt-md-0">
-                    <img src="img/gym.png" width="100px">
+                    <picture>
+                        <source srcset="img/webp/gym.webp" type="image/webp">
+                        <img src="img/gym.png" width="100px" alt="Academia">
+                    </picture>
                     <h3>Não têm tempo para ir à academia</h3>
                 </div>
             </div>
             
             <div class="row">
                 <div class="col-md-6 mt-5">
-                    <img src="img/checked.png" width="100px">
+                    <img src="img/checked.png" width="100px" alt="Emagrecimento definitivo">
                     <h3>Quer emagrecer definitivamente</h3>
                 </div>
                 <div class="col-md-6 mt-5">
-                    <img src="img/heartbeat.png" width="100px">
+                    <picture>
+                        <source srcset="img/webp/heartbeat.webp" type="image/webp">
+                        <img src="img/heartbeat.png" width="100px" alt="Saudável">
+                    </picture>
                     <h3>Quer emagrecer de forma saudável<br>
                         e manter o peso ideal</h3>
                 </div>
@@ -590,18 +248,27 @@
             
             <div class="row">
                 <div class="col-md-6 mt-5">
-                    <img src="img/weight.png" width="100px">
+                    <picture>
+                        <source srcset="img/webp/weight.webp" type="image/webp">
+                        <img src="img/weight.png" width="100px" alt="Dificuldades para emagracer">
+                    </picture>
                     <h3>Tem dificuldade para emagrecer</h3>
                 </div>
                 <div class="col-md-6 mt-5">
-                    <img src="img/fat.png" width="100px">
+                    <picture>
+                        <source srcset="img/webp/fat.webp" type="image/webp">
+                        <img src="img/fat.png" width="100px" alt="Infeliz com o corpo">
+                    </picture>
                     <h3>Está infeliz com o próprio corpo</h3>
                 </div>
             </div>
             <br><br><br>
             <a href="#" class="btn btn-primary" style="margin-top:-28px;">SIM! QUERO EMAGRECER DE VEZ</a>
             <h4>* COMPRA 100% SEGURA PELO HOTMART</h4>
-            <img src="img/Bandeiras-Pagamento.png" width="300px"/>
+            <picture>
+                <source srcset="img/webp/Bandeiras-Pagamento.webp" type="image/webp">
+                <img src="img/Bandeiras-Pagamento.png" width="300px" alt="Bandeiras de Cartão de Crédito aceitas"/>
+            </picture>
         </div>
     </div>
     <div class="fifth-block">
@@ -616,7 +283,10 @@
                     <div class="col-md-5">
                         <div class="row">
                             <div class="col">
-                                <img src="img/phone-1.png" width="100px" style="float:right;">
+                                <picture>
+                                    <source srcset="img/webp/phone-1.webp" type="image/webp">
+                                    <img src="img/phone-1.png" width="100px" style="float:right;" alt="Dieta Rápida 19 Dias">
+                                </picture>
                             </div>
                             <div class="col">
                                 <span style="float:left;font-family: 'Myriad Pro';font-weight: 700;
@@ -635,7 +305,10 @@
                     <div class="col-md-5">
                         <div class="row">
                             <div class="col">
-                                <img src="img/phone-2.png" width="100px" style="float:right;">
+                                <picture>
+                                    <source srcset="img/webp/phone-2.webp" type="image/webp">
+                                    <img src="img/phone-2.png" width="100px" style="float:right;" alt="Receitas Suco Detox">
+                                </picture>
                             </div>
                             <div class="col">
                                 <span style="float:left;font-family: 'Myriad Pro';font-weight: 700;
@@ -666,7 +339,7 @@
                         <span style="font-family:'Myriad Pro';color:lime;font-size: 70pt;font-weight: 700;line-height: 60px;text-shadow: 1.5px 1.5px #000;">
                             R$ 37,00
                         </span><br>
-                        <span style="font-size: 12pt;">
+                        <span style="font-size: 10pt;">
                             * você vai pagar menos de R$1,30 por DIA *
                         </span>
                     </p>
@@ -687,7 +360,10 @@
             <div class="text-center">
                 <a href="#" class="btn btn-primary">SIM! QUERO EMAGRECER DE VEZ</a>
                 <h4>* COMPRA 100% SEGURA PELO HOTMART</h4>
-                <img src="img/Bandeiras-Pagamento.png" width="300px"/>
+                <picture>
+                    <source srcset="img/webp/Bandeiras-Pagamento.webp" type="image/webp">
+                    <img src="img/Bandeiras-Pagamento.png" width="300px" alt="Bandeiras de Cartão de Crédito aceitas"/>
+                </picture>
             </div>
         </div>
     </div>
@@ -779,7 +455,7 @@
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="js/flipdown.min.js"></script>
     <script>
-        var limit = new Date("September 30, 2019 19:00:00").getTime() / 1000;
+        var limit = new Date("September 30, 2020 00:00:00").getTime() / 1000;
         new FlipDown(limit,{theme:'dark'}).start();
 
         $(".card-header").click(function(){

@@ -44,6 +44,16 @@
 			background-position-y: -250px;
         }
 
+        @media (max-width:767px){
+            body::after {
+                background-image:url("img/fruit-bg-mobile.jpg");
+                background-attachment: cover;
+			    background-position-x: center;
+                background-repeat: no-repeat;
+                background-position-y: center;
+            }
+        }
+
         .centering {
             margin-left:auto;
             margin-right:auto;
@@ -80,10 +90,18 @@
 
         .separator-sm {
             background-image:url("img/separator.png");
+            width:300px;
+            height:11px;
+            display:block;  
+            background-repeat: no-repeat;
         }
 
         .separator-sm-dark {
             background-image:url("img/separator_dark.png");
+            width:300px;
+            height:11px;
+            display:block;  
+            background-repeat: no-repeat;
         }
 
         @media (max-width:767px){
@@ -162,7 +180,7 @@
         }
         
         .logo {
-            width:300px;
+            width:270px;
             z-index:300;
         }
 
@@ -369,11 +387,11 @@
         }
 
         .price-bar {
-			background-color:#52bad6;
 			font-family: 'Myriad Pro';
 			font-size: 20pt;
 			font-weight: 700;
             padding: 5px 7px 5px 7px;
+			background-color:#52bad6;
             color:#000;
 		}
 
@@ -397,7 +415,8 @@
         }
 
         .seventh-block {
-            background-color:rgb(122, 122, 122);
+            background-color:#00627e;
+            border-radius: 0;
         }
         .seventh-block h2 {
             font-family: 'Myriad Pro';
@@ -470,6 +489,15 @@
                 height:740px;
             }
         }
+
+        .footer {
+            background-color:#ffffff;
+            border-top: 5px solid #bbbbbb;
+        }
+
+        #tiny {
+            transform:scale(0.8);
+        }
     </style>
 </head>
 
@@ -478,7 +506,7 @@
         <div class="logo centering mt-3 abs">
             <span class="logo-bg">
                 DIETA RÁPIDA
-            </span><br>
+            </span>
             <span class="logo-num">
                 19<span style="color:#e83e1e">D</span>
             </span>
@@ -591,9 +619,9 @@
                             </div>
                             <div class="col">
                                 <span style="float:left;font-family: 'Myriad Pro';font-weight: 700;
-                                            font-size: 24pt;">Dieta Rápida<br>19 Dias
+                                            font-size: 26pt;">Dieta Rápida<br>19 Dias
                                             <br>
-                                            <span class="price-bar" style="font-size:20pt;"><strike>R$57,00</strike></span>
+                                            <span class="price-bar" style="font-size:22pt;"><strike>R$57,00</strike></span>
                                 </span>
                             </div>
                         </div>
@@ -610,9 +638,9 @@
                             </div>
                             <div class="col">
                                 <span style="float:left;font-family: 'Myriad Pro';font-weight: 700;
-                                            font-size: 24pt;">50 receitas de<br>Suco Detox
+                                            font-size: 26pt;">50 receitas de<br>Suco Detox
                                             <br>
-                                            <span class="price-bar" style="font-size:20pt;"><strike>R$30,00</strike></span>
+                                            <span class="price-bar" style="font-size:22pt;"><strike>R$30,00</strike></span>
                                 </span>
                             </div>
                         </div>
@@ -663,17 +691,17 @@
         </div>
     </div>
 
-    <div class="seventh-block jumbotron mt-3">
+    <div class="seventh-block jumbotron mt-3 mb-0">
         <div class="container">
             <h2 class="text-center">Perguntas Frequentes</h2>
             <div class="accordion centering mt-5" id="accordion-faq" style="max-width: 800px;">
                 <div class="card">
                     <div class="card-header" id="hfaq1" data-toggle="collapse" data-target="#faq1">
-                        <h3>Para quem a Dieta é indicada?<i class="fas fa-chevron-circle-down mt-1" style="float:right;"></i><i class="fas fa-chevron-circle-right mt-1" style="float:right;display:none;"></i></h3>
+                        <h3>Para quem a Dieta é indicado?<i class="fas fa-chevron-circle-down mt-1" style="float:right;"></i><i class="fas fa-chevron-circle-right mt-1" style="float:right;display:none;"></i></h3>
                     </div>
                     <div id="faq1" class="collapse show" data-parent="#accordion-faq">
                         <div class="card-body">
-                            É indicada para homens e mulheres que queiram perder peso de forma saudável, sem passar fome, sem tomar remédios,apenas aplicando reeducação alimentar.
+                            É indicado para homens e mulheres que queiram perder peso de forma saudável, sem passar fome, sem tomar remédios, apenas aplicando reeducação alimentar.
                         </div>
                     </div>
                 </div>
@@ -684,7 +712,7 @@
                 </div>
                 <div id="faq2" class="collapse" data-parent="#accordion-faq">
                     <div class="card-body">
-                        Os resultados podem variar de acordo com cada indivíduo. Isso dependerá do esforço e desempenho de cada pessoa, estado corporal atual, fatores genéticos, entre outros. Porém o que o E-Book ensina pode ser aplicado o resto da vida, e ter os resultados alcançados sempre, pois o E-Book tem bases científicas.
+                        Os resultados podem variar de acordo com cada indivíduo. Isso dependerá do esforço e desempenho de cada pessoa, estado corporal atual, fatores genéticos entre outros. Porém o que o E-Book ensina pode ser aplicado no resto da vida, e sempre ter os resultados alcançados pois a Dieta é eficiente e tem bases científicas.
                     </div>
                 </div>
 
@@ -695,7 +723,7 @@
                 </div>
                 <div id="faq4" class="collapse" data-parent="#accordion-faq">
                     <div class="card-body">
-                        A Dieta Rápida 19 Dias é um E-Book. Logo quando for efetuado o pagamento você irá receber no seu e-mail cadastrado.
+                        A Dieta Rápida 19 dias é um E-Book. Logo quando for efetuado o pagamento você irá receber no seu e-mail cadastrado.
                     </div>
                 </div>
 
@@ -717,10 +745,29 @@
                 </div>
                 <div id="faq6" class="collapse" data-parent="#accordion-faq">
                     <div class="card-body">
-                            Não. A Dieta 19D você recebe [....]
+                        Não. A Dieta Rápida 19 Dias você só paga UMA vez, e tem acesso para sempre.
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div id="tiny" class="logo centering mt-2 abs">
+                <span class="logo-bg">
+                    DIETA RÁPIDA
+                </span>
+                <span class="logo-num">
+                    19<span style="color:#e83e1e">D</span>
+                </span>
+            </div><br><br><br><br><br>
+            <div class="inner text-center">
+                <div class="separator-sm centering mb-2"></div>
+                <a href="mailto:contato@dietarapida19dias.com"><i class="far fa-envelope"></i> contato@dietarapida19dias.com</a><br>
+                <span>2019 &copy; Todos os direitos reservados</span>
+            </div>
+            <br>
         </div>
     </div>
 
@@ -745,6 +792,9 @@
                 }
             });
         });
+
+        $(".rotor-group:first-of-type").css("display","none");
+        $("#flipdown").addClass("d-flex justify-content-center");   
     </script>
 </body>
 

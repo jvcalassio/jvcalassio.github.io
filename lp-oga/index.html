@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="pt-br" class="no-js">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="font-aweasome/font-aweasome/css/all.min.css">
+	<link rel="stylesheet" href="css/fonts.css">
+
+    <title>LP OGA</title>
+	
+	<style>
+		body {
+			background-color:#000;
+			color:rgb(253, 253, 253);
+			font-family: 'Noto Sans', sans-serif;
+		}
+
+		.centering {
+			margin-left:auto;
+			margin-right:auto;
+			left:0;
+			right:0;
+		}
+
+		.v-centering {
+			margin-top:auto;
+			margin-bottom:auto;
+			top:0;
+			bottom:0;
+		}
+
+		.first-block {
+			font-size: 14pt;
+		}
+
+		.first-block h2 {
+			font-size: 22pt;
+			text-align: center;
+			max-width: 430px;
+		}
+
+		.first-block .img-holder {
+			background-image: url("img/eagle.png");
+			background-repeat: no-repeat;
+			background-position: center center;
+			width:75px;
+			height:75px;
+			background-size: 100%;
+		}
+		.first-block .video-holder, .first-block img {
+			max-width: 400px;
+			margin-top:5px;
+		}
+
+		.button-bg {
+			background-image:url("img/hand.png");
+			background-size: 100%;
+			height:400px;
+			width:400px;
+			background-repeat: no-repeat;
+		}
+
+		.btn {
+			margin-left:120px;
+			margin-top:80px;
+		}
+
+		.second-block {
+			background-image: url("img/background.png");
+			height:900px;
+			background-size:100%;
+			background-position-x: center;
+			background-position-y: center;
+			background-repeat: no-repeat;
+			margin-top:-310px;
+		}
+
+		.second-block p {
+			font-size: 14pt;
+			background-color:rgb(252, 252, 252);
+			color:var(--dark);
+			padding: 2px 2px 2px 2px;
+			line-height: 34px;
+			display:inline;
+		}
+
+		.btn-primary {
+			background-image: url("img/btn-bg.png");
+			background-size: 100%;
+			font-weight: 700;
+			color:#fff;
+			-webkit-text-stroke: 1px #000;
+			font-size: 14pt;
+			width:200px;
+			height:80px;
+			background-color:transparent;
+			border:none;
+			transition: transform 0.2s ease;
+			transition: background-image 0.2s ease;
+		}
+
+		.btn-primary:hover {
+			border:none;
+			background-color: transparent;
+			transform: scale(1.1);
+		}
+
+		.btn-primary:focus,
+		.btn-primary.focus {
+			/*box-shadow: 0 0 0 .2rem rgba(235, 43, 69, 0.5)*/
+			box-shadow: 0 0 0 0;
+		}
+
+		.btn-primary.disabled,
+		.btn-primary:disabled {
+			/*color: #212529;*/
+			color: white;
+			background-color:var(--main-pink);
+			border-color: var(--secondary-pink);
+		}
+
+		.btn-primary:not(:disabled):not(.disabled):active,
+		.btn-primary:not(:disabled):not(.disabled).active,
+		.show>.btn-primary.dropdown-toggle {
+			background-image: url("img/btn-bg-dark.png");
+			color:#fff;
+			-webkit-text-stroke: #000;
+			background-color:transparent;
+			border:none;
+		}
+
+		.btn-primary:not(:disabled):not(.disabled):active:focus,
+		.btn-primary:not(:disabled):not(.disabled).active:focus,
+		.show>.btn-primary.dropdown-toggle:focus {
+			/*box-shadow: 0 0 0 .2rem rgba(91, 194, 194, 0.5)*/
+			box-shadow: 0 0 0 0;
+		}
+		@media (max-width: 767px){
+			.first-block .video-holder, .first-block img {
+				max-width: 335px;
+			}
+
+			.button-bg {
+				width:300px;
+				height:300px;
+			}
+
+			.button-bg .btn {
+				margin-left:70px;
+				margin-top:40px;
+			}
+
+			.second-block {
+				margin-top:-100px;
+				width:100%;
+				/* lembrar de mudar o bg e tamanho */
+				background-image: url("img/background-vert.png");
+				background-position-y:top;
+				height:1200px;
+			}
+
+			.second-block .spaces {
+				display:none;
+			}
+		}
+	</style>
+    <script>
+        !function(e,n,A){function o(e,n){return typeof e===n}function t(){var e,n,A,t,a,i,l;for(var f in r)if(r.hasOwnProperty(f)){if(e=[],n=r[f],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(A=0;A<n.options.aliases.length;A++)e.push(n.options.aliases[A].toLowerCase());for(t=o(n.fn,"function")?n.fn():n.fn,a=0;a<e.length;a++)i=e[a],l=i.split("."),1===l.length?Modernizr[l[0]]=t:(!Modernizr[l[0]]||Modernizr[l[0]]instanceof Boolean||(Modernizr[l[0]]=new Boolean(Modernizr[l[0]])),Modernizr[l[0]][l[1]]=t),s.push((t?"":"no-")+l.join("-"))}}function a(e){var n=u.className,A=Modernizr._config.classPrefix||"";if(c&&(n=n.baseVal),Modernizr._config.enableJSClass){var o=new RegExp("(^|\\s)"+A+"no-js(\\s|$)");n=n.replace(o,"$1"+A+"js$2")}Modernizr._config.enableClasses&&(n+=" "+A+e.join(" "+A),c?u.className.baseVal=n:u.className=n)}function i(e,n){if("object"==typeof e)for(var A in e)f(e,A)&&i(A,e[A]);else{e=e.toLowerCase();var o=e.split("."),t=Modernizr[o[0]];if(2==o.length&&(t=t[o[1]]),"undefined"!=typeof t)return Modernizr;n="function"==typeof n?n():n,1==o.length?Modernizr[o[0]]=n:(!Modernizr[o[0]]||Modernizr[o[0]]instanceof Boolean||(Modernizr[o[0]]=new Boolean(Modernizr[o[0]])),Modernizr[o[0]][o[1]]=n),a([(n&&0!=n?"":"no-")+o.join("-")]),Modernizr._trigger(e,n)}return Modernizr}var s=[],r=[],l={_version:"3.6.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var A=this;setTimeout(function(){n(A[e])},0)},addTest:function(e,n,A){r.push({name:e,fn:n,options:A})},addAsyncTest:function(e){r.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=l,Modernizr=new Modernizr;var f,u=n.documentElement,c="svg"===u.nodeName.toLowerCase();!function(){var e={}.hasOwnProperty;f=o(e,"undefined")||o(e.call,"undefined")?function(e,n){return n in e&&o(e.constructor.prototype[n],"undefined")}:function(n,A){return e.call(n,A)}}(),l._l={},l.on=function(e,n){this._l[e]||(this._l[e]=[]),this._l[e].push(n),Modernizr.hasOwnProperty(e)&&setTimeout(function(){Modernizr._trigger(e,Modernizr[e])},0)},l._trigger=function(e,n){if(this._l[e]){var A=this._l[e];setTimeout(function(){var e,o;for(e=0;e<A.length;e++)(o=A[e])(n)},0),delete this._l[e]}},Modernizr._q.push(function(){l.addTest=i}),Modernizr.addAsyncTest(function(){function e(e,n,A){function o(n){var o=n&&"load"===n.type?1==t.width:!1,a="webp"===e;i(e,a&&o?new Boolean(o):o),A&&A(n)}var t=new Image;t.onerror=o,t.onload=o,t.src=n}var n=[{uri:"data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=",name:"webp"},{uri:"data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA==",name:"webp.alpha"},{uri:"data:image/webp;base64,UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA",name:"webp.animation"},{uri:"data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=",name:"webp.lossless"}],A=n.shift();e(A.name,A.uri,function(A){if(A&&"load"===A.type)for(var o=0;o<n.length;o++)e(n[o].name,n[o].uri)})}),t(),a(s),delete l.addTest,delete l.addAsyncTest;for(var p=0;p<Modernizr._q.length;p++)Modernizr._q[p]();e.Modernizr=Modernizr}(window,document);
+    </script>
+</head>
+
+<body>
+	<div class="first-block mt-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<h2 class="centering">
+						É importante que você assista o vídeo inteiro e atentamente
+						para compreender a proposta.
+					</h2>
+					<div class="img-holder centering"></div>
+					<div class="video-holder centering">
+						<!--<img src="img/video-thumb.png">-->
+						<div class="embed-responsive embed-responsive-16by9">
+							<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/UF9LEGggCJU"></iframe>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 mt-5 mt-md-0">
+					<form>
+						<div class="form-group">
+							<label for="nome-input">Nome:</label>
+							<input type="text" class="form-control" id="nome-input" placeholder="Insira seu nome">
+						</div>
+						<div class="form-group">
+							<label for="email-input">E-mail:</label>
+							<input type="email" class="form-control" id="email-input" placeholder="Insira seu e-mail">
+						</div>
+						<div class="form-group">
+							<label for="wpp-input">WhatsApp:</label>
+							<input type="tel" class="form-control" id="wpp-input" placeholder="Insira seu WhatsApp">
+						</div>
+					</form>
+
+					<div class="button-bg centering">
+						<button class="btn btn-primary">ACESSO PRIVADO <BR> GRATIS</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="second-block">
+		<div class="container">
+			<br><br><br><br><br>
+			<div class="spaces">
+				<br><br><br><br><br>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="img-holder centering" style="width:200px;">
+						<img src="img/img-about.png" width="200px">
+					</div>
+				</div>
+				<div class="col-md-6">
+					<h1 class="text-center">Sobre Cesar Augusto</h1>
+					<p>
+						&quot;Eu ajudo jovens que têm sede de evolução a viverem a vida
+						dos sonhos, através da expansão de consciência alcançada nas 4 etapas
+						d'O Guia do Autoconhecimento&quot;
+					</p>
+				</div>
+			</div>
+			<div class="row mt-3">
+				<form class="centering">
+					<span style="font-size: 22pt; text-shadow: 2px 2px #000;" class="text-center">Preencha para acessar </span>
+					<div class="form-group">
+						<label for="nome-input">Nome:</label>
+						<input type="text" class="form-control" id="nome-input" placeholder="Insira seu nome">
+					</div>
+					<div class="form-group">
+						<label for="email-input">E-mail:</label>
+						<input type="email" class="form-control" id="email-input" placeholder="Insira seu e-mail">
+					</div>
+					<div class="form-group">
+						<label for="wpp-input">WhatsApp:</label>
+						<input type="tel" class="form-control" id="wpp-input" placeholder="Insira seu WhatsApp">
+					</div>
+					<div class="button-bg centering">
+						<button class="btn btn-primary">ACESSO PRIVADO <BR> GRATIS</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>

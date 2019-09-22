@@ -39,9 +39,9 @@
 		}
 
 		.first-block h2 {
-			font-size: 22pt;
+			font-size: 26pt;
 			text-align: center;
-			max-width: 430px;
+			max-width: 500px;
 		}
 
 		.first-block .img-holder {
@@ -53,7 +53,7 @@
 			background-size: 100%;
 		}
 		.first-block .video-holder, .first-block img {
-			max-width: 400px;
+			max-width: 530px;
 			margin-top:5px;
 		}
 
@@ -63,16 +63,17 @@
 			height:400px;
 			width:400px;
 			background-repeat: no-repeat;
+			margin-top:-30px;
 		}
 
 		.btn {
-			margin-left:120px;
+			margin-left:130px;
 			margin-top:80px;
 		}
 
 		.second-block {
 			background-image: url("img/background.png");
-			height:900px;
+			height:845px;
 			background-size:100%;
 			background-position-x: center;
 			background-position-y: center;
@@ -93,21 +94,18 @@
 			background-image: url("img/btn-bg.png");
 			background-size: 100%;
 			font-weight: 700;
-			color:#fff;
-			-webkit-text-stroke: 1px #000;
-			font-size: 14pt;
-			width:200px;
-			height:80px;
+			width:170px;
+			height:72px;
 			background-color:transparent;
 			border:none;
-			transition: transform 0.2s ease;
-			transition: background-image 0.2s ease;
+			/*transition: transform 0.2s ease;*/
+			transition: all 0.2s ease;
 		}
 
 		.btn-primary:hover {
 			border:none;
 			background-color: transparent;
-			transform: scale(1.1);
+			transform: scale(1.05);
 		}
 
 		.btn-primary:focus,
@@ -140,6 +138,20 @@
 			/*box-shadow: 0 0 0 .2rem rgba(91, 194, 194, 0.5)*/
 			box-shadow: 0 0 0 0;
 		}
+
+		.form-control {
+			max-height:35px;
+			margin: 0px 0px 0px 0px;
+		}
+
+		.form-group {
+			padding: 0px 0px 0px 0px;
+			/*margin-bottom:10px;*/
+		}
+/*
+		.form-group label {
+			margin: 0px 0px 0px 0px;
+		}*/
 		@media (max-width: 767px){
 			.first-block .video-holder, .first-block img {
 				max-width: 335px;
@@ -161,7 +173,7 @@
 				/* lembrar de mudar o bg e tamanho */
 				background-image: url("img/background-vert.png");
 				background-position-y:top;
-				height:1200px;
+				height:1100px;
 			}
 
 			.second-block .spaces {
@@ -178,7 +190,7 @@
 	<div class="first-block mt-5">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-6">
+				<div class="col-md-8">
 					<h2 class="centering">
 						É importante que você assista o vídeo inteiro e atentamente
 						para compreender a proposta.
@@ -187,11 +199,11 @@
 					<div class="video-holder centering">
 						<!--<img src="img/video-thumb.png">-->
 						<div class="embed-responsive embed-responsive-16by9">
-							<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/UF9LEGggCJU"></iframe>
+							<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/UF9LEGggCJU?modestbranding=1&autohide=1&rel=0"></iframe>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-6 mt-5 mt-md-0">
+				<div class="col-md-4 mt-5 mt-md-0">
 					<form>
 						<div class="form-group">
 							<label for="nome-input">Nome:</label>
@@ -208,7 +220,7 @@
 					</form>
 
 					<div class="button-bg centering">
-						<button class="btn btn-primary">ACESSO PRIVADO <BR> GRATIS</button>
+						<button class="btn btn-primary"></button>
 					</div>
 				</div>
 			</div>
@@ -217,7 +229,7 @@
 
 	<div class="second-block">
 		<div class="container">
-			<br><br><br><br><br>
+			<br><br><br><br><br><br><br><br><br><br><br>
 			<div class="spaces">
 				<br><br><br><br><br>
 			</div>
@@ -232,10 +244,11 @@
 					<p>
 						&quot;Eu ajudo jovens que têm sede de evolução a viverem a vida
 						dos sonhos, através da expansão de consciência alcançada nas 4 etapas
-						d'O Guia do Autoconhecimento&quot;
+						do O Guia do Autoconhecimento&quot;
 					</p>
 				</div>
 			</div>
+			<!--
 			<div class="row mt-3">
 				<form class="centering">
 					<span style="font-size: 22pt; text-shadow: 2px 2px #000;" class="text-center">Preencha para acessar </span>
@@ -256,6 +269,7 @@
 					</div>
 				</form>
 			</div>
+			-->
 		</div>
 	</div>
 

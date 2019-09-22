@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="font-aweasome/font-aweasome/css/all.min.css">
 	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="node_modules/plyr/dist/plyr.css">
 
     <title>LP OGA</title>
 	
@@ -57,14 +58,14 @@
 			margin-top:5px;
 		}
 
-		.video-holder .video-wrapper {
+		/*.video-holder .video-wrapper {
 			overflow: hidden;
 			max-height: 450px;
 		}
 
 		.video-holder .video-wrapper iframe {
 			margin-top: -59px;
-		}
+		}*/
 
 		.button-bg {
 			background-image:url("img/hand.png");
@@ -192,7 +193,7 @@
 			.button-bg {
 				width:350px;
 				height:350px;
-				margin-left:-10px;
+				margin-left:auto;
 			}
 
 			.btn-primary {
@@ -241,10 +242,20 @@
 						para compreender a proposta.
 					</h2>
 					<div class="img-holder centering"></div>
-					<div class="video-holder centering">
-						<!--<img src="img/video-thumb.png">-->
+					<!--<div class="video-holder centering">
+						<!--<img src="img/video-thumb.png">
 						<div class="video-wrapper">
 							<iframe width="100%" height="420px" frameborder="0" src="https://www.youtube.com/embed/UF9LEGggCJU?modestbranding=1&autohide=1&rel=0"></iframe>
+						</div>
+					</div>-->
+					<div class="vholder" style="width:100%;">
+						<div class="plyr__video-embed centering" id="player" style="max-width:550px;margin-left:auto;margin-right:auto;">
+							<iframe
+								src="https://www.youtube.com/embed/UF9LEGggCJU?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1"
+								allowfullscreen
+								allowtransparency
+								allow="autoplay"
+							></iframe>
 						</div>
 					</div>
 				</div>
@@ -322,6 +333,10 @@
 	<script src="js/jquery-3.4.1.min.js"></script>
 	<script src="js/popper.min.js"></script>
 	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="node_modules/plyr/dist/plyr.min.js"></script>
+	<script>
+		const player = new Plyr('#player');
+	</script>
 </body>
 
 </html>

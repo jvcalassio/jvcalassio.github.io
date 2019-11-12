@@ -112,5 +112,6 @@
     font-family: 'Edo SZ';
     font-style: normal;
     font-weight: normal;
+    font-display: swap;
     src: local('Edo SZ'), url('../fonts/edosz.woff') format('woff');
 }

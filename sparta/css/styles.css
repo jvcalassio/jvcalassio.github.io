@@ -1,16 +1,21 @@
-.container-md {
-    max-width: 705px;
-}
-
 .mt-8 {
     margin-top:80px;
 }
 
-.centering {
-    margin-left: auto;
-    margin-right: auto;
-    left:0;
-    right:0;
+.first-block .announcement {
+    opacity: 0.9;
+    width: 50%;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-top: 100px;
+}
+.no-webp .first-block .announcement {
+    background-image: url("../img/first-block-heading.png");
+}
+
+.webp .first-block .announcement {
+    background-image: url("../img/webp/first-block-heading.webp");
 }
 
 .btn-primary {
@@ -272,45 +277,6 @@
     box-shadow: 0px 10px 30px -10px #d30303;
 }
 
-.fb-holder {
-    height: 1100px;
-}
-
-.first-block {
-    background-color: #290e0e;
-    background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%2355281e' fill-opacity='0.4'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-    height:1100px;
-    position: absolute;
-    overflow: hidden;
-    z-index: -2;
-}
-
-.first-block::before {
-    content:'';
-    background: radial-gradient(circle at center, transparent, #000);
-    opacity: 0.8;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-}
-
-.first-block .announcement {
-    background-image: url("../img/first-block-heading.png");
-    opacity: 0.9;
-    width: 50%;
-    height: 600px;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    margin-top: 100px;
-}
-
-.first-block .video {
-    width: 360px;
-    height: 240px;
-    background-color: #fff;
-}
-
 .second-block {
     background-color: #edeacc;
     color:#1d1d1d;
@@ -348,7 +314,6 @@
 
 .second-block li::before {
     content:'';
-    background-image:url("../img/check.png");
     display: inline-block;
     background-size: 100%;
     background-position-x: center;
@@ -358,6 +323,13 @@
     height: 50px;
     margin-left:-40px;
     position: absolute;
+}
+
+.no-webp .second-block li::before {
+    background-image:url("../img/check.png");
+}
+.webp .second-block li::before {
+    background-image:url("../img/webp/check.webp");
 }
 
 .second-block lis {
@@ -373,7 +345,6 @@
 
 .second-block lis::before {
     content:'';
-    background-image:url("../img/check.png");
     display: inline-block;
     background-size: 100%;
     background-position-x: center;
@@ -382,6 +353,14 @@
     height: 50px;
     margin-left:-40px;
     position: absolute;
+}
+
+.no-webp .second-block lis::before {
+    background-image:url("../img/check.png");
+}
+
+.webp .second-block lis::before {
+    background-image:url("../img/webp/check.webp");
 }
 
 .second-block li b {
@@ -633,7 +612,6 @@
 }
 
 .sorteios-subblock .apple-watch-icon {
-    background-image: url("../img/watch-tiny.png");
     background-size: 100%;
     width: 60px;
     height: 100px;
@@ -642,8 +620,15 @@
     opacity: 0.8;
 }
 
+.no-webp .sorteios-subblock .apple-watch-icon {
+    background-image: url("../img/watch-tiny.png");
+}
+
+.webp .sorteios-subblock .apple-watch-icon {
+    background-image: url("../img/webp/watch-tiny.webp");
+}
+
 .sorteios-subblock .iphone-icon {
-    background-image: url("../img/iphones-tiny.png");
     background-size: 100%;
     background-repeat: no-repeat;
     width: 80px;
@@ -654,8 +639,15 @@
     opacity: 0.8;
 }
 
+.no-webp .sorteios-subblock .iphone-icon {
+    background-image: url("../img/iphones-tiny.png");
+}
+
+.webp .sorteios-subblock .iphone-icon {
+    background-image: url("../img/webp/iphones-tiny.webp");
+}
+
 .sorteios-subblock .macbook-icon {
-    background-image: url("../img/macbook-tiny.png");
     background-size:100%;
     background-repeat: no-repeat;
     width:80px;
@@ -665,14 +657,29 @@
     opacity: 0.8;
 }
 
+.no-webp .sorteios-subblock .macbook-icon {
+    background-image: url("../img/macbook-tiny.png");
+}
+
+.webp .sorteios-subblock .macbook-icon {
+    background-image: url("../img/webp/macbook-tiny.webp");
+}
+
 .sorteios-subblock .apple-tv-icon {
-    background-image: url("../img/tv-tiny.png");
     background-size:100%;
     background-repeat: no-repeat;
     width:80px;
     height:83px;
     float:right;
     opacity: 0.8;
+}
+
+.no-webp .sorteios-subblock .apple-tv-icon {
+    background-image: url("../img/tv-tiny.png");
+}
+
+.webp .sorteios-subblock .apple-tv-icon {
+    background-image: url("../img/webp/tv-tiny.webp");
 }
 
 .rshadow {

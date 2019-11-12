@@ -8,18 +8,18 @@
     <meta name="description" content="">
 
     <style>
+        .container-md{max-width:705px}.centering{margin-left:auto;margin-right:auto;left:0;right:0}.fb-holder{height:1100px}.first-block{background-color:#290e0e;background-image:url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%2355281e' fill-opacity='0.4'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");height:1100px;position:absolute;overflow:hidden;z-index:-2}.first-block::before{content:'';background:radial-gradient(circle at center,transparent,#000);opacity:.8;position:absolute;width:100%;height:100%;z-index:-1}.first-block .video{width:360px;height:240px;background-color:#fff}.btn-primary{color:#fff;background-color:#0abb3c;border-color:#0abb3c;border-bottom-color:#056821;border-bottom-width:3px;border-radius:25px;min-width:300px;padding-top:10px;padding-bottom:10px;padding-left:30px;padding-right:30px;font-weight:900;font-family:Roboto,sans-serif;font-size:15pt}.btn-primary:hover{color:#fff;background-color:#0b9933;border-color:#0b9933;border-bottom-color:#056821;border-bottom-width:3px}.btn-primary.focus,.btn-primary:focus{box-shadow:0 0}.btn-primary.disabled,.btn-primary:disabled{color:#fff;background-color:#ccc;border-color:#ccc}.btn-primary:not(:disabled):not(.disabled).active,.btn-primary:not(:disabled):not(.disabled):active,.show>.btn-primary.dropdown-toggle{color:#fff;background-color:#0a7c2a;border-color:#0abb3c}.btn-primary:not(:disabled):not(.disabled).active:focus,.btn-primary:not(:disabled):not(.disabled):active:focus,.show>.btn-primary.dropdown-toggle:focus{box-shadow:0 0}
     </style>
-
     <link rel="preload" href="bootstrap/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preload" href="font-aweasome/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <link rel="preload" href="css/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preload" href="css/fonts.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="css/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
     <noscript>
         <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="font-aweasome/css/all.min.css">
-        <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="css/fonts.css">
+        <link rel="stylesheet" href="css/styles.css">
     </noscript>
     
     <!-- Modernizr -->
@@ -62,7 +62,10 @@
     
                     SE ESTIVER NO SPARTA <b>BLACK</b>, PAGARÁ APENAS <b>R$1.600,00</b>
                 </p>
-                <img src="img/white-sneakers.png" width="250px" alt="Sneaker"/>
+                <picture>
+                    <source srcset="img/webp/white-sneakers.webp" type="image/webp" />
+                    <img src="img/white-sneakers.png" width="250px" alt="Sneaker"/>
+                </picture>
             </div>
 
             <div class="ex-block mt-5">
@@ -76,7 +79,10 @@
     
                     SE ESTIVER NO SPARTA <b>BLACK</b>, PAGARÁ APENAS <b>R$697,90</b>
                 </p>
-                <img src="img/black-sneakers.png" width="250px" alt="Sneaker"/>
+                <picture>
+                    <source srcset="img/webp/black-sneakers.webp" type="image/webp" />
+                    <img src="img/black-sneakers.png" width="250px" alt="Sneaker"/>
+                </picture>
             </div>
 
             <div class="sorteios-subblock">
@@ -106,8 +112,14 @@
                     </li>
                 </ul>
 
-                <img src="img/praia-1.png" width="300px" class="d-block centering my-4" alt="Você concorrerá a viagens">
-                <img src="img/praia-2.png" width="300px" class="d-block centering" alt="Ilha nas Bahamas">
+                <picture>
+                    <source srcset="img/webp/praia-1.webp" type="image/webp" />
+                    <img src="img/praia-1.png" width="300px" class="d-block centering my-4" alt="Você concorrerá a viagens">
+                </picture>
+                <picture>
+                    <source srcset="img/webp/praia-2.webp" type="image/webp" />
+                    <img src="img/praia-2.png" width="300px" class="d-block centering" alt="Ilha nas Bahamas">
+                </picture>
                 <h3 class="mt-5">CONFIRA NA DESCRIÇÃO DOS GRUPOS A QUAIS PRÊMIOS VOCÊ ESTARÁ CONCORRENDO AO PARTICIPAR</h3>
             </div>
         </div>

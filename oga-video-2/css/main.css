@@ -1,8 +1,15 @@
 @font-face {
     font-family: "High Tower Text"; 
     font-display: swap;
-    src: url("fonts/high-tower-text-webfont.woff") format("woff"),
+    src: url("../fonts/high-tower-text-webfont.woff") format("woff"),
     url("//db.onlinewebfonts.com/t/9e23421978544d8e00a00eb47740d280.svg#High Tower Text") format("svg");
+}
+
+@font-face {
+    font-family: "Impact";
+    font-display: swap;
+    src: local("Impact"),
+    url("../fonts/impact-webfont.woff") format ("woff");
 }
 
 body {

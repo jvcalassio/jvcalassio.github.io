@@ -9,7 +9,8 @@
     font-family: "Impact";
     font-display: swap;
     src: local("Impact"),
-    url("../fonts/impact-webfont.woff") format ("woff");
+    url("../fonts/impact-webfont.woff") format ("woff"),
+    url("//db.onlinewebfonts.com/t/6330ddc0d8e61db73c521dbe6288743b.svg#Impact LT Std") format("svg");
 }
 
 body {

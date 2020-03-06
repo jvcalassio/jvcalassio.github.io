@@ -31,6 +31,7 @@
 		<button class="btn btn-primary" id="btn-run">Substituir</button>
 		<h3 class="my-2 text-center">Resultado:</h3>
 		<textarea class="form-control my-2" id="texto3" placeholder="Resultado" readonly></textarea>
+		<button class="btn btn-primary" id="btn-rep">Trocar espaços/enters</button>
 	</div>
 
     <!-- Optional JavaScript -->
@@ -39,10 +40,11 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 	<script>
+		var st = true;
 		$("#btn-run").click(function() {
-			var txt1 = $("#texto1").val().split(" ");
-			var txt2 = $("#texto2").val().split(" ");
-			var excep = $("#exceptions").val().split(" ");
+			var txt1 = $("#texto1").val().trim().split(/[\s\n]/);
+			var txt2 = $("#texto2").val().trim().split(/[\s\n]/);
+			var excep = $("#exceptions").val().trim().split(/[\s\n]/);
 			
 			txt2.forEach((e) => {
 				if(!txt1.includes(e) || (excep.includes(e) && txt1.includes(e))) {
@@ -53,10 +55,22 @@
 			var str = "";
 			
 			txt1.forEach((e) => {
-				str = str + " " + e;
+				str = str + " " + e.trim();
 			});
 			
-			$("#texto3").val(str);
+			$("#texto3").val(str.trim());
+		});
+		
+		$("#btn-rep").click(function() {
+			var txt = $("#texto3").val().trim();
+			if(st){
+				$("#texto3").val(txt.replace(/\s/g, "\n"));
+				st = false;
+			}
+			else {
+				$("#texto3").val(txt.replace(/\n/g, " "));
+				st = true;
+			}
 		});
 	</script>
   </body>

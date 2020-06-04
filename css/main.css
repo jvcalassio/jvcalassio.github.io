@@ -1,0 +1,89 @@
+:root {
+    --main-color: #0E0E0E;
+    --secondary-color: #fff;
+}
+
+[data-scroll] {
+    transition: all 0.5s ease-in-out;
+}
+
+.top-down[data-scroll="in"] {
+    opacity: 1;
+    transform: translateY(0%);
+}
+
+.top-down[data-scroll="out"] {
+    opacity: 0;
+    transform: translateY(-100%) ; 
+}
+
+.bottom-top[data-scroll="in"] {
+    opacity: 1;
+    transform: translateY(0%);
+}
+
+.bottom-top[data-scroll="out"] {
+    opacity: 0;
+    transform: translateY(+100%) ; 
+}
+
+.left-right[data-scroll="in"] {
+    opacity: 1;
+    transform: translateX(0%);
+}
+
+.left-right[data-scroll="out"] {
+    opacity: 0;
+    transform: translateX(-100%) ; 
+}
+
+.right-left[data-scroll="in"] {
+    opacity: 1;
+    transform: translateX(0%);
+}
+
+.right-left[data-scroll="out"] {
+    opacity: 0;
+    transform: translateX(+100%) ; 
+}
+
+.main-button {
+    background-color: var(--main-color);
+    border-radius: 5px;
+    padding: 10px 20px 10px 20px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+.main-button:hover {
+    color: gray;
+}
+
+
+.main-color-text {
+    color: var(--secondary-color);
+    mix-blend-mode: difference;
+}
+
+.secondary-color-text {
+    color: var(--main-color);
+    mix-blend-mode: difference;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+h2, h3, h4 {
+    font-weight: 500;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+}

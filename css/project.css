@@ -1,0 +1,24 @@
+.content img{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.content li{
+    font-weight: 50;
+    font-size: 14pt;
+}
+
+#setinha2{
+    margin-bottom: 50px;
+    max-width: 40px;
+}
+
+.container span{
+    font-size: 14pt;
+    margin-right: 15px;
+    color: black;
+}
+
+.content p a {
+    text-decoration: underline;
+}

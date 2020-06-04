@@ -222,6 +222,11 @@
     padding: 40px 20px 40px 20px;
 }
 
+.box img {
+    border-radius: 50%;
+    border: 2px solid rgb(189, 189, 189);
+}
+
 .fourth-section img{
     max-width: 100px;
     margin-bottom: 30px;

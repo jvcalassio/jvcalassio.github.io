@@ -311,6 +311,7 @@
     transition: color 0.3s ease-in-out;
     text-decoration: none;
     font-size: 14pt;
+    line-height: 48px;
 }
 
 .fifth-section a:hover {

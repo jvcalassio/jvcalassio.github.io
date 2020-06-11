@@ -32,7 +32,7 @@ a:active {
     font-family: 'Montserrat', sans-serif;
     font-weight: normal;
     font-style: normal;
-    font-size: 11pt;
+    font-size: 12px;
     color: #fff;
     margin-right: 20px;
     display: block;
@@ -76,6 +76,30 @@ a:active {
     border-left: none;
 }
 
+.home-header .navbar {
+    padding: unset;
+}
+
+.home-header #navbar-items {
+    margin-top: 20px;
+    background: #F9F9F9;
+}
+
+.home-header #navbar-items li {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12pt;
+    font-weight: 500;
+    color: #272727;
+    text-align: center;
+}
+
+.home-header #navbar-items .nav-link {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
 .form-control:focus, .btn:focus {
     box-shadow: none;
     border-color: #ced4da;
@@ -84,6 +108,10 @@ a:active {
 @media (min-width: 992px) {
     .navbar-expand-lg {
         flex-flow: row wrap;
+    }
+
+    .home-header {
+        padding-bottom: 0px;
     }
 }
 
@@ -99,6 +127,7 @@ a:active {
 .header .search-form input[type="text"] {
     border-right: none;
     font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
 }
 
 .header .search-form input[type="text"]::placeholder {
@@ -114,7 +143,7 @@ a:active {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 800;
-    font-size: 24pt;
+    font-size: 36px;
     letter-spacing: -0.02em;
     color: #3E86BA;
 }
@@ -126,17 +155,19 @@ a:active {
     color: #fff;
 }
 
-.header-menu .col-md-4 {
+.header-menu .header-menu-item {
+    padding-left: 50px;
+    padding-right: 50px;
     border-right: 1px solid #013B59;
 }
 
-.header-menu .col-md-4:last-of-type {
+.header-menu .header-menu-item:last-of-type {
     border-right: none;
 }
 
 .header-menu img {
-    height: 100%;
-    width: auto;
+    height: auto;
+    width: 100%;
     max-width: 60px;
 }
 
@@ -144,18 +175,18 @@ a:active {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 14pt!important;
+    font-size: 12px!important;
 }
 
 .header-menu p {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 11pt;
+    font-size: 12px;
     margin-bottom: 0px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
     .header h1 {
         display: none;
     }
@@ -164,11 +195,15 @@ a:active {
         display: none;
     }
     
-    .header-menu .col-md-4:first-of-type {
+    .header-menu .header-menu-item {
+        border-right: 0px;
+    }
+
+    .header-menu .header-menu-item:first-of-type {
         border-bottom: 1px solid #013B59;
     }
 
-    .header-menu .col-md-4:last-of-type {
+    .header-menu .header-menu-item:last-of-type {
         border-top: 1px solid #013B59;
     }
 }
@@ -181,9 +216,10 @@ main h2 {
     font-family: 'Montserrat',sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 24pt;
+    font-size: 28px;
     color: #3E86BA;
     margin-bottom: 15px;
+    letter-spacing: -0.02em;
 }
 
 main .grid-card {
@@ -193,6 +229,10 @@ main .grid-card {
     border-radius: 4px;
     padding: 15px 20px 15px 20px;
     height: 100%;
+}
+
+main .grid-card ul {
+    margin-bottom: 0px;
 }
 
 main .grid-card-title {
@@ -206,7 +246,7 @@ main .grid-card-title h4 {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 18pt;
+    font-size: 18px;
     color: #093851;
     margin-bottom: 0px;
 }
@@ -216,6 +256,7 @@ main .grid-card-body ul {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: normal;
+    font-size: 14px;
     color: #272727;
     padding-left: 0px;
 }
@@ -251,10 +292,13 @@ main .grid-highlight {
 
 main .grid-highlight h4 {
     margin-bottom: 0px;
+    font-size: 18px;
 }
 
 .breadcrumb {
     background-color: #fff;
+    padding-left: 0px;
+    font-size: 11px;
 }
 
 .breadcrumb a {
@@ -268,7 +312,6 @@ main .grid-highlight h4 {
     content: "\2022";
     color: #4596D0;
 }
-
 
 .breadcrumb .breadcrumb-item:first-of-type::before {
     content: "";
@@ -301,12 +344,13 @@ footer a > img:not(img-fluid):hover {
 
 footer address {
     max-width: 400px;
-    font-size: 11pt;
+    font-size: 14px;
     margin-bottom: 0px;
+    color: #F5FBFA;
 }
 
 footer address span {
-    font-size: 14pt;
+    font-size: 14px;
     display: block;
     font-weight: 700;
 }
@@ -321,7 +365,7 @@ footer address span {
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
-    font-size: 12pt;
+    font-size: 12px;
     color: #272727;
 }
 
@@ -336,8 +380,23 @@ main .highlight-box{
     padding: 15px 15px 15px 15px;
 }
 
+main .highlight-box span {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #152C27;
+}
+
 main .highlight-box .search-form {
     max-width: 400px;
+}
+
+@media (max-width: 768px) {
+    main .highlight-box .search-form {
+        max-width: 100%;
+    }
 }
 
 main .highlight-box .search-form:focus {
@@ -347,6 +406,7 @@ main .highlight-box .search-form:focus {
 main .highlight-box .search-form input[type="text"] {
     border-right: none;
     font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
 }
 
 main .highlight-box .search-form input[type="text"]::placeholder {
@@ -358,6 +418,11 @@ main .highlight-box .search-form .search-button {
     border-left: none;
 }
 
+main .highlight-box .search-form .search-button img {
+    max-width: 14px;
+    max-height: 14px;
+}
+
 main .dropdown-toggle {
     background-color: #fff;
     color: #272727;
@@ -365,6 +430,7 @@ main .dropdown-toggle {
     box-sizing: border-box;
     border-radius: 4px;
     font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
 }
 
 main .dropdown-toggle:hover, main .dropdown-toggle:active {
@@ -375,6 +441,10 @@ main .dropdown-toggle:hover, main .dropdown-toggle:active {
     border-radius: 4px;
 }
 
+main .dropdown-item {
+    font-size: 12px;
+}
+
 main .table-wrapper {
     overflow-x: auto;
 }
@@ -383,12 +453,15 @@ main .table-wrapper > .table {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     white-space: nowrap;
+    font-size: 14px;
+    color: #272727;
 }
 
 main .table > thead {
     border: none;
     color: #093851;
     font-weight: 500;
+    font-size: 16px;
 }
 
 .table > thead > tr:first-child > td {

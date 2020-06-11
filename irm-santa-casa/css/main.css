@@ -55,7 +55,7 @@ a:active {
 
 .home-header {
     background-color: #FBFBFB;
-    padding: 20px 0px 20px 0px;
+    padding: 20px 0px 0px 0px;
 }
 
 .home-header .search-form {
@@ -78,6 +78,7 @@ a:active {
 
 .home-header .navbar {
     padding: unset;
+    margin-bottom: 20px;
 }
 
 .home-header #navbar-items {
@@ -85,11 +86,21 @@ a:active {
     background: #F9F9F9;
 }
 
+.home-header #navbar-items ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.home-header #navbar-items .dropdown-item {
+    font-size: 12px;
+}
+
 .home-header #navbar-items li {
-    margin-left: 20px;
-    margin-right: 20px;
+    flex: 1;
     font-family: 'Montserrat', sans-serif;
-    font-size: 12pt;
+    font-size: 12px;
+    line-height: 15px;
     font-weight: 500;
     color: #272727;
     text-align: center;
@@ -98,6 +109,91 @@ a:active {
 .home-header #navbar-items .nav-link {
     padding-top: 15px;
     padding-bottom: 15px;
+}
+
+
+.home-header .announcement {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-image: url("../img/announcement-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home-header .announcement h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 46px;
+    letter-spacing: -0.03em;
+    color: #FFE7A1;
+}
+
+.home-header .announcement p {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 48px;
+}
+
+.home-header .announcement .img-detail {
+    position: absolute;
+    background-image: url("../img/grid.png");
+    background-repeat: repeat-x;
+    width: 144px;
+    height: 135px;
+    margin-top: -75px;
+    left: 0;
+}
+
+@media (max-width: 992px) {
+    .home-header .announcement {
+        padding-top: 24px;
+        padding-bottom: 24px;
+        background-position-x: 55%;
+    }
+
+    .home-header .announcement .img-detail {
+        display: none;
+    }
+}
+
+.btn-custom {
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 19px;
+    color: #fff;
+
+    padding: 8px 15px 8px 15px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+
+    background-color: rgb(51, 101, 173);
+    transition: background-color color 0.4s ease;
+}
+
+.btn-custom:hover {
+    background-color: rgb(26, 70, 131);
+    color: rgb(240, 236, 236);
+}
+
+.btn-custom.disabled,
+.btn-custom:disabled {
+    background-color: rgb(112, 143, 187);
+    color: rgb(168, 168, 168);
+}
+
+.btn-custom:not(:disabled):not(.disabled):active:focus,
+.btn-custom:not(:disabled):not(.disabled).active:focus,
+.show>.btn-custom.dropdown-toggle:focus {
+    background-color: rgb(10, 52, 110);
+    color: rgb(240, 236, 236);
 }
 
 .form-control:focus, .btn:focus {
@@ -110,8 +206,8 @@ a:active {
         flex-flow: row wrap;
     }
 
-    .home-header {
-        padding-bottom: 0px;
+    .home-header .navbar {
+        margin-bottom: 0px;
     }
 }
 

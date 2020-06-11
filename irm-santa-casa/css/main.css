@@ -234,6 +234,10 @@ main .grid-card-body ul li::before {
     margin-right: 15px;
 }
 
+main .grid-card-body li a:active {
+    color: #777;
+}
+
 main .grid-highlight {
     background: #0B628F;
     border: 1px solid rgba(11, 98, 143, 0.2);
@@ -356,16 +360,17 @@ main .highlight-box .search-form .search-button {
 
 main .dropdown-toggle {
     background-color: #fff;
-    color: #333;
+    color: #272727;
     border: 1px solid rgba(0, 0, 0, 0.2);
     box-sizing: border-box;
     border-radius: 4px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 main .dropdown-toggle:hover, main .dropdown-toggle:active {
     background-color: rgb(236, 236, 236);
-    color: #333;
-    border: 1px solid rgba(0, 0, 0, 0.2);
+    color: #272727;
+    border: 1px solid #f0f0f0;
     box-sizing: border-box;
     border-radius: 4px;
 }
@@ -388,4 +393,8 @@ main .table > thead {
 
 .table > thead > tr:first-child > td {
     border: none;
+}
+
+.table > tbody > th {
+    font-weight: 600;
 }

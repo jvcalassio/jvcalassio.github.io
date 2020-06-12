@@ -91,7 +91,23 @@ a:active {
 }
 
 .home-header #navbar-items {
+    background: #F9F9F9;
     margin-top: 20px;
+}
+
+.home-header .bg-fw {
+    height: 44px;
+    width: 100%;
+    background: #F9F9F9;
+    position: absolute;
+    bottom: 0;
+    display: block;
+}
+
+@media (max-width: 1200px) {
+    .home-header .bg-fw {
+        height: 59px;
+    }
 }
 
 .home-header #navbar-items ul {
@@ -126,6 +142,11 @@ a:active {
 .home-header #navbar-items .nav-link {
     padding-top: 15px;
     padding-bottom: 15px;
+    transition: color 0.5s ease;
+}
+
+.home-header #navbar-items .nav-link:hover {
+    color: #3E86BA;
 }
 
 
@@ -549,6 +570,11 @@ main .side-selos > h3 > span {
     font-weight: 600;
 }
 
+main .side-selos .carousel-item > img {
+    height: 78px;
+    width: auto;
+}
+
 main .grid-card {
     background: rgba(248, 248, 248, 0.8);
     border: 1px solid rgba(11, 98, 143, 0.2);
@@ -624,6 +650,11 @@ main .grid-posts > a > .post-item  h4 {
     line-height: 17px;
 
     color: #444444;
+    transition: color 0.5s ease;
+}
+
+main .grid-posts > a:hover > .post-item  h4 {
+    color: #3E86BA;
 }
 
 main .grid-posts > a:first-of-type > .post-item h4 {
@@ -635,6 +666,10 @@ main .grid-posts > a:first-of-type > .post-item h4 {
     line-height: 22px;
 
     color: #444444;
+}
+
+main .grid-posts > a:first-of-type:hover > .post-item h4 {
+    color: #3E86BA;
 }
 
 main .grid-posts > a > .post-item  p {
@@ -771,11 +806,20 @@ main .grid-highlight {
     font-weight: 500;
     color: #fff;
     padding: 15px 30px 15px 30px;
+    transition: background 0.5s ease;
+}
+
+main .grid-highlight:hover {
+    background: #1177AB;
 }
 
 main .grid-highlight h4 {
     margin-bottom: 0px;
     font-size: 18px;
+}
+
+main .grid-highlight-link:hover{
+    text-decoration: none;
 }
 
 .sidebar {
@@ -826,7 +870,7 @@ footer a > img:not(img-fluid) {
 }
 
 footer a > img:not(img-fluid):hover {
-    filter: invert(0.1);
+    filter: invert(0.13);
 }
 
 footer address {
@@ -1039,7 +1083,7 @@ main .blog-post ul li:before {
 }
 
 .blog-post > .anexo:hover {
-    background: rgb(233, 233, 233);
+    background: #dadada;
 }
 
 .blog-post > .anexo a:hover {

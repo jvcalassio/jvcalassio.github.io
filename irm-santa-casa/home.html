@@ -10,6 +10,13 @@
     <link rel="stylesheet" href="css/main.css">
 
     <title>Irmandade Santa Casa</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/svg" href="img/favicon-santacasa.svg"/>
+    <link rel="icon" href="img/favicon-santacasa.svg" type="image/svg" sizes="32x32" />
+    <link rel="icon" href="img/favicon-santacasa.svg" type="image/svg" sizes="192x192" />
+    <link rel="apple-touch-icon-precomposed" type="image/svg" href="img/favicon-santacasa.svg" /> <!-- 180 x 180 -->
+    <meta name="msapplication-TileImage" type="image/svg" content="img/favicon-santacasa.svg" /> <!-- 270 x 270 -->
 </head>
 
 <body>
@@ -31,82 +38,88 @@
     </section>
 
     <section class="home-header">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg">
-                <div class="home-header-content row align-items-center w-100">
-                    <div class="col-6">
-                        <img src="img/logo_blue.png" class="img-fluid" alt="Irmandade Santa Casa de Birigui - Organização Social de Saúde"/>
-                    </div>
-                    <div class="col-6 d-none d-lg-block">
-                        <div class="input-group search-form float-right">
-                            <input type="text" class="form-control" placeholder="O que você procura?" aria-describedby="search-icon-append">
-                            <div class="input-group-append">
-                                <a href="#" class="input-group-text search-button"><img src="img/search_24px.svg" /></a>
+        <div class="position-relative">
+            <div class="bg-fw d-none d-lg-block"></div>
+            <div class="container">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="home-header-content row align-items-center w-100">
+                        <div class="col-6">
+                            <img src="img/logo_blue.png" class="img-fluid"
+                                alt="Irmandade Santa Casa de Birigui - Organização Social de Saúde" />
+                        </div>
+                        <div class="col-6 d-none d-lg-block">
+                            <div class="input-group search-form float-right">
+                                <input type="text" class="form-control" placeholder="O que você procura?"
+                                    aria-describedby="search-icon-append">
+                                <div class="input-group-append">
+                                    <a href="#" class="input-group-text search-button"><img src="img/search_24px.svg" /></a>
+                                </div>
                             </div>
                         </div>
+                        <div class="col-6">
+                            <button class="navbar-toggler float-right float-right" type="button" data-toggle="collapse"
+                                data-target="#navbar-items" aria-controls="navbar-items" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <img src="img/sort_24px.svg" alt="Ícone de menu" />
+                            </button>
+                        </div>
                     </div>
-                    <div class="col-6">
-                        <button class="navbar-toggler float-right float-right" type="button" data-toggle="collapse" data-target="#navbar-items" aria-controls="navbar-items" aria-expanded="false" aria-label="Toggle navigation">
-                            <img src="img/sort_24px.svg" alt="Ícone de menu"/>
-                        </button>
+    
+                    <div class="collapse navbar-collapse" id="navbar-items">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <div class="btn-group">
+                                    <a class="nav-link dropdown-toggle" href="#" id="menu-santacasa-dropdown" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        A Santa Casa
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="menu-santacasa-dropdown">
+                                        <a class="dropdown-item" href="#">Cidade Pérola</a>
+                                        <a class="dropdown-item" href="#">Capital brasileira do calçado infantil</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="#">Campanhas</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Especialidades</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Notícias e Eventos</a></li>
+                            <li class="nav-item dropdown">
+                                <div class="btn-group">
+                                    <a class="nav-link dropdown-toggle" href="#" id="menu-unidades-dropdown" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Unidades
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="menu-unidades-dropdown">
+                                        <a class="dropdown-item" href="/araçatuba">Araçatuba-SP</a>
+                                        <a class="dropdown-item" href="/araucária">Araucária-PR</a>
+                                        <a class="dropdown-item" href="/barueri">Barueri-SP</a>
+                                        <a class="dropdown-item" href="/birigui">Birigui-SP</a>
+                                        <a class="dropdown-item" href="/birigui">Birigui-SP Pronto Socorro Municipal</a>
+                                        <a class="dropdown-item" href="/capanema">Capanema-PA</a>
+                                        <a class="dropdown-item" href="/guapiara">Guapiara-SP</a>
+                                        <a class="dropdown-item" href="/guarulhos">Guarulhos-SP</a>
+                                        <a class="dropdown-item" href="/lençóis">Lençóis Paulista-SP</a>
+                                        <a class="dropdown-item" href="/mandaqui">Mandaqui-São Paulo-SP</a>
+                                        <a class="dropdown-item" href="/patos">Patos-PB</a>
+                                        <a class="dropdown-item" href="/penápolis">Penápolis-SP</a>
+                                        <a class="dropdown-item" href="/ribeirão">Ribeirão Pires-SP</a>
+                                        <a class="dropdown-item" href="/vargem">Vargem Grande Paulista-SP</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="#">Transparência</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Ouvidoria</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
+                        </ul>
                     </div>
-                </div>
-            
-                  
-                <div class="collapse navbar-collapse" id="navbar-items">
-                    <ul class="navbar-nav">
-                        <li class="nav-item dropdown">
-                            <div class="btn-group">
-                                <a class="nav-link dropdown-toggle" href="#" id="menu-santacasa-dropdown" role="button"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    A Santa Casa
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="menu-santacasa-dropdown">
-                                    <a class="dropdown-item" href="#">Cidade Pérola</a>
-                                    <a class="dropdown-item" href="#">Capital brasileira do calçado infantil</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="nav-item"><a class="nav-link" href="#">Campanhas</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Especialidades</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Notícias e Eventos</a></li>
-                        <li class="nav-item dropdown">
-                            <div class="btn-group">
-                                <a class="nav-link dropdown-toggle" href="#" id="menu-unidades-dropdown" role="button"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Unidades
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="menu-unidades-dropdown">
-                                    <a class="dropdown-item" href="/araçatuba">Araçatuba-SP</a>
-                                    <a class="dropdown-item" href="/araucária">Araucária-PR</a>
-                                    <a class="dropdown-item" href="/barueri">Barueri-SP</a>
-                                    <a class="dropdown-item" href="/birigui">Birigui-SP</a>
-                                    <a class="dropdown-item" href="/birigui">Birigui-SP Pronto Socorro Municipal</a>
-                                    <a class="dropdown-item" href="/capanema">Capanema-PA</a>
-                                    <a class="dropdown-item" href="/guapiara">Guapiara-SP</a>
-                                    <a class="dropdown-item" href="/guarulhos">Guarulhos-SP</a>
-                                    <a class="dropdown-item" href="/lençóis">Lençóis Paulista-SP</a>
-                                    <a class="dropdown-item" href="/mandaqui">Mandaqui-São Paulo-SP</a>
-                                    <a class="dropdown-item" href="/patos">Patos-PB</a>
-                                    <a class="dropdown-item" href="/penápolis">Penápolis-SP</a>
-                                    <a class="dropdown-item" href="/ribeirão">Ribeirão Pires-SP</a>
-                                    <a class="dropdown-item" href="/vargem">Vargem Grande Paulista-SP</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="nav-item"><a class="nav-link" href="#">Transparência</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Ouvidoria</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
-                    </ul>
-                </div>
-            </nav>
+                </nav>
+            </div>
         </div>
         <aside class="announcement">
             <div class="img-detail"></div>
             <div class="container">
                 <h2>Cuidando especialmente de você</h2>
                 <p>Muito mais dedicação e cuidados especiais a você e a quem você ama</p>
-
+    
                 <button class="btn btn-custom">Saiba mais</button>
             </div>
         </aside>
@@ -219,18 +232,18 @@
                                 <img src="img/selo-qualidade-best-practice.png" alt="Selo de qualidade 'Best Practice Esterelização 3M'">
                             </div>
                             <div class="carousel-item">
-                                <img src="img/selo-qualidade-best-practice.png" alt="Selo de qualidade 'Best Practice Esterelização 3M'">
+                                <img src="img/selo-rhf.png" alt="Selo de qualidade 'Centro de Estudos Augusto Leopoldo Ayrosa Galvão'">
                             </div>
                             <div class="carousel-item">
-                                <img src="img/selo-qualidade-best-practice.png" alt="Selo de qualidade 'Best Practice Esterelização 3M'">
+                                <img src="img/selo-cealag.png" alt="Selo de qualidade 'Programa Revitalização dos Hospitais Filantrópicos'">
                             </div>
                         </div>
                         <a class="carousel-control-prev" href="#carousel-selos" role="button" data-slide="prev">
-                            <img src="img/arrow_back_ios_24px.png" alt="Anterior">
+                            <img src="img/arrow_back_ios_24px.svg" alt="Anterior">
                             <span class="sr-only">Anterior</span>
                         </a>
                         <a class="carousel-control-next" href="#carousel-selos" role="button" data-slide="next">
-                            <img src="img/arrow_forward_ios_24px.png" alt="Próximo">
+                            <img src="img/arrow_forward_ios_24px.svg" alt="Próximo">
                             <span class="sr-only">Próximo</span>
                         </a>
                     </div>

@@ -863,9 +863,7 @@ main .table > thead {
     font-weight: 600;
 }
 
-
-
-.col-lg-9 p{
+.blog-post p{
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: normal;
@@ -873,7 +871,7 @@ main .table > thead {
     line-height: 18px;
 }
 
-.col-lg-9 h4{
+.blog-post h4{
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: normal;
@@ -882,17 +880,22 @@ main .table > thead {
     font-weight: 600;
 }
 
-main .col-lg-9 ul {
+main .blog-post ul {
     list-style-type: none;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     color: #272727;
-    padding-left: 0px;
+    padding-left: 40px;
 }
-main .col-lg-9 ul li:before {
-    /content: "\2022";
+
+main .blog-post li {
+    margin-bottom: 9px;
+}
+
+main .blog-post ul li:before {
+    content: "\2022";
     color: #1CA3EC;
     content: "";
     background: #1CA3EC;
@@ -902,24 +905,49 @@ main .col-lg-9 ul li:before {
     width: 5px;
     margin-bottom: 4px;
     margin-left: -15px;
-    margin-right: 15px;
+    margin-right: 10px;
 }
 
-.anexo{
-    background-color: #F4F4F3;
-}
-.anexo img{
-    padding-left: 20pt;
-    padding-top: 20pt;
-}
-
-#primeiroparagrafo{
-    padding-top: 20pt;
+.blog-post h3{
+    margin-bottom: 10pt;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
     font-weight: 600;
-    
+    font-size: 16px;
+    line-height: 20px;
+    color: #272727;
 }
 
-#outroparagrafo{
+.blog-post p {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: #272727;
+}
+
+.blog-post > .anexo{
+    background: #F4F4F3;
+    border-radius: 4px;
+    padding: 20px 20px 20px 20px;
+}
+
+.blog-post > .anexo span {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.blog-post > .anexo .title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #444444;
+}
+
+.blog-post > .anexo .subtext{
     font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
@@ -928,49 +956,42 @@ main .col-lg-9 ul li:before {
     color: #787878;
 }
 
-#arquivoh4{
-    padding-bottom: 10pt;
-}
-
-#primeiropar{
-    padding-top: 30pt;
-}
-
-
-
-.primeiraimg{
+.blog-post > .blog-post-featured {
     width:100%;
     height: auto;
+    border-radius: 4px;
+    margin-bottom: 30px;
 }
 
-.card{
-    color: black;
+main .custom-accordion .card{
+    color: #272727;
     margin-top: 5px;
 }
-.card-header{
-    border: 1px solid #DEE8ED;
-box-sizing: border-box;
-border-radius: 4px;
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: normal;
-font-size: 14px;
-line-height: 18px;
-/* identical to box height, or 129% */
-background-color: white;
 
-color: #272727;
+main .custom-accordion .card-header{
+    border: 1px solid #DEE8ED;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    background-color: white;
+    color: #272727;
 }
-.botaozinhoazul{
+
+main .custom-accordion .btn-accordion {
     color: black;
     border: none;
     background-color: transparent;   
 }
 
-.botaozinhoazul:focus{
-border: none;
+
+main .custom-accordion .btn-accordion:not(.collapsed) {
+    font-weight: bold; 
 }
 
-.plussign{
+main .custom-accordion .plus-img{
     margin-right: 10px;
 }

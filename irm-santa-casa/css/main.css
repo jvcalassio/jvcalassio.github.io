@@ -272,6 +272,9 @@ a:active {
     border-right: none;
     font-family: 'Open Sans', sans-serif;
     font-size: 12px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 16px;
 }
 
 .header .search-form input[type="text"]::placeholder {
@@ -281,6 +284,11 @@ a:active {
 .header .search-form .search-button {
     background-color: #fff;
     border-left: none;
+}
+
+.header .search-form .search-button img {
+    max-width: 14px;
+    max-height: 14px;
 }
 
 .header h1 {

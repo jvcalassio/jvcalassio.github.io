@@ -223,7 +223,7 @@ a:active {
     border-radius: 4px;
 
     background-color: rgb(51, 101, 173);
-    transition: background-color color 0.4s ease;
+    transition: background-color color 0.5s ease;
 }
 
 .btn-custom:hover {
@@ -822,7 +822,7 @@ footer .footer-logo {
 
 footer a > img:not(img-fluid) {
     margin-left: 10px;
-    transition: filter 0.3s ease-in-out;
+    transition: filter 0.5s ease-in-out;
 }
 
 footer a > img:not(img-fluid):hover {
@@ -1035,6 +1035,11 @@ main .blog-post ul li:before {
     background: #F4F4F3;
     border-radius: 4px;
     padding: 20px 20px 20px 20px;
+    transition: background 0.5s ease;
+}
+
+.blog-post > .anexo:hover {
+    background: rgb(233, 233, 233);
 }
 
 .blog-post > .anexo a:hover {

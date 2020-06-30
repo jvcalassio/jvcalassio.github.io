@@ -32,6 +32,10 @@ body {
     }
 }
 
+hr {
+    border: 1px solid rgba(151, 151, 151, 0.2);
+}
+
 .blog-homepage {
     position: relative;
     padding-top: 60px;
@@ -351,7 +355,6 @@ body {
 .blog-post .post-content .post-divider {
     margin-top: 95px;
     margin-bottom: 30px;
-    border: 1px solid rgba(151, 151, 151, 0.2);
 }
 
 .blog-post .post-content footer .post-author {
@@ -417,4 +420,59 @@ body {
     .blog-post .post-content footer .post-share {
         margin: 15px auto 0px auto;
     }
+}
+
+/**
+ * Footer
+ */
+.blog-footer {
+    background-color: #F5F5F7;
+    padding-top: 65px;
+    padding-bottom: 140px;
+    font-family: 'Gordita', sans-serif;
+}
+
+.blog-footer .first-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.blog-footer .login-btn {
+    border: 1px solid #1CA3EC;
+    box-sizing: border-box;
+    border-radius: 100px;
+    padding: 12px 25px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 17px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #1CA3EC;
+    transition: background 0.25s ease, color 0.25s ease;
+}
+
+.blog-footer .login-btn:hover {
+    background: #1CA3EC;
+    color: #fff;
+}
+
+.blog-footer p.highlight {
+    color: #3D3D46;
+    margin-bottom: 40px;
+}
+
+.blog-footer p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 17px;
+
+    color: #979797;
+}
+
+.blog-footer .footer-divider {
+    margin-top: 40px;
+    margin-bottom: 28px;
 }

@@ -1,0 +1,41 @@
+@font-face {
+font-family: 'Gordita';
+font-style: normal;
+font-weight: normal;
+src: local('Gordita'), url('Gordita Regular.woff') format('woff');
+}
+
+@font-face {
+font-family: 'Gordita';
+font-style: italic;
+font-weight: normal;
+src: local('Gordita'), url('Gordita Regular Italic.woff') format('woff');
+}
+
+@font-face {
+font-family: 'Gordita';
+font-style: normal;
+font-weight: 100;
+src: local('Gordita'), url('Gordita Thin.woff') format('woff');
+}
+
+@font-face {
+font-family: 'Gordita';
+font-style: normal;
+font-weight: 300;
+src: local('Gordita'), url('Gordita Light.woff') format('woff');
+}
+
+@font-face {
+font-family: 'Gordita';
+font-style: normal;
+font-weight: 500;
+src: local('Gordita'), url('Gordita Medium.woff') format('woff');
+}
+
+@font-face {
+font-family: 'Gordita';
+font-style: normal;
+font-weight: 700;
+src: local('Gordita'), url('Gordita Bold.woff') format('woff');
+}

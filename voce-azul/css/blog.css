@@ -1,11 +1,15 @@
-body {
+body, html {
     background: #fcfcfc;
+    margin: 0px
 }
 
 .container {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
 }
 
 @media (min-width: 576px) {
@@ -182,11 +186,14 @@ hr {
 }
 
 .blog-homepage .leading-post .post-item .post-img {
-    flex: 5;
+    -ms-flex: 1;
+    flex: 1;
 }
 
 .blog-homepage .leading-post .post-item .post-info {
-    flex: 7;
+    -ms-flex: 1;
+    flex: 1;
+    padding-right: 0px;
 }
 
 .blog-homepage .leading-post .post-item .post-info h2 {

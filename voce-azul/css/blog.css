@@ -617,6 +617,10 @@ hr {
     color: #FFFFFF;
     word-wrap: break-word;
     word-break: break-all;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
 }
 
 .blog-header .title .blog-title h1 .light {

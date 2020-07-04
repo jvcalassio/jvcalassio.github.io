@@ -205,6 +205,8 @@ hr {
     -ms-flex: 1;
     flex: 1;
     border-radius: 6px;
+    min-width: -moz-fit-content;
+    min-width: fit-content;
 }
 
 .blog-homepage .leading-post .post-item .post-img {
@@ -252,6 +254,18 @@ hr {
 
 .blog-homepage .load-more .load-more-button:active, .blog-homepage .load-more .load-more-button:focus {
     outline: none;
+}
+
+@media only screen and (max-width: 992px) {
+    .blog-homepage .leading-post .post-item .post-info {
+        padding: 25px 30px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .blog-homepage .leading-post .post-item .post-info {
+        padding: 25px 5px;
+    }
 }
 
 /**

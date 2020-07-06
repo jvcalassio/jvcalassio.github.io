@@ -179,7 +179,7 @@ hr {
     position: absolute;
     margin-left: 7px;
     top: 50%;
-    margin-top: -6px;
+    margin-top: -5px;
 }
 
 .blog-homepage .post-item .post-info .post-link:hover {
@@ -570,6 +570,7 @@ hr {
 
 .blog-footer .social-media .social-media-link {
     margin-left: 10px;
+    text-decoration: none;
 }
 
 .blog-footer .social-media-link .blue-svg circle {
@@ -783,6 +784,10 @@ hr {
 
     .blog-header .navbar .navbar-items .searchbar {
         display: none;
+    }
+
+    .blog-header .navbar .navbar-items .home-button {
+        margin-right: 10px;
     }
 
     .blog-header .navbar .search-button {

@@ -46,6 +46,7 @@ hr {
     position: relative;
     padding-top: 60px;
     font-family: 'Gordita', sans-serif;
+    display: block;
 }
 
 .blog-homepage::before, .blog-post::before {
@@ -83,6 +84,7 @@ hr {
 
 @media only screen and (max-width: 552px) {
     .blog-homepage .post-grid {
+        -ms-grid-columns: repeat(auto-fit, minmax(100%, 1fr));
         grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
     }
 }
@@ -291,6 +293,7 @@ hr {
     padding-top: 35px;
     padding-bottom: 60px;
     position: relative;
+    display: block;
 }
 
 .blog-post .post-content {
@@ -540,6 +543,8 @@ hr {
     text-decoration: none;
     color: #1CA3EC;
     transition: background 0.25s ease, color 0.25s ease;
+    height: -moz-max-content;
+    height: max-content
 }
 
 .blog-footer .login-btn:hover {

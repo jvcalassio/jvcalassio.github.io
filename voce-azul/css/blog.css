@@ -2,9 +2,8 @@ body, html {
     background: #fcfcfc;
     margin: 0px
 }
-* {
-    z-index: 1;
-}
+
+*{margin:0;padding:0;list-style:none;border:0;box-sizing:border-box;outline:none;text-decoration:none;color:inherit;border-spacing: 0;border-collapse: collapse;z-index: 1;}
 
 .container {
     width: 100%;
@@ -425,7 +424,7 @@ hr {
 
 .blog-post .post-content footer .post-author > .author-img {
     width: 60px;
-    height: auto;
+    height: 60px;
     border-radius: 6px;
     margin-right: 20px;
 }
@@ -474,7 +473,6 @@ hr {
 
 .blog-post .post-content footer .post-share .social-media-link {
     width: 25px;
-    height: 25px;
     margin-left: 10px;
 }
 
@@ -526,7 +524,7 @@ hr {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: -10px;
+    margin-top: 5px;
 }
 
 .blog-footer .login-btn {
@@ -598,6 +596,11 @@ hr {
 
     .blog-footer .last-row {
         flex-direction: column;
+        margin-top: 15px;
+    }
+
+    .blog-footer .last-row .social-media {
+        margin-top: 15px;
     }
 }
 
@@ -611,6 +614,7 @@ hr {
     background-size: cover;
     padding: 50px 0px;
     width: 100%;
+    background-position: center center;
 }
 
 .blog-header .navbar {
@@ -788,6 +792,10 @@ hr {
 
     .blog-header .navbar .navbar-items .home-button {
         margin-right: 10px;
+    }
+
+    .blog-header .title .blog-title h1 .under::after {
+        margin-bottom: 5px;
     }
 
     .blog-header .navbar .search-button {

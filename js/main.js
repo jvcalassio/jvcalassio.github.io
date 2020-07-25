@@ -1,6 +1,6 @@
 $(document).ready(function() {
     ScrollOut({
-       
+        once: true
     });
 
     /*let elements = {

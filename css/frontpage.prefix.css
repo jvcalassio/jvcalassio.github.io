@@ -80,6 +80,10 @@
     grid-row: 1 / 3;
 }
 
+.second-section picture {
+    height: 100%;
+} 
+
 .second-section .projects-item {
     background-color: var(--main-color);
     color: var(--secondary-color);

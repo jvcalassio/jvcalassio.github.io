@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="pt-br" class="no-js">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+
+	<title>Cruiser Provedor de Internet</title>
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" type="image/png" href="" />
+	<link rel="icon" href="" sizes="32x32" />
+	<link rel="icon" href="" sizes="192x192" />
+	<link rel="apple-touch-icon-precomposed" href="" /> <!-- 180 x 180 -->
+	<meta name="msapplication-TileImage" content="" /> <!-- 270 x 270 -->
+
+	<!-- Modernizr -->
+	<script>
+		!function (e, n, A) { function o(e, n) { return typeof e === n } function t() { var e, n, A, t, a, i, l; for (var f in r) if (r.hasOwnProperty(f)) { if (e = [], n = r[f], n.name && (e.push(n.name.toLowerCase()), n.options && n.options.aliases && n.options.aliases.length)) for (A = 0; A < n.options.aliases.length; A++)e.push(n.options.aliases[A].toLowerCase()); for (t = o(n.fn, "function") ? n.fn() : n.fn, a = 0; a < e.length; a++)i = e[a], l = i.split("."), 1 === l.length ? Modernizr[l[0]] = t : (!Modernizr[l[0]] || Modernizr[l[0]] instanceof Boolean || (Modernizr[l[0]] = new Boolean(Modernizr[l[0]])), Modernizr[l[0]][l[1]] = t), s.push((t ? "" : "no-") + l.join("-")) } } function a(e) { var n = u.className, A = Modernizr._config.classPrefix || ""; if (c && (n = n.baseVal), Modernizr._config.enableJSClass) { var o = new RegExp("(^|\\s)" + A + "no-js(\\s|$)"); n = n.replace(o, "$1" + A + "js$2") } Modernizr._config.enableClasses && (n += " " + A + e.join(" " + A), c ? u.className.baseVal = n : u.className = n) } function i(e, n) { if ("object" == typeof e) for (var A in e) f(e, A) && i(A, e[A]); else { e = e.toLowerCase(); var o = e.split("."), t = Modernizr[o[0]]; if (2 == o.length && (t = t[o[1]]), "undefined" != typeof t) return Modernizr; n = "function" == typeof n ? n() : n, 1 == o.length ? Modernizr[o[0]] = n : (!Modernizr[o[0]] || Modernizr[o[0]] instanceof Boolean || (Modernizr[o[0]] = new Boolean(Modernizr[o[0]])), Modernizr[o[0]][o[1]] = n), a([(n && 0 != n ? "" : "no-") + o.join("-")]), Modernizr._trigger(e, n) } return Modernizr } var s = [], r = [], l = { _version: "3.6.0", _config: { classPrefix: "", enableClasses: !0, enableJSClass: !0, usePrefixes: !0 }, _q: [], on: function (e, n) { var A = this; setTimeout(function () { n(A[e]) }, 0) }, addTest: function (e, n, A) { r.push({ name: e, fn: n, options: A }) }, addAsyncTest: function (e) { r.push({ name: null, fn: e }) } }, Modernizr = function () { }; Modernizr.prototype = l, Modernizr = new Modernizr; var f, u = n.documentElement, c = "svg" === u.nodeName.toLowerCase(); !function () { var e = {}.hasOwnProperty; f = o(e, "undefined") || o(e.call, "undefined") ? function (e, n) { return n in e && o(e.constructor.prototype[n], "undefined") } : function (n, A) { return e.call(n, A) } }(), l._l = {}, l.on = function (e, n) { this._l[e] || (this._l[e] = []), this._l[e].push(n), Modernizr.hasOwnProperty(e) && setTimeout(function () { Modernizr._trigger(e, Modernizr[e]) }, 0) }, l._trigger = function (e, n) { if (this._l[e]) { var A = this._l[e]; setTimeout(function () { var e, o; for (e = 0; e < A.length; e++)(o = A[e])(n) }, 0), delete this._l[e] } }, Modernizr._q.push(function () { l.addTest = i }), Modernizr.addAsyncTest(function () { function e(e, n, A) { function o(n) { var o = n && "load" === n.type ? 1 == t.width : !1, a = "webp" === e; i(e, a && o ? new Boolean(o) : o), A && A(n) } var t = new Image; t.onerror = o, t.onload = o, t.src = n } var n = [{ uri: "data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=", name: "webp" }, { uri: "data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA==", name: "webp.alpha" }, { uri: "data:image/webp;base64,UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA", name: "webp.animation" }, { uri: "data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=", name: "webp.lossless" }], A = n.shift(); e(A.name, A.uri, function (A) { if (A && "load" === A.type) for (var o = 0; o < n.length; o++)e(n[o].name, n[o].uri) }) }), t(), a(s), delete l.addTest, delete l.addAsyncTest; for (var p = 0; p < Modernizr._q.length; p++)Modernizr._q[p](); e.Modernizr = Modernizr }(window, document);
+	</script>
+</head>
+
+<body>
+	<header class="first-section">
+		<nav class="black-bar">
+			<div class="container">
+				<picture>
+					<source srcset="img/icons/webp/to_clients_icon.webp" type="image/webp">
+					<img src="img/icons/to_clients_icon.png" class="icon" alt="Para clientes">
+				</picture>
+				<h4>
+					PARA CLIENTES:
+				</h4>
+				<ul>
+					<li><a href="#">WEBMAIL CRUISER</a></li>
+					<li><a href="#">SEGUNDA VIA DE BOLETO</a></li>
+					<li><a href="#">MEDIDOR DE VELOCIDADE</a></li>
+				</ul>
+			</div>
+		</nav>
+		<nav class="navbar navbar-expand-lg">
+			<div class="container">
+				<a class="navbar-brand" href="#">
+					<picture>
+						<source srcset="img/webp/logo.webp" type="image/webp">
+						<img src="img/logo.png" class="logo-img" alt="Cruiser Provedor de Internet">
+					</picture>
+					<h1 class="sr-only">Cruiser Provedor de Internet</h1>
+				</a>
+				<div class="d-flex flex-column align-items-end">
+					<div class="contato d-none d-lg-block">
+						<ul>
+							<li>
+								<a href="tel:(21) 2715-0100">
+									<picture>
+										<source srcset="img/icons/webp/red_phone.webp" type="image/webp">
+										<img src="img/icons/red_phone.png" alt="Telefone">
+									</picture>
+									(21) 2715-0100
+								</a>
+							</li>
+							<li>
+								<a href="tel:(21) 97381-0707">
+									<picture>
+										<source srcset="img/icons/webp/whatsapp_flat.webp" type="image/webp">
+										<img src="img/icons/whatsapp_flat.png" alt="WhatsApp">
+									</picture>
+									(21) 97381-0707
+								</a>
+							</li>
+						</ul>
+					</div>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar"
+						aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+						<div>
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</button>
+					<div class="collapse navbar-collapse" id="main-navbar">
+						<ul class="navbar-nav ml-auto">
+							<li><a class="nav-item nav-link" href="#">Planos</a></li>
+							<li><a class="nav-item nav-link" href="#">Vantagens</a></li>
+							<li><a class="nav-item nav-link highlighted" href="#">Assine Agora</a></li>
+							<li><a class="nav-item nav-link" href="#">Fale com a gente</a></li>
+							<li><a class="nav-item nav-link" href="#">Sobre nós</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<section class="banner">
+			<div class="container">
+				<h2>
+					INTERNET
+					<span class="ate">ATÉ </span>
+					<span class="mb">50 </span>
+					<span class="mg">MEGAS</span>
+				</h2>
+				<div class="y-rs">
+					<span class="rs">SÓ 79</span>
+					<span class="rss">reais</span>
+				</div>
+				<a href="tel:2715-0100" class="call-btn">
+					<picture>
+						<source srcset="img/icons/webp/phone.webp" type="image/webp">
+						<img src="img/icons/phone.png" class="phone-img" alt="Telefone">
+					</picture>
+					<span class="call-txt">
+						LIGUE AGORA
+						<span class="call-number">
+							2715-0100
+						</span>
+					</span>
+				</a>
+			</div>
+			<a href="#" class="whatsapp-btn d-none d-md-block"></a>
+		</section>
+	</header>
+
+	<section class="second-section">
+		<div class="container">
+			<h2>BANDA LARGA</h2>
+			<h3>Planos de Fibra Óptica. Internet de Verdade!</h3>
+
+			<div class="row">
+				<div class="col-sm-6 col-md-4">
+					<div class="card-planos mt-5">
+						<span class="ate">Até</span>
+						<div class="price">
+							<span class="mb">50 Mega</span>
+							<span class="rs">79,00</span>
+							<span class="pm">por mês</span>
+						</div>
+						<p class="features">
+							Horas de uso ilimitadas<br>
+							+ 5 contas de email grátis
+						</p>
+
+						<a href="#" class="main-btn">ASSINE AGORA!</a>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4">
+					<div class="card-planos mt-5">
+						<span class="ate">Até</span>
+						<div class="price">
+							<span class="mb">5 Mega</span>
+							<span class="rs">45,00</span>
+							<span class="pm">por mês</span>
+						</div>
+						<p class="features">
+							Horas de uso ilimitadas<br>
+							+ 5 contas de email grátis
+						</p>
+
+						<a href="#" class="main-btn">ASSINE AGORA!</a>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4">
+					<div class="card-planos mt-5">
+						<span class="ate">Até</span>
+						<div class="price">
+							<span class="mb">10 Mega</span>
+							<span class="rs">55,00</span>
+							<span class="pm">por mês</span>
+						</div>
+						<p class="features">
+							Horas de uso ilimitadas<br>
+							+ 5 contas de email grátis
+						</p>
+
+						<a href="#" class="main-btn">ASSINE AGORA!</a>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4">
+					<div class="card-planos mt-5">
+						<span class="ate">Até</span>
+						<div class="price">
+							<span class="mb">15 Mega</span>
+							<span class="rs">60,00</span>
+							<span class="pm">por mês</span>
+						</div>
+						<p class="features">
+							Horas de uso ilimitadas<br>
+							+ 5 contas de email grátis
+						</p>
+
+						<a href="#" class="main-btn">ASSINE AGORA!</a>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4">
+					<div class="card-planos mt-5">
+						<span class="ate">Até</span>
+						<div class="price">
+							<span class="mb">30 Mega</span>
+							<span class="rs">68,00</span>
+							<span class="pm">por mês</span>
+						</div>
+						<p class="features">
+							Horas de uso ilimitadas<br>
+							+ 5 contas de email grátis
+						</p>
+
+						<a href="#" class="main-btn">ASSINE AGORA!</a>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4">
+					<div class="card-planos mt-5">
+						<span class="ate">Até</span>
+						<div class="price">
+							<span class="mb">100 Mega</span>
+							<span class="rs">99,00</span>
+							<span class="pm">por mês</span>
+						</div>
+						<p class="features">
+							Horas de uso ilimitadas<br>
+							+ 5 contas de email grátis
+						</p>
+
+						<a href="#" class="main-btn">ASSINE AGORA!</a>
+					</div>
+				</div>
+			</div>
+			<hr>
+			<p>
+				* Valores para o plano residencial. Sujeito a viabilidade tecnica<br>
+				** Sujeito a confirmação<br>
+				Obs.: Preços para velocidades de download, sendo a velocidade de upload ate 25% da velocidade contratada
+				de download
+			</p>
+		</div>
+	</section>
+
+	<section class="third-section">
+		<div class="container">
+			<h2>VANTAGENS</h2>
+			<h3>Veja abaixo as vantagens de ser um cliente cruiser</h3>
+			<div class="row mt-5">
+				<div class="col-md-4 mt-4">
+					<picture>
+						<source srcset="img/icons/webp/fibra.webp" type="image/webp">
+						<img src="img/icons/fibra.png" alt="Fibra ótica">
+					</picture>
+					<span>FIBRA ÓTICA</span>
+				</div>
+				<div class="col-md-4 mt-4">
+					<picture>
+						<source srcset="img/icons/webp/support.webp" type="image/webp">
+						<img src="img/icons/support.png" alt="Suporte técnico">
+					</picture>
+					<span>SUPORTE TÉCNICO</span>
+				</div>
+				<div class="col-md-4 mt-4">
+					<picture>
+						<source srcset="img/icons/webp/rocket.webp" type="image/webp">
+						<img src="img/icons/rocket.png" alt="Foguete">
+					</picture>
+					<span>SEM FRANQUIA DE UTILIZAÇÃO</span>
+				</div>
+				<div class="col-md-4 mt-4">
+					<picture>
+						<source srcset="img/icons/webp/speed.webp" type="image/webp">
+						<img src="img/icons/speed.png" alt="Taxa de transferência">
+					</picture>
+					<span>TAXA DE TRANSFERÊNCIA INDIVIDUAL</span>
+				</div>
+				<div class="col-md-4 mt-4">
+					<picture>
+						<source srcset="img/icons/webp/videos.webp" type="image/webp">
+						<img src="img/icons/videos.png" alt="Videos">
+					</picture>
+					<span>SÉRIES, FILMES<br> E MUITO MAIS!</span>
+				</div>
+				<div class="col-md-4 mt-4">
+					<picture>
+						<source srcset="img/icons/webp/contract.webp" type="image/webp">
+						<img src="img/icons/contract.png" alt="Sem fidelidade">
+					</picture>
+					<span>SEM CONTRATO DE FIDELIDADE</span>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="fourth-section">
+		<div class="container">
+			<h2>ASSINE AGORA!</h2>
+			<h3>Preencha o formulário abaixo e nossa equipe entrará em contato com você!</H3>
+			<div class="formularios mt-5">
+				<form>
+					<div class="form-group">
+						<label for="plano_escolhido">Confirme o plano escolhido *</label>
+						<select id="plano_escolhido" name="plano_escolhido" class="form-control" required>
+							<option>Selecione</option>
+						</select>
+					</div>
+					<div class="form-row">
+						<div class="form-group col-md-6">
+							<label for="cep">CEP *</label>
+							<input type="text" class="form-control" id="cep" placeholder="CEP" required>
+						</div>
+						<div class="form-group col-md-6">
+							<label for="endereco">Endereço *</label>
+							<input type="text" class="form-control" id="endereco" placeholder="Endereço" required>
+						</div>
+					</div>
+
+					<div class="form-row">
+						<div class="form-group col-md-6">
+							<label for="numero">Número *</label>
+							<input type="text" class="form-control" id="numero" placeholder="Número" required>
+						</div>
+						<div class="form-group col-md-6">
+							<label for="complemento">Complemento</label>
+							<input type="text" class="form-control" id="complemento" placeholder="Complemento">
+						</div>
+					</div>
+
+					<div class="form-row">
+						<div class="form-group col-md-6">
+							<label for="bairro">Bairro</label>
+							<input type="text" class="form-control" id="bairro" placeholder="Bairro">
+						</div>
+						<div class="form-group col-md-6">
+							<label for="nome">Nome *</label>
+							<input type="text" class="form-control" id="nome" placeholder="Nome" required>
+						</div>
+					</div>
+
+					<div class="form-row">
+						<div class="form-group col-md-6">
+							<label for="telefone">Telefone *</label>
+							<input type="tel" class="form-control" id="telefone" placeholder="Telefone" required>
+						</div>
+						<div class="form-group col-md-6">
+							<label for="email">Email *</label>
+							<input type="email" class="form-control" id="email" placeholder="Email" required>
+						</div>
+					</div>
+					<button type="submit" class="main-btn">ASSINE AGORA!</button>
+				</form>
+
+				<p class="txt-obs">
+					Caso queira fazer o seu cadastro por telefone, entre em contato com nosso suporte
+					técnico, tel.: 2611-0111 / 2715-0100.<br>
+					Ao clicar em Cadastrar estará aceitando as condições do Contrato de Prestação de Serviços<br>
+					Dúvidas e sugestões: admin@cruiser.com.br
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="fifth-section d-none d-md-block">
+		<div class="row w-100 mx-0">
+			<div class="col-md-7">
+				<div class="box box1">
+					<h2>FALE COM A GENTE</h2>
+					<h3>nosso atendimento é mais ágil e de melhor qualidade</h3>
+					<div class="row mt-5 mb-10">
+						<div class="col-lg-4">
+							<picture>
+								<source srcset="img/icons/webp/red_phone.webp" type="image/webp">
+								<img src="img/icons/red_phone.png" alt="Telefone">
+							</picture>
+							<span class="headline">Telefones:</span>
+							<p>
+								(21) 2715-0100<br>
+								(21) 2611-0111
+							</p>
+						</div>
+						<div class="col-lg-4">
+							<picture>
+								<source srcset="img/icons/webp/whatsapp_flat.webp" type="image/webp">
+								<img src="img/icons/whatsapp_flat.png"" alt="WhatsApp">
+							</picture>
+							<span class="headline">WhatsApp:</span>
+							<p>(21) 97381-0707</p>
+						</div>
+						<div class="col-lg-4">
+							<picture>
+								<source srcset="img/icons/webp/email.webp" type="image/webp">
+								<img src="img/icons/email.png" alt="Email">
+							</picture>
+							<span class="headline">Emails:</span>
+							<p>
+								webmaster@cruiser.com.br<br>
+								admin@cruiser.com.br
+							</p>
+						</div>
+					</div>
+					<div class="info">
+						<span class="headline">Horários de Atendimento:</span>
+						<p>
+							Segunda à sexta: 08h ás 22h<br>
+							Sab.Dom. e feriados: 9h
+							às 18h
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-5">
+				<div class="box box2">
+					<h2>PARA CLIENTES</h2>
+					<h3>espaço reservado para clientes</h3>
+					<div class="row mt-5">
+						<div class="col-lg-4"><img src="img/icons/webmail.png">
+							<span class="headline">WEBMAIL<BR>CRUISER</span>
+						</div>
+						<div class="col-lg-4"><img src="img/icons/boleto.png">
+							<span class="headline">SEGUNDA VIA<BR>DE BOLETO</span>
+						</div>
+						<div class="col-lg-4"><img src="img/icons/speedtest.png">
+							<span class="headline">MEDIDOR DE<BR>VELOCIDADE</span>
+						</div>
+					</div>
+					<p class="info">
+						Acesse suas informações<br>
+						de forma rápida e segura.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="sixth-section d-none d-md-block">
+		<div class="container">
+			<h2>A CRUISER</h2>
+			<h3>mais de 25 anos conectando você com o mundo</H3>
+			<div class="row mt-5">
+				<div class="col-md-6">
+					<p>
+						Desde 1999 a Predialnet mantém seus valores em relação a qualidade e atendimento até os dias
+						atuais. A instituição busca atender com eficiência um público cada vez mais exigente, que
+						procura conexão rápida e estável. A Predialnet procura estar sempre na frente quando o assunto é
+						velocidade, tecnologia e suporte.
+					</p>
+					<h4>Missão</h4>
+					<p>
+						Construir um futuro com pessoas interligadas em uma rede de telecomunicações de alta performance,
+						que permita atender de forma contínua às necessidades do mercado.
+					</p>
+					<h4>Visão</h4>
+					<p>
+						Ser considerado um dos melhores provedores de internet banda larga do Brasil e possuir o maior
+						nível de satisfação dos clientes em seu segmento.
+					</p>
+				</div>
+				<div class="col-md-6">
+					<div class="box">
+						<h4>Atuação</h4>
+						<p>
+							A Predialnet atualmente atende as cidades do Rio de Janeiro, Niterói, São Gonçalo e Itaboraí.
+							Pra saber se existe disponibilidade para sua região entre em contato.
+						</p>
+						<picture>
+							<source srcset="img/webp/map.webp" type="image/webp">
+							<img src="img/map.png" alt="Mapa da área de atuação da Cruiser">
+						</picture>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="seventh-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<h4>TELEFONES DE CONTATO E SUPORTE:</h4>
+					<p>
+						TELEFONE: <a href="tel:2715.0100">2715.0100</a><br>
+						WHATSAPP: <a href="tel:97381.0707">97381.0707</a>
+					</p>
+				</div>
+				<div class="col-md-4">
+					<h4>EMAILS:</h4>
+					<p>
+						Problemas de conexão ou para contratar o serviço:<br>
+						<a href="mailto:webmaster@cruiser.com.br">webmaster@cruiser.com.br</a><br><br>
+						Dúvidas sobre sua fatura bancária:<br>
+						<a href="mailto:admin@cruiser.com.br">admin@cruiser.com.br</a>
+					</p>
+				</div>
+				<div class="col-md-4">
+					<h4>SEGUE A GENTE NAS REDES SOCIAIS!</h4>
+					<ul class="socialmedia">
+						<li>
+							<a href="#" target="_blank" rel="noopener noreferrer">
+								<picture>
+									<source srcset="img/icons/webp/facebook.webp" type="image/webp">
+									<img src="img/icons/facebook.png" alt="Facebook" />
+								</picture>
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank" rel="noopener noreferrer">
+								<picture>
+									<source srcset="img/icons/webp/instagram.webp" type="image/webp">
+									<img src="img/icons/instagram.png" alt="Instagram"/>
+								</picture>
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank" rel="noopener noreferrer">
+								<picture>
+									<source srcset="img/icons/webp/linkedin.webp" type="image/webp">
+									<img src="img/icons/linkedin.png" alt="LinkedIn"/>
+								</picture>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Page JS -->
+	<script src="js/jquery-3.5.1.slim.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>

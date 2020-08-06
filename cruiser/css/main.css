@@ -662,7 +662,7 @@ a {
 }
 
 .fifth-section .box2 {
-    background-color: rgb(183, 192, 195);
+    background-color: rgb(164, 170, 172);
 }
 
 .fifth-section .box2 h3 {
@@ -671,10 +671,20 @@ a {
 }
 
 .fifth-section .box2 .headline {
-    color: #fff;
     font-weight: 600;
     display: block;
     margin-top: 25px;
+}
+
+.fifth-section .box2 a {
+    color: #fff;
+
+    display: block;
+}
+
+.fifth-section .box2 a:hover {
+    text-decoration: none;
+    color: #0056b3;
 }
 
 .fifth-section img {

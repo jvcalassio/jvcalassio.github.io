@@ -29,7 +29,10 @@
 </head>
 
 <body>
-	<header class="first-section">
+	<div class="scroll-top">
+		<a href="#header" class="link-scroll"><img src="img/up.svg" /></a>
+	</div>
+	<header class="first-section" id="header">
 		<nav class="black-bar">
 			<div class="container">
 				<picture>
@@ -88,46 +91,57 @@
 					</button>
 					<div class="collapse navbar-collapse" id="main-navbar">
 						<ul class="navbar-nav ml-auto">
-							<li><a class="nav-item nav-link" href="#">Planos</a></li>
-							<li><a class="nav-item nav-link" href="#">Vantagens</a></li>
-							<li><a class="nav-item nav-link highlighted" href="#">Assine Agora</a></li>
-							<li><a class="nav-item nav-link" href="#">Fale com a gente</a></li>
-							<li><a class="nav-item nav-link" href="#">Sobre nós</a></li>
+							<li><a class="nav-item nav-link link-scroll" href="#planos">Planos</a></li>
+							<li><a class="nav-item nav-link link-scroll" href="#vantagens">Vantagens</a></li>
+							<li><a class="nav-item nav-link link-scroll highlighted" href="#assine-agora">Assine Agora</a></li>
+							<li><a class="nav-item nav-link link-scroll" href="#fale-com-a-gente">Fale com a gente</a></li>
+							<li><a class="nav-item nav-link link-scroll" href="#sobre">Sobre nós</a></li>
 						</ul>
 					</div>
 				</div>
 			</div>
 		</nav>
-		<section class="banner">
-			<div class="container">
-				<h2>
-					INTERNET
-					<span class="ate">ATÉ </span>
-					<span class="mb">50 </span>
-					<span class="mg">MEGAS</span>
-				</h2>
-				<div class="y-rs">
-					<span class="rs">SÓ 79</span>
-					<span class="rss">reais</span>
+		<div id="carousel-banner" class="carousel slide" data-ride="carousel">
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<section class="banner">
+						<picture>
+							<source srcset="img/webp/bg_header.webp" type="image/webp">
+							<img src="img/bg_header.png" class="banner-bg-img">
+						</picture>
+						<div class="container">
+							<h2>
+								INTERNET
+								<span class="ate">ATÉ </span>
+								<span class="mb">50 </span>
+								<span class="mg">MEGAS</span>
+							</h2>
+							<div class="y-rs">
+								<span class="rs">SÓ 79</span>
+								<span class="rss">reais</span>
+							</div>
+							<a href="tel:2715-0100" class="call-btn">
+								<picture>
+									<source srcset="img/icons/webp/phone.webp" type="image/webp">
+									<img src="img/icons/phone.png" class="phone-img" alt="Telefone">
+								</picture>
+								<span class="call-txt">
+									LIGUE AGORA
+									<span class="call-number">
+										2715-0100
+									</span>
+								</span>
+							</a>
+						</div>
+						<a href="#" class="whatsapp-btn d-none d-md-block"></a>
+					</section>
 				</div>
-				<a href="tel:2715-0100" class="call-btn">
-					<picture>
-						<source srcset="img/icons/webp/phone.webp" type="image/webp">
-						<img src="img/icons/phone.png" class="phone-img" alt="Telefone">
-					</picture>
-					<span class="call-txt">
-						LIGUE AGORA
-						<span class="call-number">
-							2715-0100
-						</span>
-					</span>
-				</a>
 			</div>
-			<a href="#" class="whatsapp-btn d-none d-md-block"></a>
-		</section>
+		</div>
+		
 	</header>
 
-	<section class="second-section">
+	<section class="second-section" id="planos">
 		<div class="container">
 			<h2>BANDA LARGA</h2>
 			<h3>Planos de Fibra Óptica. Internet de Verdade!</h3>
@@ -146,7 +160,7 @@
 							+ 5 contas de email grátis
 						</p>
 
-						<a href="#" class="main-btn">ASSINE AGORA!</a>
+						<a href="#assine-agora" class="main-btn link-scroll">ASSINE AGORA!</a>
 					</div>
 				</div>
 				<div class="col-sm-6 col-md-4">
@@ -162,7 +176,7 @@
 							+ 5 contas de email grátis
 						</p>
 
-						<a href="#" class="main-btn">ASSINE AGORA!</a>
+						<a href="#assine-agora" class="main-btn link-scroll">ASSINE AGORA!</a>
 					</div>
 				</div>
 				<div class="col-sm-6 col-md-4">
@@ -178,7 +192,7 @@
 							+ 5 contas de email grátis
 						</p>
 
-						<a href="#" class="main-btn">ASSINE AGORA!</a>
+						<a href="#assine-agora" class="main-btn link-scroll">ASSINE AGORA!</a>
 					</div>
 				</div>
 				<div class="col-sm-6 col-md-4">
@@ -194,7 +208,7 @@
 							+ 5 contas de email grátis
 						</p>
 
-						<a href="#" class="main-btn">ASSINE AGORA!</a>
+						<a href="#assine-agora" class="main-btn link-scroll">ASSINE AGORA!</a>
 					</div>
 				</div>
 				<div class="col-sm-6 col-md-4">
@@ -210,7 +224,7 @@
 							+ 5 contas de email grátis
 						</p>
 
-						<a href="#" class="main-btn">ASSINE AGORA!</a>
+						<a href="#assine-agora" class="main-btn link-scroll">ASSINE AGORA!</a>
 					</div>
 				</div>
 				<div class="col-sm-6 col-md-4">
@@ -226,7 +240,7 @@
 							+ 5 contas de email grátis
 						</p>
 
-						<a href="#" class="main-btn">ASSINE AGORA!</a>
+						<a href="#assine-agora" class="main-btn link-scroll">ASSINE AGORA!</a>
 					</div>
 				</div>
 			</div>
@@ -240,7 +254,7 @@
 		</div>
 	</section>
 
-	<section class="third-section">
+	<section class="third-section" id="vantagens">
 		<div class="container">
 			<h2>VANTAGENS</h2>
 			<h3>Veja abaixo as vantagens de ser um cliente cruiser</h3>
@@ -291,7 +305,7 @@
 		</div>
 	</section>
 
-	<section class="fourth-section">
+	<section class="fourth-section" id="assine-agora">
 		<div class="container">
 			<h2>ASSINE AGORA!</h2>
 			<h3>Preencha o formulário abaixo e nossa equipe entrará em contato com você!</H3>
@@ -359,7 +373,7 @@
 		</div>
 	</section>
 
-	<section class="fifth-section d-none d-md-block">
+	<section class="fifth-section d-none d-md-block" id="fale-com-a-gente">
 		<div class="row w-100 mx-0">
 			<div class="col-md-7">
 				<div class="box box1">
@@ -432,7 +446,7 @@
 		</div>
 	</section>
 
-	<section class="sixth-section d-none d-md-block">
+	<section class="sixth-section d-none d-md-block" id="sobre">
 		<div class="container">
 			<h2>A CRUISER</h2>
 			<h3>mais de 25 anos conectando você com o mundo</H3>
@@ -525,8 +539,8 @@
 	</footer>
 
 	<!-- Page JS -->
-	<script src="js/jquery-3.5.1.slim.min.js"></script>
-	<script src="js/popper.min.js"></script>
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<!--script src="js/popper.min.js"></script-->
 	<script src="bootstrap/js/bootstrap.min.js"></script>
 	<script src="js/main.js"></script>
 </body>

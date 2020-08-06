@@ -66,6 +66,27 @@ a {
     text-decoration: none;
 }
 
+.scroll-top {
+    width: 35px;
+    height: 35px;
+    position: fixed;
+    visibility: hidden;
+    bottom: 10px;
+    right: 10px;
+    opacity: 0;
+    transition: opacity 0.25s ease, visibility 0.25s ease;
+}
+
+.scroll-top.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.scroll-top img {
+    width: 35px;
+    height: 35px;
+}
+
 /************************************************
  * 1st section
  ************************************************/
@@ -252,29 +273,28 @@ a {
     }
 }
 
-.webp .first-section .banner {
-    background-image: url('../img/webp/bg_header.webp');
-}
-
-.no-webp .first-section .banner {
-    background-image: url('../img/bg_header.png');
-}
-
 .first-section .banner {
     width: 100%;
     height: 300px;
     background-color: #1e6a7e;
-    background-position-x: center;
-    background-position-y: bottom;
-    background-size: cover;
-    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
 
+.first-section .banner .banner-bg-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 .first-section .banner .container {
     position: relative;
+    z-index: 2;
 }
 
 .first-section .banner h2 {
@@ -375,6 +395,7 @@ a {
     height: 50px;
     background-size: 100%;
     background-repeat: no-repeat;
+    z-index: 2;
 }
 
 /************************************************

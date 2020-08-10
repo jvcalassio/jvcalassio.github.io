@@ -75,6 +75,7 @@ a {
     right: 10px;
     opacity: 0;
     transition: opacity 0.25s ease, visibility 0.25s ease;
+    z-index: 100;
 }
 
 .scroll-top.active {
@@ -166,7 +167,7 @@ a {
     display: inline-block;
 }
 
-.first-section .black-bar ul li a {
+.first-section .black-bar ul li:not(:first-of-type) a {
     margin-left: 5px;
 }
 
@@ -237,14 +238,14 @@ a {
 
 .first-section .navbar-toggler > div > span {
     width: 100%;
-    min-width: 40px;
+    min-width: 35px;
     height: 4px;
     background-color: #00b3e7;
     display: block;
 }
 
 .first-section .navbar-toggler > div > span:not(:first-of-type) {
-    margin-top: 6px;
+    margin-top: 4px;
 }
 
 @media only screen and (max-width: 992px) {
@@ -306,6 +307,16 @@ a {
     display: inline-block;
 }
 
+@media only screen and (max-width: 576px) {
+    .first-section .banner {
+        height: 120px;
+    }
+
+    .first-section .banner h2 {
+        font-size: 18px;
+    }
+}
+
 .first-section .banner h2::after {
     content: unset;
 }
@@ -315,26 +326,26 @@ a {
 }
 
 .first-section .banner h2 .ate {
-    font-size: 24px;
+    font-size: 0.66em;
 }
 
 .first-section .banner h2 .mb {
-    font-size: 150px;
-    line-height: 150px;
+    font-size: 4em;
+    line-height: 1em;
     margin-top: -20px;
-    margin-left: -10px;
+    margin-left: -0.06em;
 }
 
 .first-section .banner h2 .mg {
-    font-size: 32px;
-    line-height: 32px;
+    font-size: 0.88em;
+    line-height: 1em;
 }
 
 .first-section .banner .y-rs {
     color: #fefb00;
     font-weight: 800;
     font-size: 54px;
-    line-height: 32px;
+    line-height: 0.6em;
     display: inline-block;
     position: absolute;
     bottom: 0;
@@ -344,7 +355,7 @@ a {
 
 .first-section .banner .y-rs .rss {
     display: block;
-    font-size: 18px;
+    font-size: 0.33em;
     text-align: right;
     padding-right: 10px;
 }
@@ -369,14 +380,43 @@ a {
 
 .first-section .banner .call-txt {
     font-size: 17px;
-    line-height: 18px;
+    line-height: 0.95em;
     display: inline-block;
 }
 
 .first-section .banner .call-number {
     font-size: 24px;
-    line-height: 20px;
+    line-height: 0.83em;
     display: block;
+}
+
+@media only screen and (max-width: 576px) {
+    .first-section .banner h2 .mb {
+        line-height: 1.25em;
+    }
+
+    .first-section .banner h2 .mg {
+        margin-top: -15px;
+    }
+
+    .first-section .banner .y-rs {
+        font-size: 30px;
+        margin-bottom: 30px;
+        margin-left: 0px;
+    }
+
+    .first-section .banner .call-btn .phone-img {
+        max-height: 20px;
+        margin-top: -10px;
+    }
+
+    .first-section .banner .call-txt {
+        font-size: 10px;
+    }
+
+    .first-section .banner .call-number {
+        font-size: 14px;
+    }
 }
 
 .no-webp .first-section .banner .whatsapp-btn {
@@ -413,6 +453,7 @@ a {
     padding: 20px;
     max-width: 260px;
     margin: auto;
+    font-size: 14px;
 }
 
 .second-section .card-planos.highlight::before {
@@ -485,13 +526,14 @@ a {
 
 @media only screen and (max-width: 576px) {
     .second-section .card-planos.highlight::before {
-        max-width: 220px;
-        font-size: 18px;
-        padding-top: 3px;
+        max-width: 130px;
+        font-size: 11px;
+        padding-top: 8px;
     }
 
     .second-section .card-planos.highlight::after {
-        margin-right: -120px;
+        margin-right: -80px;
+        width: 30px;
     }
 }
 
@@ -519,37 +561,49 @@ a {
 }
 
 .second-section .card-planos .ate {
-    font-size: 14px;
+    /*font-size: 14px;*/
+    font-size: 1em;
 }
 
 .second-section .card-planos .price {
-    margin-top: 10px;
+    margin-top: 0.7em;
 }
 
 .second-section .card-planos .price .mb {
-    font-size: 28px;
+    font-size: 2em;
 }
 
 .second-section .card-planos .price .rs {
     color: #98C400;
-    font-size: 40px;
+    font-size: 2.86em;
     margin: 6px 0px;
 }
 
 .second-section .card-planos .price .pm {
     font-weight: 300;
-    font-size: 14px;
+    font-size: 1em;
 }
 
 .second-section .card-planos .features {
     font-weight: 300;
-    font-size: 14px;
+    font-size: 1em;
     text-align: center;
     margin: 20px 0px;
 }
 
 .second-section .obs {
     font-weight: 300;
+}
+
+@media only screen and (max-width: 576px) {
+    .second-section .card-planos {
+        font-size: 10px;
+    }
+
+    .second-section .col-6 {
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
 }
 
 /************************************************
@@ -588,6 +642,18 @@ a {
 
 .third-section h2{
     color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+    .third-section img {
+        width: 90px;
+        height: 90px;
+        border-width: 9px;
+    }
+
+    .third-section span {
+        font-size: 12px;
+    }
 }
 
 /************************************************

@@ -9,7 +9,7 @@
         set_scale('100%', $(this));
     }); 
     $('#1_6_scale').click(function() {
-        set_scale('33.3%', $(this));
+        set_scale('33.334%', $(this));
     });
 
     function set_scale(val, btn) {
